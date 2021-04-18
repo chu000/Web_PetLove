@@ -18,237 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
     <title>PetLove 派樂</title>
-    <style>
-      :root {
-        --mainblue: #89a7c2;
-        --mainpink: #ff9a9a;
-        --mainyellow: #f9dd83;
-        --maingray: #cccccc;
-        --maindarkgray: #707070;
-      }
-      body {
-        background-color: #f7f4ee;
-        color: var(--maindarkgray);
-        font-family: 'Poppins', 'Noto Sans TC', sans-serif;
-      }
-
-      .c_donate_title {
-        font-size: 45px;
-        margin: 5% auto;
-        max-width: 180px;
-        border-bottom: 2px solid var(--mainblue);
-      }
-      .c_donate_main {
-        margin: 0 auto;
-        max-width: 1028px;
-        background-color: #fff;
-        border-radius: 25px;
-        margin-top: 90px;
-        overflow: hidden;
-      }
-      .c_donate_content {
-        margin: 2% auto;
-        font-size: 18px;
-        max-width: 900px;
-        /* word-break: keep-all; */
-        text-align: center;
-        line-height: 2;
-        padding: 3%;
-      }
-
-      .c_donateBTN {
-        position: relative;
-        margin: 3% 5%;
-        max-width: 300px;
-        border-radius: 15px;
-        overflow: hidden;
-        margin-bottom: 20%;
-        transition: all 0.5s ease-out;
-        font-size: 30px;
-      }
-      .c_donateBTN:hover {
-        transform: translateY(10px);
-      }
-      .c_donateBTN_pM {
-        position: absolute;
-        color: #fff;
-        font-weight: 400;
-        bottom: 2px;
-        left: 20px;
-      }
-      .c_donateBTN_pF {
-        position: absolute;
-        color: #fff;
-        font-weight: 400;
-        bottom: 2px;
-        right: 20px;
-      }
-      .c_donate_note {
-        font-size: 16px;
-        margin: 2% auto;
-        max-width: 800px;
-        line-height: 2;
-        padding: 3%;
-      }
-      .c_donate_note a {
-        color: var(--mainblue);
-        text-decoration: none;
-      }
-      .c_searchBOX {
-        position: relative;
-        max-width: 500px;
-        margin: 5% auto;
-      }
-      .c_searchBOX svg {
-        position: absolute;
-        right: 18px;
-        top: 8px;
-        width: 20px;
-        height: 20px;
-        fill: var(--maingray);
-        cursor: pointer;
-      }
-      .c_directory {
-        max-width: 800px;
-        text-align: center;
-        margin: 0 auto;
-        color: var(--mainblue);
-        margin-bottom: 10%;
-      }
-      .c_directory thead {
-        background-color: var(--mainblue);
-        color: #fff;
-      }
-      /*更改boostrap表格*/
-      .table thead th {
-        border-bottom: none;
-      }
-
-      .form-control {
-        border: none;
-        border-radius: 50px;
-      }
-      .table td,
-      .table th {
-        padding: 1rem;
-        border-top: 1px solid var(--mainblue);
-      }
-      .form-control::placeholder {
-        color: var(--maingray);
-      }
-      /*關掉手機芳名錄版*/
-      .c_directory_mobile {
-        display: none;
-      }
-      .c_gallery {
-        scroll-snap-type: x mandatory;
-        -webkit-scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        /* align-items: center; */
-        display: flex;
-        margin-bottom: 10%;
-        -webkit-overflow-scrolling: touch;
-      }
-      .c_gallery img {
-        max-width: 400px;
-        border-radius: 10px;
-        margin: 3% 1%;
-      }
-
-      /*------------------捲軸---------------------------------------------------------*/
-      /* 捲軸空間*/
-
-      .c_gallery::-webkit-scrollbar {
-        height: 8px;
-        overflow: visible;
-        /* width: 11px; */
-      }
-
-      .c_gallery::-webkit-scrollbar-thumb {
-        background-color: var(--mainyellow);
-        /* background-clip: padding-box; */
-        /* border: solid transparent; */
-        border-radius: 999em;
-        /* border-width: 0 0 0 0px; */
-        /* min-height: 35px; */
-        /* padding: 100px 0 0; */
-        /* box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07); */
-      }
-
-      .c_gallery::-webkit-scrollbar-thumb:hover {
-        background-color: var(--mainyellow);
-        /* box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25); */
-      }
-
-      .c_gallery ::-webkit-scrollbar-thumb:active {
-        background-color: var(--maingray);
-        /* box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35); */
-      }
-
-      @media (max-width: 375px) {
-        .c_donate_title {
-          font-size: 24px;
-          max-width: 100px;
-        }
-        .c_donate_main {
-          background-color: rgba(255, 255, 255, 0);
-          border-radius: 0px;
-        }
-        .c_donate_main img {
-          border-radius: 10px;
-        }
-        .c_donate_content {
-          font-size: 14px;
-          padding: 0 5%;
-        }
-        .c_donateBTN {
-          margin: 3% 2%;
-          max-width: 145px;
-          border-radius: 10px;
-          font-size: 18px;
-          line-height: 1.2;
-        }
-        .c_donateBTN_pM {
-          margin: 0;
-          bottom: 10px;
-          left: 10px;
-        }
-        .c_donateBTN_pF {
-          margin: 0;
-          bottom: 10px;
-          right: 10px;
-        }
-        .c_donate_note {
-          font-size: 12px;
-        }
-        .c_searchBOX {
-          margin: 10% auto;
-        }
-        .c_directory {
-          display: none;
-        }
-        .c_directory_mobile {
-          display: block;
-          margin: 4% auto;
-          max-width: 320px;
-          border-radius: 10px;
-          border: 2px solid var(--mainblue);
-          color: var(--mainblue);
-          padding: 5%;
-          font-size: 14px;
-        }
-        .c_directory_mobile th {
-          padding: 0;
-        }
-        .c_directory_mobile td {
-          margin-left: 5%;
-          padding: 1%;
-          padding-left: 5%;
-        }
-      }
-    </style>
+ 
   </head>
   <body>
     <div class="container">
@@ -321,17 +93,17 @@
       </div>
       <p class="c_donate_title">捐贈查詢</p>
       <div class="c_searchBOX">
-        <input
+        <input id="c_searchINput"
           class="form-control mr-sm-2"
           placeholder=" 請輸入身分證號碼或E-mail"
           aria-label="Search"
         />
 
-        <svg>
+        <svg id="c_donate_search">
           <use xlink:href="./img/Donate/donate.svg#search"></use>
         </svg>
       </div>
-
+<div id="c_appear_directory">
       <table class="table c_directory">
         <thead>
           <tr>
@@ -449,8 +221,40 @@
         </table>
       </div>
     </div>
+      <div id="c_NO_directory">
+        <P>-查無資料-</P>
+      </div>
+
+
+    </div>
 
     <script src="./js/0_main/jquery-3.5.1.js"></script>
     <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+            let Csearch = document.getElementById('c_donate_search')
+            let CsearchINput= document.getElementById('c_searchINput')
+            let Cappear= document.getElementById('c_appear_directory')
+            let CnoDirectory= document.getElementById('c_NO_directory')
+
+            Csearch.addEventListener('click', function (event) {
+            console.log(CsearchINput.value)
+    
+
+
+          // 判斷是否有包含在裡面
+          let idx = CsearchINput.value.indexOf('0919123456')
+          console.log(idx)
+          if (idx !== -1) {
+            Cappear.style.display = 'block'
+            CnoDirectory.style.display = 'none'
+          } else {
+            Cappear.style.display = 'none'
+            CnoDirectory.style.display = 'block'
+          }
+        })
+      
+    </script>
   </body>
 </html>
