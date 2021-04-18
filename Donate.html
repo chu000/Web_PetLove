@@ -119,24 +119,27 @@
       .c_directory thead {
         background-color: var(--mainblue);
         color: #fff;
- 
       }
-
+      /*更改boostrap表格*/
       .table thead th {
         border-bottom: none;
       }
-   
 
       .form-control {
         border: none;
         border-radius: 50px;
       }
-      .table td,.table th {
-    padding: 1rem;
-    border-top: 1px solid var(--mainblue);
-    }
+      .table td,
+      .table th {
+        padding: 1rem;
+        border-top: 1px solid var(--mainblue);
+      }
       .form-control::placeholder {
         color: var(--maingray);
+      }
+      /*關掉手機芳名錄版*/
+      .c_directory_mobile {
+        display: none;
       }
       .c_gallery {
         scroll-snap-type: x mandatory;
@@ -183,6 +186,7 @@
         background-color: var(--maingray);
         /* box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35); */
       }
+
       @media (max-width: 375px) {
         .c_donate_title {
           font-size: 24px;
@@ -208,21 +212,41 @@
         }
         .c_donateBTN_pM {
           margin: 0;
-        bottom: 10px;
-        left: 10px;
-      }
-      .c_donateBTN_pF {
-        margin: 0;
-        bottom: 10px;
-        right: 10px;
-      }
+          bottom: 10px;
+          left: 10px;
+        }
+        .c_donateBTN_pF {
+          margin: 0;
+          bottom: 10px;
+          right: 10px;
+        }
         .c_donate_note {
           font-size: 12px;
         }
         .c_searchBOX {
-
-        margin: 10% auto;
-      }
+          margin: 10% auto;
+        }
+        .c_directory {
+          display: none;
+        }
+        .c_directory_mobile {
+          display: block;
+          margin: 4% auto;
+          max-width: 320px;
+          border-radius: 10px;
+          border: 2px solid var(--mainblue);
+          color: var(--mainblue);
+          padding: 5%;
+          font-size: 14px;
+        }
+        .c_directory_mobile th {
+          padding: 0;
+        }
+        .c_directory_mobile td {
+          margin-left: 5%;
+          padding: 1%;
+          padding-left: 5%;
+        }
       }
     </style>
   </head>
@@ -308,8 +332,6 @@
         </svg>
       </div>
 
-
-
       <table class="table c_directory">
         <thead>
           <tr>
@@ -346,11 +368,85 @@
           </tr>
         </tbody>
       </table>
-      <div class="table c_directory_mobile">
-        <tr>
-          <th scope="row">姓名</th>
-          <td>吳XX</td>
-        </tr>
+      <div class="c_directory_mobile">
+        <table>
+          <tr>
+            <th scope="row">姓名</th>
+            <td>吳XX</td>
+          </tr>
+          <tr>
+            <th scope="row">年份</th>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <th scope="row">項目</th>
+            <td>愛心捐款-台中西屯曾媽媽</td>
+          </tr>
+          <tr>
+            <th scope="row">金額</th>
+            <td>$2000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="c_directory_mobile">
+        <table>
+          <tr>
+            <th scope="row">姓名</th>
+            <td>吳XX</td>
+          </tr>
+          <tr>
+            <th scope="row">年份</th>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <th scope="row">項目</th>
+            <td>愛心助糧-徐春水流浪狗之家</td>
+          </tr>
+          <tr>
+            <th scope="row">金額</th>
+            <td>$1599</td>
+          </tr>
+        </table>
+      </div>
+      <div class="c_directory_mobile">
+        <table>
+          <tr>
+            <th scope="row">姓名</th>
+            <td>吳XX</td>
+          </tr>
+          <tr>
+            <th scope="row">年份</th>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <th scope="row">項目</th>
+            <td>愛心捐款-高雄大寮陳媽媽狗園</td>
+          </tr>
+          <tr>
+            <th scope="row">金額</th>
+            <td>$3500</td>
+          </tr>
+        </table>
+      </div>
+      <div class="c_directory_mobile">
+        <table>
+          <tr>
+            <th scope="row">姓名</th>
+            <td>吳XX</td>
+          </tr>
+          <tr>
+            <th scope="row">年份</th>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <th scope="row">項目</th>
+            <td>愛心助糧-南投埔里埔愛貓屋</td>
+          </tr>
+          <tr>
+            <th scope="row">金額</th>
+            <td>$490</td>
+          </tr>
+        </table>
       </div>
     </div>
 
