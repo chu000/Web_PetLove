@@ -32,20 +32,9 @@
         color: var(--maindarkgray);
         font-family: 'Poppins', 'Noto Sans TC', sans-serif;
       }
-      .c_font45 {
-        font-size: 45px;
-      }
-      .c_font30 {
-        font-size: 30px;
-      }
-      .c_font18 {
-        font-size: 18px;
-      }
-      .c_font16 {
-        font-size: 16px;
-      }
 
       .c_donate_title {
+        font-size: 45px;
         margin: 5% auto;
         max-width: 180px;
         border-bottom: 2px solid var(--mainblue);
@@ -60,10 +49,12 @@
       }
       .c_donate_content {
         margin: 2% auto;
+        font-size: 18px;
         max-width: 900px;
-        word-break: keep-all;
+        /* word-break: keep-all; */
         text-align: center;
         line-height: 2;
+        padding: 3%;
       }
 
       .c_donateBTN {
@@ -74,6 +65,7 @@
         overflow: hidden;
         margin-bottom: 20%;
         transition: all 0.5s ease-out;
+        font-size: 30px;
       }
       .c_donateBTN:hover {
         transform: translateY(10px);
@@ -93,6 +85,7 @@
         right: 20px;
       }
       .c_donate_note {
+        font-size: 16px;
         margin: 2% auto;
         max-width: 800px;
         line-height: 2;
@@ -127,20 +120,18 @@
       }
       .c_searchBOX svg {
         position: absolute;
-       right: 18px;
-       top:8px;
-       width: 20px;
-       height: 20px;
-       fill:var(--maingray);
-       cursor: pointer;
+        right: 18px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+        fill: var(--maingray);
+        cursor: pointer;
       }
       .form-control {
         border: none;
         border-radius: 50px;
- 
       }
       .form-control::placeholder {
-    
         color: var(--maingray);
       }
       .c_gallery {
@@ -151,7 +142,7 @@
         /* align-items: center; */
         display: flex;
         margin-bottom: 10%;
-       
+        -webkit-overflow-scrolling: touch;
       }
       .c_gallery img {
         max-width: 400px;
@@ -188,14 +179,55 @@
         background-color: var(--maingray);
         /* box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35); */
       }
+      @media (max-width: 375px) {
+        .c_donate_title {
+          font-size: 24px;
+          max-width: 100px;
+        }
+        .c_donate_main {
+          background-color: rgba(255, 255, 255, 0);
+          border-radius: 0px;
+        }
+        .c_donate_main img {
+          border-radius: 10px;
+        }
+        .c_donate_content {
+          font-size: 14px;
+          padding: 0 5%;
+        }
+        .c_donateBTN {
+          margin: 3% 2%;
+          max-width: 145px;
+          border-radius: 10px;
+          font-size: 18px;
+          line-height: 1.2;
+        }
+        .c_donateBTN_pM {
+          margin: 0;
+        bottom: 10px;
+        left: 10px;
+      }
+      .c_donateBTN_pF {
+        margin: 0;
+        bottom: 10px;
+        right: 10px;
+      }
+        .c_donate_note {
+          font-size: 12px;
+        }
+        .c_searchBOX {
+
+        margin: 10% auto;
+      }
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="c_donate_main">
         <img src="./img/Donate/donate_banner01.jpg" alt="" width="100%" />
-        <p class="c_donate_title c_font45">愛心捐贈</p>
-        <p class="c_donate_content c_font18">
+        <p class="c_donate_title">愛心捐贈</p>
+        <p class="c_donate_content">
           感謝您願意了解「派樂」的愛心捐款與助糧，我們長期幫助全台灣弱勢私人流浪貓狗收容中心，
           提供飼料援助， 並協助修繕工程以改善其收容環境。
           讓每個毛孩們都有生存的權利，並以感恩的心珍惜您的每一分愛，所有的愛將被妥善運用，
@@ -210,7 +242,7 @@
         <div class="row justify-content-center">
           <a href="">
             <div class="c_donateBTN">
-              <p class="c_donateBTN_pM c_font30">
+              <p class="c_donateBTN_pM">
                 愛心
                 <br />
                 捐款
@@ -220,7 +252,7 @@
           </a>
           <a href="">
             <div class="c_donateBTN">
-              <p class="c_donateBTN_pF c_font30">
+              <p class="c_donateBTN_pF">
                 愛心
                 <br />
                 助糧
@@ -230,7 +262,7 @@
           </a>
         </div>
       </div>
-      <p class="c_donate_note c_font16">
+      <p class="c_donate_note">
         ※
         愛心有憑據：在「派樂」平台進行愛心捐款的每一位捐款人，都會收到正式且可供抵稅的合法收據，確保您的愛心有憑有據。
         <br />
@@ -250,7 +282,7 @@
         ※ 有關捐款任何問題，歡迎隨時
         <a href="">聯絡我們。</a>
       </p>
-      <p class="c_donate_title c_font45">活動紀錄</p>
+      <p class="c_donate_title">活動紀錄</p>
       <div class="c_gallery">
         <img src="./img/Donate/donaatePIC (1).jpg" alt="" />
         <img src="./img/Donate/donaatePIC (2).jpg" alt="" />
@@ -259,21 +291,20 @@
         <img src="./img/Donate/donaatePIC (5).jpg" alt="" />
         <img src="./img/Donate/donaatePIC (6).jpg" alt="" />
       </div>
-      <p class="c_donate_title c_font45">捐贈查詢</p>
+      <p class="c_donate_title">捐贈查詢</p>
       <div class="c_searchBOX">
         <input
           class="form-control mr-sm-2"
-   
           placeholder=" 請輸入身分證號碼或E-mail"
           aria-label="Search"
         />
 
-        <svg >
+        <svg>
           <use xlink:href="./img/Donate/donate.svg#search"></use>
         </svg>
       </div>
 
-      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+
 
       <table class="table c_directory">
         <thead>
@@ -311,12 +342,7 @@
           </tr>
         </tbody>
       </table>
-<div class="table c_directory_mobile">
-
-
-</div>
-
-
+      <div class="table c_directory_mobile"></div>
     </div>
 
     <script src="./js/0_main/jquery-3.5.1.js"></script>
