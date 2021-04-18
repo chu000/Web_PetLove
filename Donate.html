@@ -95,24 +95,6 @@
         color: var(--mainblue);
         text-decoration: none;
       }
-      .table thead th {
-        border-bottom: none;
-      }
-      .table td,
-      .table th {
-        border-top: 1px solid var(--mainblue);
-      }
-      .c_directory {
-        max-width: 800px;
-        text-align: center;
-        margin: 0 auto;
-        color: var(--mainblue);
-        margin-bottom: 10%;
-      }
-      .c_directory thead {
-        background-color: var(--mainblue);
-        color: #fff;
-      }
       .c_searchBOX {
         position: relative;
         max-width: 500px;
@@ -127,10 +109,32 @@
         fill: var(--maingray);
         cursor: pointer;
       }
+      .c_directory {
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+        color: var(--mainblue);
+        margin-bottom: 10%;
+      }
+      .c_directory thead {
+        background-color: var(--mainblue);
+        color: #fff;
+ 
+      }
+
+      .table thead th {
+        border-bottom: none;
+      }
+   
+
       .form-control {
         border: none;
         border-radius: 50px;
       }
+      .table td,.table th {
+    padding: 1rem;
+    border-top: 1px solid var(--mainblue);
+    }
       .form-control::placeholder {
         color: var(--maingray);
       }
@@ -342,7 +346,12 @@
           </tr>
         </tbody>
       </table>
-      <div class="table c_directory_mobile"></div>
+      <div class="table c_directory_mobile">
+        <tr>
+          <th scope="row">姓名</th>
+          <td>吳XX</td>
+        </tr>
+      </div>
     </div>
 
     <script src="./js/0_main/jquery-3.5.1.js"></script>
