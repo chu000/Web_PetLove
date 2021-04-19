@@ -131,11 +131,12 @@ body {
 .c_gallery {
   scroll-snap-type: x mandatory;
   -webkit-scroll-snap-type: x mandatory;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
+  overflow-x: hidden;
   overflow-y: hidden;
-  /* align-items: center; */
+  align-items: center;
   display: flex;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   -webkit-overflow-scrolling: touch;
 }
 .c_gallery img {
@@ -209,6 +210,9 @@ body {
   }
   .c_donate_note {
     font-size: 12px;
+  }
+  .c_gallery {
+    overflow-x: hidden;
   }
   .c_searchBOX {
     margin: 10% auto;
