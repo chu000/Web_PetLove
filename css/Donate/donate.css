@@ -192,7 +192,7 @@ body {
   }
   .c_donateBTN {
     margin: 3% 2%;
-    max-width: 145px;
+    max-width: 175px;
     border-radius: 10px;
     font-size: 18px;
     line-height: 1.2;
@@ -219,7 +219,7 @@ body {
   .c_directory_mobile {
     display: block;
     margin: 4% auto;
-    max-width: 320px;
+    max-width: 282px;
     border-radius: 10px;
     border: 2px solid var(--mainblue);
     color: var(--mainblue);
@@ -231,7 +231,7 @@ body {
   }
   .c_directory_mobile td {
     margin-left: 5%;
-    padding: 1%;
-    padding-left: 5%;
+    /* padding: 1%; */
+    padding-left: 10%;
   }
 }
