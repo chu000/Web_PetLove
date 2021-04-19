@@ -182,7 +182,7 @@ body {
   }
   .c_donate_main {
     /* background-color: rgba(255, 255, 255, 0); */
-    border-radius: 0px;
+    border-radius: 0px 0px 15px 15px;
   }
 
   .c_donate_content {
