@@ -181,18 +181,16 @@ body {
     max-width: 100px;
   }
   .c_donate_main {
-    background-color: rgba(255, 255, 255, 0);
+    /* background-color: rgba(255, 255, 255, 0); */
     border-radius: 0px;
   }
-  .c_donate_main img {
-    border-radius: 10px;
-  }
+
   .c_donate_content {
     font-size: 14px;
     padding: 0 5%;
   }
   .c_donateBTN {
-    margin: 3% 2%;
+    margin: 16% 2%;
     max-width: 175px;
     border-radius: 10px;
     font-size: 18px;
@@ -210,6 +208,7 @@ body {
   }
   .c_donate_note {
     font-size: 12px;
+    padding: 7%;
   }
 
   .c_searchBOX {
