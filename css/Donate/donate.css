@@ -91,17 +91,15 @@
 }
 
 .c_searchBOX .form-control {
- 
   border-radius: 50px;
-  border:0;
-    -webkit-box-shadow:none;
-    box-shadow:none;
-
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-.c_searchBOX .form-control:focus{
-  border-color:#fff;
-  -webkit-box-shadow:none;
-  box-shadow:none;
+.c_searchBOX .form-control:focus {
+  border-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .table td,
@@ -258,87 +256,116 @@
 }
 .c_donate_money_sop p {
   margin: 10% auto;
-  
 }
 
 /*捐錢資訊表格*/
-.c_donate_money_form{
+
+
+.c_donate_money_form {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 5% auto;
   font-size: 18px;
+
 }
 
 .c_donate_money_form .form-control {
- 
-  border:0;
-    -webkit-box-shadow:none;
-    box-shadow:none;
-
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-.c_donate_money_form .form-control:focus{
-  border-color:#fff;
-  -webkit-box-shadow:none;
-  box-shadow:none;
+.c_donate_money_form .form-control:focus {
+  border-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-.c_donate_money_form .form-group{
- margin-top:5% ;
+.c_donate_money_form .form-group {
+  margin-top: 5%;
 }
- .c_form_name::after{
-  content: "*";
+.c_form_name::after {
+  content: '*';
   width: 30px;
   height: 30px;
   color: var(--mainpink);
 }
-
-
-.c_donate_form_item{
+.c_donate_warning{
+  color: var(--mainpink);
+  /* float: right; */
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.c_donate_form_item {
   font-size: 18px;
   color: var(--mainblue);
   border-bottom: 2px solid var(--mainblue);
   margin: 10% auto;
 }
-.c_donate_checkBox{
+.c_donate_checkBox {
   float: right;
   margin: 1%;
   font-size: 16px;
 }
-  /* 地址 裡面樣式*/
+/* 地址 裡面樣式*/
 
-  .c_donate_address {
- margin: 0;
-      }
-  .c_donate_address .form-group{
-margin-right: 3%;
-  }
-
-  /*付款方式*/
-  .c_donate_PayBox{
-max-width: 800px;
-margin: 0 auto;
-justify-content: center;
-font-size: 22px;
-  }
-  .c_btn_credit,.c_btn_linePay,.c_btn_atm{
-    max-width: 120px;
-    border-radius: 5px;
- 
-    text-align: center;
-    color: #fff;
-    margin: 2%;
-    line-height: 2;
-  }
-
-  .c_btn_credit{
-    background-color: var(--mainblue);
-  }
-.c_btn_linePay{
-  background-color: var(--maingray);
+.c_donate_address {
+  margin: 0;
 }
-.c_btn_atm{
-  background-color: var(--maingray);
+.c_donate_address .form-group {
+  margin-right: 3%;
+  margin-top: 0;
 }
 
+/*付款方式*/
+.c_donate_PayBox {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15%;
+  justify-content: center;
+  font-size: 22px;
+}
+.c_btn_credit,
+.c_btn_linePay,
+.c_btn_atm {
+  max-width: 120px;
+  border-radius: 5px;
+
+  text-align: center;
+  color: #fff;
+  margin: 2%;
+  line-height: 2;
+}
+
+.c_btn_credit {
+  background-color: var(--mainblue);
+}
+.c_btn_linePay {
+  background-color: var(--maingray);
+}
+.c_btn_atm {
+  background-color: var(--maingray);
+}
+
+/*信用卡資料*/
+.c_cardNumber {
+ max-width: 95px;
+  text-align: center;
+  
+  margin-left: 3%;
+}
+.c_creditCandSvg_box {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-right: 3%;
+}
+.c_creditCand_Svg {
+  width: 50px;
+  height: 30px;
+  fill: var(--maingray);
+  margin-right: 2%;
+  float: right;
+
+}
 
 /*---------------------------------------手機板---------------------------------------------------------*/
 @media (max-width: 414px) {
