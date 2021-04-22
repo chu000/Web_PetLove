@@ -302,8 +302,8 @@
 }
 .c_donate_checkBox {
   float: right;
-  margin: 1%;
-  font-size: 16px;
+  /* margin: 1%; */
+  font-size: 14px;
 }
 /* 地址 裡面樣式*/
 
