@@ -366,6 +366,33 @@
   float: right;
 
 }
+/*下一步*/
+
+.c_donate_btn_box{
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 10%;
+  
+ 
+
+}
+.c_donate_btn_box a{
+  color: var(--maindarkgray);
+  text-decoration: none;
+}
+.c_donate_btn_forward,.c_donate_btn_next{
+  max-width: 200px;
+  background-color: var(--mainyellow);
+  border-radius: 50px;
+  padding: 1% 5%;
+  text-align: center;
+  margin:  5%;
+
+  
+}
+
+
 
 /*---------------------------------------手機板---------------------------------------------------------*/
 @media (max-width: 414px) {
