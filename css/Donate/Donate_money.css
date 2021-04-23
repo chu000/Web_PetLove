@@ -23,61 +23,6 @@
     font-size: 22px;
 }
 
-/*捐錢進度*/
-
-.c_sopbox {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.c_sopbox::after {
-    position: absolute;
-    top: 75px;
-    left: 140px;
-    content: '';
-    width: 500px;
-    height: 3px;
-    background-color: var(--maingray);
-    z-index: -1;
-}
-
-.c_donate_money_sop {
-    max-width: 200px;
-    margin: 5% auto;
-    text-align: center;
-    justify-content: center;
-}
-
-.c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
-    margin: 0 auto;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--mainyellow);
-    font-size: 30px;
-    text-align: center;
-    line-height: 2.1;
-}
-
-.c_donate_money_step1 {
-    background-color: var(--mainyellow);
-    color: var(--maindarkgray);
-}
-
-.c_donate_money_step2 {
-    background-color: var(--maingray);
-    color: #fff;
-}
-
-.c_donate_money_step3 {
-    background-color: var(--maingray);
-    color: #fff;
-}
-
-.c_donate_money_sop p {
-    margin: 10% auto;
-}
 
 /*捐錢資訊表格*/
 
@@ -87,7 +32,7 @@
 
 .c_donate_money_form {
     max-width: 700px;
-    margin: 5% auto;
+    margin: 10% auto;
     font-size: 18px;
 }
 
@@ -304,13 +249,13 @@
 .c_donate_complete_box p {
  margin-bottom: 5%;
     line-height: 2;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .c_donate_atm_list {
     max-width: 320px;
     font-size: 16px;
-    margin: 8% auto;
+    margin: 5% auto;
     line-height: 2;
     text-align: left;
     padding: 2%;
@@ -324,6 +269,7 @@
     padding: 2%;
     margin: 2% 0;
     color: #fff;
+    margin-bottom: 8%;
 }
 
 .c_blue_check svg {
