@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/walkingservice/mobile/style.css" />
   <link rel="stylesheet" href="./css/walkingservice/web/style.css" />
   <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
-
+  <link rel="stylesheet" href="./css/Donate/Donate_money.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
     rel="stylesheet" />
 
@@ -760,15 +760,16 @@
       <div class="form-group row">
         <div class="col-sm-4 col-form-label">
           <label class="c_form_name">收據抬頭</label>
-          <div class="form-check c_donate_checkBox">
-            <input class="form-check-input" type="checkbox" value=""  />
-            <label class="form-check-label" for="defaultCheck1">
-              同捐助姓名
-            </label>
-          </div>
+
         </div>
 
         <div class="col-sm-8">
+          <div class="form-check c_donate_checkBox c_donate_check_margin">
+            <input class="form-check-input" type="checkbox" value=""  />
+            <label class="form-check-label " for="defaultCheck1">
+              同捐助姓名
+            </label>
+          </div>
           <input type="text" class="form-control" placeholder="王X明" />
 
         </div>
@@ -776,15 +777,15 @@
       <div class="form-group row">
         <div class="col-sm-4 col-form-label">
           <label class="c_form_name">收件人</label>
-          <div class="form-check c_donate_checkBox">
-            <input class="form-check-input" type="checkbox" value=""  />
-            <label class="form-check-label" for="defaultCheck1">
-              同捐助姓名
-            </label>
-          </div>
         </div>
 
         <div class="col-sm-8">
+          <div class="form-check c_donate_checkBox c_donate_check_margin">
+            <input class="form-check-input" type="checkbox" value=""  />
+            <label class="form-check-label " for="defaultCheck1">
+              同捐助姓名
+            </label>
+          </div>
           <input type="text" class="form-control" placeholder="王X明" />
         </div>
       </div>
@@ -837,8 +838,8 @@
             卡片有效期限
           </label>
           <div class="row col-sm-8">
-            <input type="text" class="form-control col-2 c_cardNumber" placeholder="YY" maxlength="2" />
-            <input type="text" class="form-control col-2 c_cardNumber" placeholder="MM" maxlength="2" />
+            <input type="text" class="form-control col-8 col-sm-2   c_cardNumber" placeholder="YY" maxlength="2" />
+            <input type="text" class="form-control col-8 col-sm-2  c_cardNumber" placeholder="MM" maxlength="2" />
           </div>
         </div>
 
@@ -847,7 +848,7 @@
             信用卡安全碼(三碼)
           </label>
           <div class=" col-sm-8">
-            <input type="text" class="form-control col-2 " placeholder="***" maxlength="3" />
+            <input type="text" class="form-control  col-2 " placeholder="***" maxlength="3" />
           </div>
 
         </div>
@@ -901,14 +902,14 @@
 <p>請使用LINE帳號或掃描行動條碼登入。<br>若您已經是LINE Pay會員，您可以在應用程式中直接進行付款。</p>
 
 <div class="row">
-<div class="col-6 c_donate_line_log_in">
+<div class="col-sm-6 c_donate_line_log_in">
 <p>LINE Log in</p>
 <input type="email" class="form-control"  placeholder="電子郵件帳號" />
 <input type="password" class="form-control"  placeholder="密碼">
 <div class="c_donate_line_login_btn"><p>登入</p></div>
 <small>您可在LINE應用程式中的「設定」>「我的帳號」確認您的帳號資訊。</small>
 </div>
-<div class="col-6 c_donate_line_QRcode_box">
+<div class="col-sm-6  c_donate_line_QRcode_box">
   <p>行動條碼掃描</p>
  
   <div class="c_donate_line_QR">

@@ -1,0 +1,379 @@
+/*-----------------------細節頁-------------------------------*/
+
+.c_donate_banner {
+    position: relative;
+    max-width: 1028px;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.c_donate_banner_title {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 45px;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.c_donate_banner_title p span {
+    font-size: 22px;
+}
+
+/*捐錢進度*/
+
+.c_sopbox {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.c_sopbox::after {
+    position: absolute;
+    top: 75px;
+    left: 140px;
+    content: '';
+    width: 500px;
+    height: 3px;
+    background-color: var(--maingray);
+    z-index: -1;
+}
+
+.c_donate_money_sop {
+    max-width: 200px;
+    margin: 5% auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--mainyellow);
+    font-size: 30px;
+    text-align: center;
+    line-height: 2.1;
+}
+
+.c_donate_money_step1 {
+    background-color: var(--mainyellow);
+    color: var(--maindarkgray);
+}
+
+.c_donate_money_step2 {
+    background-color: var(--maingray);
+    color: #fff;
+}
+
+.c_donate_money_step3 {
+    background-color: var(--maingray);
+    color: #fff;
+}
+
+.c_donate_money_sop p {
+    margin: 10% auto;
+}
+
+/*捐錢資訊表格*/
+.form-control::placeholder {
+    color: var(--maingray);
+  }
+
+.c_donate_money_form {
+    max-width: 700px;
+    margin: 5% auto;
+    font-size: 18px;
+}
+
+.c_donate_money_form .form-control {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.c_donate_money_form .form-control:focus {
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.c_donate_money_form .form-group {
+    margin-top: 5%;
+}
+
+.c_form_name::after {
+    content: '*';
+    width: 30px;
+    height: 30px;
+    color: var(--mainpink);
+}
+
+.c_donate_warning {
+    color: var(--mainpink);
+    /* float: right; */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.c_donate_form_item {
+    font-size: 18px;
+    color: var(--mainblue);
+    border-bottom: 2px solid var(--mainblue);
+    margin: 10% auto;
+}
+/*打勾勾*/
+.c_donate_checkBox {
+    float: right;
+  
+    font-size: 14px;
+}
+
+
+.c_donate_check_margin{
+    margin-top:-30px ;
+ 
+}
+
+/* 地址 裡面樣式*/
+
+.c_donate_address {
+    margin: 0;
+}
+
+.c_donate_address .form-group {
+    margin-right: 3%;
+    margin-top: 0;
+}
+
+/*付款方式*/
+
+.c_donate_PayBox {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15%;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.c_btn_credit, .c_btn_linePay, .c_btn_atm {
+    max-width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    margin: 2%;
+    line-height: 2;
+}
+
+.c_btn_credit {
+    background-color: var(--mainblue);
+}
+
+.c_btn_linePay {
+    background-color: var(--maingray);
+}
+
+.c_btn_atm {
+    background-color: var(--maingray);
+}
+
+/*信用卡資料*/
+
+
+.c_cardNumber {
+    max-width: 95px;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.c_creditCandSvg_box {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-right: 3%;
+}
+
+.c_creditCand_Svg {
+    width: 50px;
+    height: 30px;
+    fill: var(--maingray);
+    margin-right: 2%;
+    float: right;
+}
+
+/*line pay 頁面*/
+
+.c_donate_pay_Line_box {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.c_donate_pay_Line_box img {
+    max-width: 150px;
+    ;
+}
+
+.c_donate_pay_Line_box p {
+    margin: 2%;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 5%;
+}
+
+.c_donate_line_log_in {
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.c_donate_line_log_in input {
+    margin: 5% auto;
+}
+
+.c_donate_line_login_btn {
+    background-color: #aab0b9;
+    ;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: 2% auto;
+}
+
+.c_donate_line_login_btn p {
+    margin: 5% auto;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+.c_donate_line_QRcode_box {
+    text-align: center;
+}
+
+.c_donate_line_QR {
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 5%;
+}
+
+.c_donate_line_QR img {
+    margin: 10% auto;
+}
+
+/*下一步*/
+
+.c_donate_btn_box {
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.c_donate_btn_box a {
+    color: var(--maindarkgray);
+    text-decoration: none;
+}
+
+.c_donate_btn_forward, .c_donate_btn_next {
+    max-width: 200px;
+    background-color: var(--mainyellow);
+    border-radius: 50px;
+    padding: 1% 5%;
+    text-align: center;
+    margin: 5%;
+}
+
+@media (max-width: 414px) {
+    .c_donate_banner {
+        border-radius: 10px;
+        margin-top: 110px;
+    }
+    .c_donate_banner_title {
+        position: absolute;
+        left: 20px;
+        bottom: 0px;
+        font-size: 22px;
+    }
+    .c_donate_banner_title p span {
+        font-size: 12px;
+    }
+    /*捐錢進度*/
+    .c_sopbox {
+        font-size: 12px;
+    }
+    .c_sopbox::after {
+        top: 43px;
+        left: 50px;
+        width: 250px;
+        height: 2px;
+    }
+    .c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 2.2;
+    }
+    /*表單*/
+    .c_donate_money_form {
+        max-width: 700px;
+        margin: 5% auto;
+        font-size: 14px;
+    }
+    .form-control {
+        font-size: 14px;
+    }
+    /*付款方式*/
+    .c_donate_PayBox {
+        margin-bottom: 20%;
+        font-size: 16px;
+    }
+    .c_btn_credit, .c_btn_linePay, .c_btn_atm {
+        max-width: 100px;
+    }
+
+    
+/*信用卡資料*/
+
+
+
+.c_cardNumber {
+    max-width: 72px;
+    text-align: center;
+    margin-left: 4%;
+    
+}
+    /*line pay 頁面*/
+    .c_donate_pay_Line_box {
+        padding: 0 2%;
+    }
+    .c_donate_pay_Line_box p {
+        font-size: 14px;
+    }
+    .c_donate_pay_Line_box img {
+        max-width: 110px;
+        ;
+    }
+    .c_donate_line_log_in {
+        text-align: center;
+        font-weight: 800;
+        font-size: 16px;
+        margin-bottom: 15%;
+    }
+
+    /*下一步*/
+
+
+
+.c_donate_btn_forward, .c_donate_btn_next {
+    max-width: 150px;
+  
+    padding: 1% 5%;
+ 
+    margin:20% 3%;
+}
+
+}
