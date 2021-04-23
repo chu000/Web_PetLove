@@ -346,6 +346,9 @@
 }
 
 /*信用卡資料*/
+.c_donate_pay_credit_box{
+  display: none;
+}
 .c_cardNumber {
  max-width: 95px;
   text-align: center;
@@ -364,6 +367,63 @@
   fill: var(--maingray);
   margin-right: 2%;
   float: right;
+  
+
+}
+
+/*line pay 頁面*/
+.c_donate_pay_Line_box{
+max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.c_donate_pay_Line_box img{
+  max-width:150px;
+;
+  
+  }
+.c_donate_pay_Line_box p{
+margin: 2%;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 5%;
+  }
+.c_donate_line_log_in{
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+.c_donate_line_log_in input{
+margin: 5% auto;
+}
+.c_donate_line_login_btn{
+  
+  background-color: #aab0b9;;
+  color: rgba(255,255,255,0.5);
+  font-weight: 700;
+  margin: 2% auto;
+
+}
+.c_donate_line_login_btn p{
+margin: 5% auto;
+line-height: 2.5;
+font-size: 18px;
+}
+.c_donate_line_QRcode_box{
+  text-align: center;
+
+}
+.c_donate_line_QR{
+  
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 5%;
+}
+.c_donate_line_QR img{
+  
+  margin: 10% auto;
+
 
 }
 /*下一步*/
