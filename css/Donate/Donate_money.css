@@ -137,6 +137,7 @@
 
 .c_donate_check_margin {
     margin-top: -30px;
+    margin-right: 12PX;
 }
 
 /* 地址 裡面樣式*/
@@ -204,6 +205,10 @@
     float: right;
 }
 
+/*ATM頁面*/
+.c_donate_atm_box{
+    display: none;
+}
 /*line pay 頁面*/
 
 .c_donate_pay_Line_box {
