@@ -884,8 +884,8 @@
         <div class="c_donate_form_item">
           <div class="form-check c_donate_checkBox">
             <input
-              class="form-check-input"
-              id="c_receiptCheck"
+              class="form-check-input c_receiptCheck"
+              
               type="checkbox"
             />
             <label class="form-check-label" for="defaultCheck1">
@@ -1326,62 +1326,6 @@
     <!-- 地址 JS    star-->
     <script src="./js/Donate/tw-city-selector.js"></script>
 
-    <script>
-      // 地址 JS    star
-      new TwCitySelector({
-        el: ".city-selector", // 同 DOM querySelector()
-        disabled: false,
-        hasZipcode: true,
-        bootstrapStyle: true,
-      });
-
-      //new TwCitySelector();
-      //  地址 JS  end
-
-      //不寄送收據
-
-      $("#c_receiptCheck").on("change", function (event) {
-        if ($(this).is(":checked") == true) {
-          $(".c_receipt_dis").attr("disabled", true);
-          $(".city-selector ")
-            .children(".form-group")
-            .children(".form-control")
-            .attr("disabled", true);
-        } else {
-          $(".c_receipt_dis").attr("disabled", false);
-          $(".form-control").attr("disabled", false);
-        }
-        //可用is 或 prop
-        // if ($(this).prop("checked") ==true) {
-        //     alert("checked");}
-      });
-
-      // 選擇付款方式---------------------
-      //按鈕顏色
-      $(".c_donate_PayBox li").click(function () {
-        $(this)
-          .css("background-color", "var(--mainblue)")
-          .siblings()
-          .css("background-color", "var(--maingray)");
-      });
-      //各付款方式出現
-      $(".c_btn_credit").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "block");
-        $(".c_donate_pay_Line_box").css("display", "none");
-        $(".c_donate_atm_box").css("display", "none");
-      });
-
-      $(".c_btn_linePay").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "none");
-        $(".c_donate_pay_Line_box").css("display", "block");
-        $(".c_donate_atm_box").css("display", "none");
-      });
-
-      $(".c_btn_atm").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "none");
-        $(".c_donate_pay_Line_box").css("display", "none");
-        $(".c_donate_atm_box").css("display", "block");
-      });
-    </script>
+    <script src="js/Donate/donate.js"></script>
   </body>
 </html>

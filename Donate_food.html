@@ -797,64 +797,64 @@
         </div>
         <img src="./images/Donate/donate_food_banner.jpg" alt="" width="100%" />
       </div>
-
+      <table class="table table-borderless c_donate_foodBOX">
+        <thead class="c_donate_foodBOX_title">
+          <tr>
+            <th scope="col" colspan="2">項目</th>
+            <th scope="col">價格</th>
+            <th scope="col">數量</th>
+            <th scope="col">小計</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="c_donate_foodBOX_pic">
+              <img
+                src="./images/Donate/donate_food_item01.jpg"
+                alt=""
+                width="100%"
+              />
+            </th>
+            <td class="c_donate_foodBOX_name">
+              [愛心直送徐園長護生園] <br>Classic Pets 加好寶乾狗糧 – 雞肉口味 15KG
+              x 10包
+            </td>
+            <td class="c_donate_foodBOX_price">4,99,900</td>
+            <td>
+              <ul class="row c_donate_foodBOX_amount">
+                <li class="c_donate_cut">-</li>
+                <li class="c_donate_foodAmount">99</li>
+                <li class="c_donate_add">+</li>
+              </ul>
+            </td>
+            <td class="c_donate_foodBOX_subtotal">4,99,90</td>
+          </tr>
+          <tr>
+            <th scope="row" class="c_donate_foodBOX_pic">
+              <img
+                src="./images/Donate/donate_food_item01.jpg"
+                alt=""
+                width="100%"
+              />
+            </th>
+            <td class="c_donate_foodBOX_name">
+              [愛心直送徐園長護生園] Classic Pets 加好寶乾狗糧 – 雞肉口味 15KG
+              x 10包
+            </td>
+            <td class="c_donate_foodBOX_price">4,99,900</td>
+            <td>
+              <ul class="row c_donate_foodBOX_amount">
+                <li class="c_donate_cut">-</li>
+                <li class="c_donate_foodAmount">99</li>
+                <li class="c_donate_add">+</li>
+              </ul>
+            </td>
+            <td class="c_donate_foodBOX_subtotal">4,99,90</td>
+          </tr>
+        </tbody>
+      </table>
       <form class="c_donate_money_form">
-        <table class="table table-borderless c_donate_foodBOX">
-          <thead class="c_donate_foodBOX_title">
-            <tr>
-              <th scope="col" colspan="2">項目</th>
-              <th scope="col">價格</th>
-              <th scope="col">數量</th>
-              <th scope="col">小計</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" class="c_donate_foodBOX_pic">
-                <img
-                  src="./images/Donate/donate_food_item01.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </th>
-              <td class="c_donate_foodBOX_name">
-                [愛心直送徐園長護生園] Classic Pets 加好寶乾狗糧 – 雞肉口味 15KG
-                x 10包
-              </td>
-              <td class="c_donate_foodBOX_price">4,99,900</td>
-              <td>
-                <ul class="row c_donate_foodBOX_amount">
-                  <li class="c_donate_cut">-</li>
-                  <li class="c_donate_foodAmount">99</li>
-                  <li class="c_donate_add">+</li>
-                </ul>
-              </td>
-              <td class="c_donate_foodBOX_subtotal">4,99,90</td>
-            </tr>
-            <tr>
-              <th scope="row" class="c_donate_foodBOX_pic">
-                <img
-                  src="./images/Donate/donate_food_item01.jpg"
-                  alt=""
-                  width="100%"
-                />
-              </th>
-              <td class="c_donate_foodBOX_name">
-                [愛心直送徐園長護生園] Classic Pets 加好寶乾狗糧 – 雞肉口味 15KG
-                x 10包
-              </td>
-              <td class="c_donate_foodBOX_price">4,99,900</td>
-              <td>
-                <ul class="row c_donate_foodBOX_amount">
-                  <li class="c_donate_cut">-</li>
-                  <li class="c_donate_foodAmount">99</li>
-                  <li class="c_donate_add">+</li>
-                </ul>
-              </td>
-              <td class="c_donate_foodBOX_subtotal">4,99,90</td>
-            </tr>
-          </tbody>
-        </table>
+
 
         <div class="c_donate_form_item">
           <div class="form-check c_donate_checkBox">
@@ -913,74 +913,95 @@
         </div>
 
         <div class="c_donate_form_item">
-          <div class="form-check c_donate_checkBox" id="c_receiptCheck">
-            <input class="form-check-input" type="checkbox" />
+          <div class="form-check c_donate_checkBox">
+            <input
+              class="form-check-input c_receiptCheck"
+              
+              type="checkbox"
+            />
             <label class="form-check-label" for="defaultCheck1">
               不需寄送收據
             </label>
           </div>
           <p>收據資料</p>
         </div>
-        <div class="c_donate_receiptBox">
-          <div class="form-group row">
-            <div class="col-sm-4 col-form-label">
-              <label class="c_form_name">收據抬頭</label>
-            </div>
-
-            <div class="col-sm-8">
-              <div class="form-check c_donate_checkBox c_donate_check_margin">
-                <input class="form-check-input" type="checkbox" value="" />
-                <label class="form-check-label" for="defaultCheck1">
-                  同捐助姓名
-                </label>
-              </div>
-              <input type="text" class="form-control" placeholder="王X明" />
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-sm-4 col-form-label">
-              <label class="c_form_name">收件人</label>
-            </div>
-
-            <div class="col-sm-8">
-              <div class="form-check c_donate_checkBox c_donate_check_margin">
-                <input class="form-check-input" type="checkbox" value="" />
-                <label class="form-check-label" for="defaultCheck1">
-                  同捐助姓名
-                </label>
-              </div>
-              <input type="text" class="form-control" placeholder="王X明" />
-            </div>
+       
+        <div class="form-group row">
+          <div class="col-sm-4 col-form-label">
+            <label class="c_form_name">收據抬頭</label>
           </div>
 
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              收據寄送地址
-            </label>
-            <div class="col-sm-8">
-              <div
-                class="row c_donate_address"
-                role="tw-city-selector"
-                data-bootstrap-style
-                data-has-zipcode
-              ></div>
-
+          <div class="col-sm-8">
+            <div class="form-check c_donate_checkBox c_donate_check_margin">
               <input
-                type="text"
-                class="form-control"
-                placeholder="復興南路一段390號"
+                class="form-check-input c_receipt_dis"
+                type="checkbox"
+                value=""
               />
+              <label class="form-check-label" for="defaultCheck1">
+                同捐助姓名
+              </label>
             </div>
+            <input
+              type="text"
+              class="form-control c_receipt_dis"
+              placeholder="王X明"
+            />
           </div>
         </div>
+        <div class="form-group row">
+          <div class="col-sm-4 col-form-label">
+            <label class="c_form_name">收件人</label>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="form-check c_donate_checkBox c_donate_check_margin">
+              <input
+                class="form-check-input c_receipt_dis"
+                type="checkbox"
+                value=""
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                同捐助姓名
+              </label>
+            </div>
+            <input
+              type="text"
+              class="form-control c_receipt_dis"
+              placeholder="王X明"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label c_form_name">
+            收據寄送地址
+          </label>
+          <div class="col-sm-8">
+            <div
+              id="dis"
+              class="row c_donate_address c_receipt_dis city-selector"
+              role="tw-city-selector"
+              data-bootstrap-style
+              data-has-zipcode
+            ></div>
+
+            <input
+              type="text"
+              class="form-control c_receipt_dis"
+              placeholder="復興南路一段390號"
+            />
+          </div>
+        </div>
+        
         <div class="c_donate_form_item">
           <p>付款方式</p>
         </div>
-        <div class="row c_donate_PayBox">
-          <div type="button" class="col-4 c_btn_credit">信用卡</div>
-          <div type="button" class="col-4 c_btn_linePay">Line Pay</div>
-          <div type="button" class="col-4 c_btn_atm">ATM</div>
-        </div>
+        <ul class="row c_donate_PayBox">
+          <li class="col-4 c_btn_credit">信用卡</li>
+          <li class="col-4 c_btn_linePay">Line Pay</li>
+          <li class="col-4 c_btn_atm">ATM</li>
+        </ul>
 
         <!-- box信用交易 -->
         <div class="c_donate_pay_credit_box">
@@ -1335,38 +1356,6 @@
     <!-- 地址 JS    star-->
     <script src="./js/Donate/tw-city-selector.js"></script>
 
-    <script>
-      new TwCitySelector();
-    </script>
-    <!-- 地址 JS  end -->
-
-    <script>
-      // 選擇付款方式---------------------
-      //按鈕顏色
-      $(".c_donate_PayBox li").click(function () {
-        $(this)
-          .css("background-color", "var(--mainblue)")
-          .siblings()
-          .css("background-color", "var(--maingray)");
-      });
-      //各付款方式出現
-      $(".c_btn_credit").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "block");
-        $(".c_donate_pay_Line_box").css("display", "none");
-        $(".c_donate_atm_box").css("display", "none");
-      });
-
-      $(".c_btn_linePay").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "none");
-        $(".c_donate_pay_Line_box").css("display", "block");
-        $(".c_donate_atm_box").css("display", "none");
-      });
-
-      $(".c_btn_atm").click(function () {
-        $(".c_donate_pay_credit_box").css("display", "none");
-        $(".c_donate_pay_Line_box").css("display", "none");
-        $(".c_donate_atm_box").css("display", "block");
-      });
-    </script>
+    <script src="js/Donate/donate.js"></script>
   </body>
 </html>
