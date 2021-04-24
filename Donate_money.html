@@ -883,7 +883,11 @@
 
         <div class="c_donate_form_item">
           <div class="form-check c_donate_checkBox">
-            <input class="form-check-input" type="checkbox" value="" />
+            <input
+              class="form-check-input"
+              id="c_receiptCheck"
+              type="checkbox"
+            />
             <label class="form-check-label" for="defaultCheck1">
               不需寄送收據
             </label>
@@ -898,12 +902,20 @@
 
           <div class="col-sm-8">
             <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input class="form-check-input" type="checkbox" value="" />
+              <input
+                class="form-check-input c_receipt_dis"
+                type="checkbox"
+                value=""
+              />
               <label class="form-check-label" for="defaultCheck1">
                 同捐助姓名
               </label>
             </div>
-            <input type="text" class="form-control" placeholder="王X明" />
+            <input
+              type="text"
+              class="form-control c_receipt_dis"
+              placeholder="王X明"
+            />
           </div>
         </div>
         <div class="form-group row">
@@ -913,12 +925,20 @@
 
           <div class="col-sm-8">
             <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input class="form-check-input" type="checkbox" value="" />
+              <input
+                class="form-check-input c_receipt_dis"
+                type="checkbox"
+                value=""
+              />
               <label class="form-check-label" for="defaultCheck1">
                 同捐助姓名
               </label>
             </div>
-            <input type="text" class="form-control" placeholder="王X明" />
+            <input
+              type="text"
+              class="form-control c_receipt_dis"
+              placeholder="王X明"
+            />
           </div>
         </div>
 
@@ -928,7 +948,8 @@
           </label>
           <div class="col-sm-8">
             <div
-              class="row c_donate_address"
+              id="dis"
+              class="row c_donate_address c_receipt_dis city-selector"
               role="tw-city-selector"
               data-bootstrap-style
               data-has-zipcode
@@ -936,11 +957,12 @@
 
             <input
               type="text"
-              class="form-control"
+              class="form-control c_receipt_dis"
               placeholder="復興南路一段390號"
             />
           </div>
         </div>
+
         <div class="c_donate_form_item">
           <p>付款方式</p>
         </div>
@@ -1305,24 +1327,33 @@
     <script src="./js/Donate/tw-city-selector.js"></script>
 
     <script>
-      new TwCitySelector();
-    </script>
-    <!-- 地址 JS  end -->
+      // 地址 JS    star
+      new TwCitySelector({
+        el: ".city-selector", // 同 DOM querySelector()
+        disabled: false,
+        hasZipcode: true,
+        bootstrapStyle: true,
+      });
 
-    <script>
+      //new TwCitySelector();
+      //  地址 JS  end
+
       //不寄送收據
-      //   $("input").click(function () {
-      //     $('.form-group').children().removeAttr('placeholder').attr("disabled",true)
-      // // alert("checked");
-      // alert($('.c_donate_receiptBox ').children().attr('class'));
-      //   });
 
-      // $('.form-check > input[type="checkbox"]').on("change", function (event) {
-      //   console.log($(this).prop("checked"));
-      //   $(".form-check > input").attr("readonly", true);
-      //   $(".form-check > input").attr("placeholder", "123456");
-      //   alert("checked");
-      // });
+      $("#c_receiptCheck").on("change", function (event) {
+        if ($(this).is(":checked") == true) {
+          $(".c_receipt_dis").attr("disabled", true);
+          $(".city-selector > .form-group")
+            .children(".form-control")
+            .attr("disabled", true);
+        } else {
+          $(".c_receipt_dis").attr("disabled", false);
+          $(".form-control").attr("disabled", false);
+        }
+        //可用is 或 prop
+        // if ($(this).prop("checked") ==true) {
+        //     alert("checked");}
+      });
 
       // 選擇付款方式---------------------
       //按鈕顏色
