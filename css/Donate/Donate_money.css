@@ -113,6 +113,7 @@
     color: #fff;
     margin: 2%;
     line-height: 2;
+    cursor: pointer;
 }
 
 .c_btn_credit {
@@ -161,6 +162,7 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+
 }
 
 .c_donate_pay_Line_box img {
@@ -217,14 +219,16 @@
 
 .c_donate_btn_box {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 10% auto;
     justify-content: center;
-    margin-bottom: 10%;
+
+
 }
 
 .c_donate_btn_box a {
     color: var(--maindarkgray);
     text-decoration: none;
+
 }
 
 .c_donate_btn_forward, .c_donate_btn_next, .c_donate_btn_home {

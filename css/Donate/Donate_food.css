@@ -1,0 +1,35 @@
+.c_donate_foodBOX{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+
+   
+}
+.c_donate_foodBOX_title{
+    max-width: 1250px;
+    margin: 0 auto;
+    /* padding: 1% 8%; */
+    background-color: var(--mainyellow);
+}
+.c_donate_foodBOX_pic{
+    max-width: 90px;
+
+}
+.c_donate_foodBOX_name,.c_donate_foodBOX_price,.c_donate_foodBOX_amount,.c_donate_foodBOX_subtotal{
+
+/* margin: 0 5%; */
+    
+}
+
+.c_donate_foodBOX_name{
+    max-width: 80px;  
+}
+.c_donate_foodBOX_price{
+    /* max-width:50px;   */
+}
+.c_donate_foodBOX td, .c_donate_foodBOX th {
+    vertical-align: middle;
+    /* 使Table欄位垂直置中 */
+    border-top: 0px ;
+}
