@@ -1343,7 +1343,8 @@
       $("#c_receiptCheck").on("change", function (event) {
         if ($(this).is(":checked") == true) {
           $(".c_receipt_dis").attr("disabled", true);
-          $(".city-selector > .form-group")
+          $(".city-selector ")
+            .children(".form-group")
             .children(".form-control")
             .attr("disabled", true);
         } else {
