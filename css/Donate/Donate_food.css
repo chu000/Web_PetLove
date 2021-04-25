@@ -1,6 +1,6 @@
 .c_donate_foodBOX{
     max-width: 1028px;
-    margin: 5% auto;
+    margin: 5% auto 2% auto;
     font-size: 16px;
     text-align: center;
     background-color: #fff;
@@ -42,8 +42,8 @@
     cursor: pointer;
 }
 .c_donate_foodBOX_price::before,.c_donate_foodBOX_subtotal::before{
-    content: "NT$";
-    font-size: 12px;
+    content: "NT$  ";
+    font-size: 13px;
 }
 .c_donate_foodBOX td, .c_donate_foodBOX th {
     vertical-align: middle;
@@ -52,4 +52,20 @@
 }
 .c_donate_foodBOX tr{
     border-bottom: 5px solid #F7F4EE;
+}
+
+.c_donate_foodBOX_total{
+    max-width: 850px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
+.c_donate_foodBOX_total p{
+  margin-left: 15%;
+   
+
+
 }
