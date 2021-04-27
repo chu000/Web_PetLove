@@ -6,7 +6,7 @@ new TwCitySelector({
   bootstrapStyle: true,
 });
 
-//*    不寄送收據+ 特別設定外掛選擇城市也關掉
+//不寄送收據+ 特別設定外掛選擇城市也關掉-----------------------------
 
 $(".c_receiptCheck").on("change", function (event) {
   //備註可用is 或 prop 而attr因為版本關係不適用
@@ -24,7 +24,53 @@ $(".c_receiptCheck").on("change", function (event) {
   }
 });
 
-// *   選擇付款方式---------------------
+//    同捐助姓名勾選--------------------------
+
+$(".c_sameName01").on( "change",function (event) {
+  let j = $('.c_fast_donationNAME').val();
+
+  if ($(this).is(":checked") == true) {
+
+ $('.c_fast_receiptNAME').val(j)
+  }
+});
+$(".c_sameName02").on( "change",function (event) {
+  let j = $('.c_fast_donationNAME').val();
+
+  if ($(this).is(":checked") == true) {
+
+ $('.c_fast_addressNAME').val(j);
+  }
+});
+
+// 自動填入-----------------------------------------------
+$(".c_donate_banner_title").click( function () {
+  $('.c_fast_money').val("500");
+  $('.c_fast_selecthome').prop('selectedIndex', 2);
+  // $('.c_donate_address ').find('.form-control').prop('selectedIndex', 2);
+
+  $('.c_fast_donationNAME').val("心鐘");
+  $('.c_fast_IDnumber').val("T222567123");
+  $('.c_fast_cellphone').val("0912987654");
+  $('.c_fast_email').val("GG@gmail.com");
+  $('.c_fast_receiptNAME').val("阮曼");
+  $('.c_fast_addressNAME').val("阮曼");
+  $('.c_fast_address').val("松勇路69巷2號");
+  $('.c_fast_card_number01').val("7831");
+  $('.c_fast_card_number02').val("7204");
+  $('.c_fast_card_number03').val("2751");
+  $('.c_fast_card_number04').val("9437");
+  $('.c_fast_period01').val("23");
+  $('.c_fast_period02').val("10");
+  $('.c_fast_security').val("603");
+  $('.c_fast_cardName').val("心鐘");
+
+});
+
+
+
+
+// *   選擇付款方式---------------------------
 //按鈕顏色
 $(".c_donate_PayBox li").click(function () {
   $(this)
@@ -56,54 +102,8 @@ $(".c_btn_atm").click(function () {
 
 
 
-//愛心捐購物車加總
+//愛心捐購物車加總------------------------------------------
 
-// $(function(){ 
-//   $(".add").click(function(){
-//     var t = $(this).parent().find('input[class*=text_box]');
-//     t.val(parseInt(t.val()) +1);
-//     if(parseInt(t.val())>99){
-//       t.val(99);
-//       }
-//     setTotal();
-//     })
-//     $(".min").click(function(){
-//     var t = $(this).parent().find("input[class*=text_box]");
-//     t.val(parseInt(t.val())-1);
-//     if(parseInt(t.val())<0){
-//     t.val(0);
-//     }
-//     setTotal()
-//     })
-//     function setTotal(){
-//     var sum = 0;
-//     $(".c_donate_foodBOX ").each(function(){
-//     var num = parseInt($(this).find("input[class*=text_box]").val());
-//     var price = parseFloat($(this).find("span[class*=c_donate_foodBOX_price]").text());
-//     sum  = num*price;
-//     // console.log(price)
-//     // console.log(num)
-//     })
-//     $(".c_donate_foodBOX_subtotal ").text(sum);
-//     }
-//     // setTotal();
-//     function allTotal(){
-//       var allTT = 0;
-//       $(".c_donate_foodBOX ").each(function() {
-    
-         
-//         allTT += parseFloat($(".c_donate_foodBOX_subtotal").eq(4).text());
-        
-//         $(".c_donate_foodBOX_alltotal").text(allTT);
-//     })
-//       console.log(allTT)
-  
-      
-//     }
-
-
-//       allTotal();
-//     }) ;
 // ****************************************************************
 
 //裡面三個小的複選按鈕選中狀態跟著 全選按鈕走
