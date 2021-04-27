@@ -19,11 +19,13 @@
 
 
 .c_donate_foodBOX_name{
-    max-width:150px; 
+    max-width:200px; 
     text-align: left; 
     font-size: 16px;
 }
 .c_donate_foodBOX_amount{
+    margin: 0 auto;
+    max-width: 150px;
     background-color: #F7F4EE;
     border-radius: 50px;
     font-size: 18px;
@@ -32,16 +34,26 @@
 
 }
 .c_donate_foodAmount{
-    margin: 0 15%;
+    /* margin: 0 15%; */
     /* line-height: 2.2; */
+    max-width: 60px;
+    border: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+  
+
 }
-.c_donate_cut,.c_donate_add{
+
+.c_donate_foodBOX_amount input:focus{
+outline:none;
+    /* border:none; */
+}
+.min,.add{
     font-weight: 800;
-  
-  
-    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
-.c_donate_foodBOX_price::before,.c_donate_foodBOX_subtotal::before{
+.c_donate_foodBOX_price::before,.c_donate_foodBOX_subtotal::before,.c_donate_foodBOX_alltotal::before{
     content: "NT$  ";
     font-size: 13px;
 }
@@ -63,8 +75,8 @@
 
 
 }
-.c_donate_foodBOX_total p{
-  margin-left: 15%;
+.c_donate_foodBOX_total span{
+  margin-left: 8%;
    
 
 
