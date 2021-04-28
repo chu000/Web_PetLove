@@ -20,16 +20,18 @@
 
 .c_sopbox {
     position: relative;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
 }
 
 .c_sopbox::after {
     position: absolute;
-    top: 75px;
+    top: 68px;
     left: 140px;
     content: '';
-    width: 500px;
+    width: 450px;
     height: 3px;
     background-color: var(--maingray);
     z-index: -1;
@@ -74,10 +76,17 @@
 
 
 @media (max-width: 414px) {
+    .c_yellow_check {
+   
+        padding: 5%;
+     
+        margin-bottom: 8%;
 
+    }
     /*捐錢進度*/
     .c_sopbox {
         font-size: 11px;
+        margin: 4% auto;
     }
     .c_sopbox::after {
         top: 43px;

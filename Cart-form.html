@@ -783,7 +783,7 @@
     </div>
     <!-- //////////////////////////////////////////////// -->
     <div class="container">
-      <div class="c_donate_banner">
+      <!-- <div class="c_donate_banner">
         <div class="c_donate_banner_title">
           <p>
             愛心捐款
@@ -796,7 +796,7 @@
           alt=""
           width="100%"
         />
-      </div>
+      </div> -->
       <!-- 步驟 -->
       <div class="row c_sopbox">
         <div class="c_donate_money_sop col-2">
@@ -828,63 +828,22 @@
 
 
       <form class="c_donate_money_form">
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">
-            捐贈金額 (TWD)
-          </label>
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control c_fast_money"
-              placeholder="金額需為台幣101元以上"
-            />
-            <small class="c_donate_warning">填寫格式有誤</small>
-          </div>
-        </div>
 
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">捐贈單位</label>
-          <div class="col-sm-8">
-            <select class="form-control c_fast_selecthome" id="exampleFormControlSelect1">
-              <option>請選擇</option>
-              <option>新北三峽黃媽媽狗園</option>
-              <option>桃園陳媽媽狗園</option>
-              <option>苗栗縣友善毛小孩協會</option>
-              <option>台中大甲陳媽貓狗園</option>
-              <option>南投埔里埔愛貓屋</option>
-            </select>
-          </div>
-        </div>
+
         <div class="c_donate_form_item">
-          <div class="form-check c_donate_checkBox">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="defaultCheck1">
-              不公開查詢
-            </label>
-          </div>
-          <p>捐贈資料</p>
+  
+          <p>收件人資料</p>
         </div>
         <div class="form-group row">
           <label class="col-sm-4 col-form-label c_form_name ">
-            捐贈姓名/公司行號
+            收件姓名
           </label>
 
           <div class="col-sm-8">
             <input type="text" class="form-control c_fast_donationNAME " placeholder="王X明" />
           </div>
         </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">
-            身分證字號/統一編號
-          </label>
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control c_fast_IDnumber"
-              placeholder="身分證字號/統一編號"
-            />
-          </div>
-        </div>
+
         <div class="form-group row">
           <label
             for="exampleFormControlInput1"
@@ -910,68 +869,6 @@
             />
           </div>
         </div>
-
-        <div class="c_donate_form_item">
-          <div class="form-check c_donate_checkBox">
-            <input
-              class="form-check-input c_receiptCheck"
-              
-              type="checkbox"
-            />
-            <label class="form-check-label" for="defaultCheck1">
-              不需寄送收據
-            </label>
-          </div>
-          <p>收據資料</p>
-        </div>
-
-        <div class="form-group row">
-          <div class="col-sm-4 col-form-label">
-            <label class="c_form_name">收據抬頭</label>
-          </div>
-
-          <div class="col-sm-8">
-            <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input
-                class="form-check-input c_receipt_dis  c_sameName01"
-                type="checkbox"
-                value=""
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                同捐助姓名
-              </label>
-            </div>
-            <input
-              type="text"
-              class="form-control c_receipt_dis c_fast_receiptNAME"
-              placeholder="王X明"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-4 col-form-label">
-            <label class="c_form_name">收件人</label>
-          </div>
-
-          <div class="col-sm-8">
-            <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input
-                class="form-check-input c_receipt_dis  c_sameName02"
-                type="checkbox"
-                value=""
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                同捐助姓名
-              </label>
-            </div>
-            <input
-              type="text"
-              class="form-control c_receipt_dis c_fast_addressNAME"
-              placeholder="王X明"
-            />
-          </div>
-        </div>
-
         <div class="form-group row">
           <label class="col-sm-4 col-form-label c_form_name">
             收據寄送地址
@@ -990,6 +887,57 @@
               class="form-control c_receipt_dis c_fast_address"
               placeholder="復興南路一段390號"
             />
+          </div>
+        </div>
+        <div class="c_donate_form_item">
+
+          <p>發票資料</p>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label "></label>
+          <div class="col-sm-8">
+            <div class="form-check " style="margin-top: 2%;">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                捐贈發票(捐至配合單位)
+              </label>
+            </div>
+        <div class="form-check " style="margin-top: 2%;">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            個人電子發票(E-mail發送)
+          </label>
+        </div>
+ 
+
+        <div class="form-check" style="margin-top: 2%;">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            公司電子發票
+          </label>
+         
+           
+              <input type="text" class="col-8 form-control c_fast_donationNAME " placeholder="請輸入統一編號" style="margin-top: 2%; margin-left: -20px;"/>
+            
+       
+        </div>
+      </div>
+    </div>
+
+        <div class="c_donate_form_item">
+
+          <p>運送時間</p>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label c_form_name">選擇時間</label>
+          <div class="col-sm-8">
+            <select class="form-control c_fast_selecthome" id="exampleFormControlSelect1">
+              <option>不指定</option>
+              <option>08:00 - 11:00</option>
+              <option>12:00 - 15:00</option>
+              <option>16:00 - 19:00</option>
+
+            </select>
           </div>
         </div>
 
