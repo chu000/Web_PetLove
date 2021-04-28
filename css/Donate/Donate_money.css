@@ -299,22 +299,7 @@
     .c_donate_banner_title p span {
         font-size: 12px;
     }
-    /*捐錢進度*/
-    .c_sopbox {
-        font-size: 12px;
-    }
-    .c_sopbox::after {
-        top: 43px;
-        left: 50px;
-        width: 250px;
-        height: 2px;
-    }
-    .c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        line-height: 2.2;
-    }
+
     /*表單*/
     .c_donate_money_form {
         max-width: 700px;
