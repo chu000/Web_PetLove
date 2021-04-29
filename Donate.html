@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css" />
   <link rel="stylesheet" href="./css/0_main/navbar/web/style.css" />
-  <link rel="stylesheet" href="./css/walkingservice/mobile/style.css" />
-  <link rel="stylesheet" href="./css/walkingservice/web/style.css" />
+
   <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
@@ -20,7 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap"
  rel="stylesheet" />
- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>PetLove 派樂星球</title>
   <style></style>
 </head>
@@ -712,34 +711,39 @@
   </p>
 
   <!-- 活動照片 -->
-  <div class="carousel"
-  data-flickity='{ "wrapAround": true }'>
-  <button class="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
-  <button class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <ol class="flickity-page-dots"><li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li><li class="dot" aria-label="Page dot 2"></li><li class="dot" aria-label="Page dot 3"></li><li class="dot" aria-label="Page dot 4"></li><li class="dot" aria-label="Page dot 5"></li></ol>
-</div>
+
 
   <p class="c_donate_title">活動紀錄</p>
+  <!-- <div class="carousel"
+  data-flickity='{ "wrapAround": true }'>
 
+  <div class="carousel-cell">  <img src="./images/Donate/donatePIC (1).jpg" alt=""  width="100%"/></div>
+  <div class="carousel-cell">   <img src="./images/Donate/donatePIC (2).jpg" alt="" width="100%"/></div>
+  <div class="carousel-cell">    <img src="./images/Donate/donatePIC (3).jpg" alt="" width="100%"/></div>
+  <div class="carousel-cell">    <img src="./images/Donate/donatePIC (4).jpg" alt="" width="100%"/></div>
+  <div class="carousel-cell">    <img src="./images/Donate/donatePIC (5).jpg" alt="" width="100%"/></div>
+  <div class="carousel-cell">    <img src="./images/Donate/donatePIC (6).jpg" alt="" width="100%"/></div>
   
-  <div class="c_gallery">
+
+</div> -->
+
+<!-- <div class="your-class">
+  <div>    <img src="./images/Donate/donatePIC (1).jpg" alt="" width="100%"/></div>
+  <div>  <img src="./images/Donate/donatePIC (2).jpg" alt="" width="100%"/></div>
+  <div>  <img src="./images/Donate/donatePIC (3).jpg" alt="" width="100%"/></div>
+  <div>  <img src="./images/Donate/donatePIC (4).jpg" alt="" width="100%"/></div>
+  <div>  <img src="./images/Donate/donatePIC (5).jpg" alt="" width="100%"/></div>
+  <div>  <img src="./images/Donate/donatePIC (6).jpg" alt="" width="100%"/></div>
+</div> -->
+  
+  <div class="c_gallery_slick">
     <img src="./images/Donate/donatePIC (1).jpg" alt="" />
     <img src="./images/Donate/donatePIC (2).jpg" alt="" />
     <img src="./images/Donate/donatePIC (3).jpg" alt="" />
     <img src="./images/Donate/donatePIC (4).jpg" alt="" />
     <img src="./images/Donate/donatePIC (5).jpg" alt="" />
     <img src="./images/Donate/donatePIC (6).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (1).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (2).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (3).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (4).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (5).jpg" alt="" />
-    <img src="./images/Donate/donatePIC (6).jpg" alt="" />
+
   </div>
   <p class="c_donate_title">捐贈查詢</p>
   <div class="c_searchBOX">
@@ -1021,8 +1025,26 @@
   <script src="./js/0_main/navbar/web/custom.js"></script>
 
   <script src="./js/0_main/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
+    // $(document).ready(function(){
+    //   $('.your-class').slick({     
+    //   });
+    // });
+
+    $('.c_gallery_slick').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+
+
+
+
+
+
+
+
 
     // 搜尋假功能暫用
     let Csearch = document.getElementById('c_donate_search')

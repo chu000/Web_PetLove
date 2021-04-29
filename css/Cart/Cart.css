@@ -49,20 +49,21 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--mainyellow);
+   
     font-size: 28px;
     text-align: center;
     line-height: 1.8;
 }
 
 .c_donate_money_step1 {
-    background-color: var(--mainyellow);
-    color: var(--maindarkgray);
+    background-color: var(--maingray);
+    color: #fff;
 }
 
 .c_donate_money_step2 {
-    background-color: var(--maingray);
-    color: #fff;
+  
+    background-color: var(--mainyellow);
+    color: var(--maindarkgray);
 }
 
 .c_donate_money_step3 {
