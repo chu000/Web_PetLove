@@ -1,106 +1,105 @@
-
 .c_yellow_check {
-    max-width: 1028px;
-    background-color: var(--mainyellow);
-    padding: 2%;
-    margin: 0 auto;
-    color: var(--maindarkgray);
-    margin-bottom: 8%;
-    text-align: center;
+  max-width: 1028px;
+  background-color: var(--mainyellow);
+  padding: 2%;
+  margin: 0 auto;
+  color: var(--maindarkgray);
+  margin-bottom: 8%;
+  text-align: center;
 }
 
 .c_yellow_check svg {
-    width: 25px;
-    height: 25px;
-    fill: #fff;
-    margin: 0 1%;
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  margin: 0 1%;
 }
 
 /*捐錢進度*/
 
 .c_sopbox {
-    position: relative;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 15%;
-    margin-bottom: 5%;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
 .c_sopbox::after {
-    position: absolute;
-    top: 68px;
-    left: 140px;
-    content: '';
-    width: 450px;
-    height: 3px;
-    background-color: var(--maingray);
-    z-index: -1;
+  position: absolute;
+  top: 68px;
+  left: 140px;
+  content: "";
+  width: 450px;
+  height: 3px;
+  background-color: var(--maingray);
+  z-index: -1;
 }
 
 .c_donate_money_sop {
-    max-width: 200px;
-    margin: 5% auto;
-    text-align: center;
-    justify-content: center;
+  max-width: 200px;
+  margin: 5% auto;
+  text-align: center;
+  justify-content: center;
 }
 
-.c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-   
-    font-size: 28px;
-    text-align: center;
-    line-height: 1.8;
+.c_donate_money_step1,
+.c_donate_money_step2,
+.c_donate_money_step3 {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.8;
 }
 
 .c_donate_money_step1 {
-    background-color: var(--maingray);
-    color: #fff;
+  background-color: var(--maingray);
+  color: #fff;
 }
 
 .c_donate_money_step2 {
-  
-    background-color: var(--mainyellow);
-    color: var(--maindarkgray);
+  background-color: var(--mainyellow);
+  color: var(--maindarkgray);
 }
 
 .c_donate_money_step3 {
-    background-color: var(--maingray);
-    color: #fff;
+  background-color: var(--maingray);
+  color: #fff;
 }
 
 .c_donate_money_sop p {
-    margin: 10% auto;
+  margin: 10% auto;
 }
 
-
 @media (max-width: 414px) {
-    .c_yellow_check {
-   
-        padding: 5%;
-     
-        margin-bottom: 8%;
+  .c_yellow_check {
+    padding: 5%;
 
-    }
-    /*捐錢進度*/
-    .c_sopbox {
-        font-size: 11px;
-        margin: 4% auto;
-    }
-    .c_sopbox::after {
-        top: 43px;
-        left: 50px;
-        width: 250px;
-        height: 2px;
-    }
-    .c_donate_money_step1, .c_donate_money_step2, .c_donate_money_step3 {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        line-height: 2.2;
-    }
+    margin-bottom: 8%;
+  }
+  /*捐錢進度*/
+  .c_sopbox {
+    font-size: 11px;
+    margin: 4% auto;
 
-
+    margin-top: 30%;
+  }
+  .c_sopbox::after {
+    top: 43px;
+    left: 50px;
+    width: 250px;
+    height: 2px;
+  }
+  .c_donate_money_step1,
+  .c_donate_money_step2,
+  .c_donate_money_step3 {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 2.2;
+  }
 }
