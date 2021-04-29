@@ -124,16 +124,12 @@
   display: none;
 }
 /* -----------外掛slick  ---------輪播圖片-----調整 */
-.c_gallery img {
-  max-width: 400px;
-  border-radius: 10px;
-  margin: 2% 1%;
-}
+
 
 .c_gallery_slick {
   position: relative;
   margin: 8% auto;
-  max-width: 1500px;
+  max-width: 1490px;
 
 }
 
