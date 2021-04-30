@@ -174,4 +174,8 @@ display: block;
     border-bottom: 10px solid #F7F4EE;
   
 }
+
+.c_donate_foodBOX_price{
+    opacity: .6;
+}
 }

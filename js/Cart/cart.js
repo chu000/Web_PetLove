@@ -1,107 +1,3 @@
-// 地址 JS    star
-new TwCitySelector({
-  el: ".city-selector", // 同 DOM querySelector()
-  disabled: false,
-  hasZipcode: true,
-  bootstrapStyle: true,
-});
-
-//不寄送收據+ 特別設定外掛選擇城市也關掉-----------------------------
-
-$(".c_receiptCheck").on("change", function (event) {
-  //備註可用is 或 prop 而attr因為版本關係不適用
-  // if ($(this).prop("checked") ==true) {
-  //     alert("checked");}
-  if ($(this).is(":checked") == true) {
-    $(".c_receipt_dis").attr("disabled", true);
-    $(".city-selector ")
-      .children(".form-group")
-      .children(".form-control")
-      .attr("disabled", true);
-  } else {
-    $(".c_receipt_dis").attr("disabled", false);
-    $(".form-control").attr("disabled", false);
-  }
-});
-
-//    同捐助姓名勾選--------------------------
-
-$(".c_sameName01").on( "change",function (event) {
-  let j = $('.c_fast_donationNAME').val();
-
-  if ($(this).is(":checked") == true) {
-
- $('.c_fast_receiptNAME').val(j)
-  }
-});
-$(".c_sameName02").on( "change",function (event) {
-  let j = $('.c_fast_donationNAME').val();
-
-  if ($(this).is(":checked") == true) {
-
- $('.c_fast_addressNAME').val(j);
-  }
-});
-
-// 自動填入-----------------------------------------------
-$(".c_foot_auto").click( function () {
-  $('.c_fast_money').val("500");
-  $('.c_fast_selecthome').prop('selectedIndex', 2);
-  // $('.c_donate_address ').find('.form-control').prop('selectedIndex', 2);
-
-  $('.c_fast_donationNAME').val("阮心鐘曼");
-  $('.c_fast_IDnumber').val("T222567123");
-  $('.c_fast_cellphone').val("0912987654");
-  $('.c_fast_email').val("happymama@gmail.com");
-  $('.c_fast_receiptNAME').val("阮心鐘曼");
-  $('.c_fast_addressNAME').val("阮心鐘曼");
-  $('.c_fast_address').val("松勇路69巷2號");
-  $('.c_fast_card_number01').val("5412");
-  $('.c_fast_card_number02').val("3456");
-  $('.c_fast_card_number03').val("7890");
-  $('.c_fast_card_number04').val("1232");
-  $('.c_fast_period01').val("23");
-  $('.c_fast_period02').val("10");
-  $('.c_fast_security').val("603");
-  $('.c_fast_cardName').val("心鐘");
-  $('.c_creditCand_Svg').eq(1).css("fill","#89A7C2");
-
-  
-
-});
-
-
-
-
-// *   選擇付款方式---------------------------
-//按鈕顏色
-$(".c_donate_PayBox li").click(function () {
-  $(this)
-    .css("background-color", "var(--mainblue)")
-    .siblings()
-    .css("background-color", "var(--maingray)");
-});
-//各付款方式出現
-$(".c_btn_credit").click(function () {
-  $(".c_donate_pay_credit_box").css("display", "block");
-  $(".c_donate_pay_Line_box").css("display", "none");
-  $(".c_donate_atm_box").css("display", "none");
-});
-
-$(".c_btn_linePay").click(function () {
-  $(".c_donate_pay_credit_box").css("display", "none");
-  $(".c_donate_pay_Line_box").css("display", "block");
-  $(".c_donate_atm_box").css("display", "none");
-});
-
-$(".c_btn_atm").click(function () {
-  $(".c_donate_pay_credit_box").css("display", "none");
-  $(".c_donate_pay_Line_box").css("display", "none");
-  $(".c_donate_atm_box").css("display", "block");
-});
-
-
-
 
 
 
@@ -142,6 +38,7 @@ $(".c_btn_atm").click(function () {
           //         $(this).parents("tr").removeClass("current");
           //     }
           // })
+    
 
           $(".add").click(function() {
               let n = parseInt($(this).siblings(".num").val());
@@ -150,6 +47,7 @@ $(".c_btn_atm").click(function () {
                 return false;
             }
               n++;
+              $(".min").attr("disabled", false);
               $(this).siblings(".num").val(n);
               let price = $(this).parent().parent().siblings(".price").html();
               // price = price.substr(1);
@@ -161,7 +59,9 @@ $(".c_btn_atm").click(function () {
           $(".min").click(function() {
                   let n = parseInt($(this).siblings(".num").val());
                   //console.log(n);
-                  if (n === 0) {
+                  
+                  if (n === 1) {
+                    $(".min").attr("disabled", true);
                       return false;
                   }
                   n--;
@@ -194,28 +94,29 @@ $(".c_btn_atm").click(function () {
               $(".sum").html(money);
           }
 
-          //刪除商品模組
-          //點選刪除之後一定是刪除當前的商品，所以從$(this)出發
-          // $(".delete").click(function() {
-          //         //刪除的是當前的商品
-          //         $(this).parent().remove();
-          //         $(".ed").change();
-          //         getSum();
-          //         clearCheckAll();
-          //     })
-          //     //刪除選定的商品:小的複選框如果選中就刪除對應的商品
+          // 刪除商品模組
+          // 點選刪除之後一定是刪除當前的商品，所以從$(this)出發
+          $(".delete").click(function() {
+                  //刪除的是當前的商品
+                  $(this).parent().remove();
+                 
+                  // $(".ed").change();
+                  // getSum();
+                  // clearCheckAll();
+              })
+              //刪除選定的商品:小的複選框如果選中就刪除對應的商品
           // $(".delSome").click(function() {
           //         //刪除的是選中的商品
           //         $(".ed:checked").parent().parent().remove();
           //         getSum();
           //         clearCheckAll();
           //     })
-          //     //清空購物車
-          // $(".delAll").click(function() {
-          //     $(".tab tbody").empty();
-          //     getSum();
-          //     clearCheckAll();
-          // })
+              //清空購物車
+          $(".delAll").click(function() {
+              $(".tab tbody").empty();
+              getSum();
+              clearCheckAll();
+          })
 
           // function clearCheckAll() {
           //     if ($(".tab tbody")[0].innerText == '') {

@@ -144,6 +144,9 @@
     margin-right: 2%;
     float: right;
 }
+.c_fast_security{
+    text-align: center;
+}
 
 /*ATM頁面*/
 .c_donate_atm_box{

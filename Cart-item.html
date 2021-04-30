@@ -15,14 +15,10 @@
     <link rel="stylesheet" href="./css/0_main/navbar/web/style.css" />
 
     <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
+    <link rel="stylesheet" href="./css/Cart/Cart.css" type="text/css" />
     <link
       rel="stylesheet"
       href="./css/Donate/Donate_money.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/Donate/Donate_food.css"
       type="text/css"
     />
     <link
@@ -784,650 +780,158 @@
         </div>
       </div>
     </div>
-    <!-- ///////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////// -->
     <div class="container">
-      <div class="c_donate_banner">
-        <div class="c_donate_banner_title">
-          <p>
-            愛心捐糧
-            <br />
-            <span>Donate money</span>
-          </p>
+      <div class="row c_sopbox">
+        <div class="c_donate_money_sop col-2">
+          <div class="c_donate_money_step1  c_maingray c_textcolor_fff">
+            <p>1</p>
+          </div>
+          <p>購物車</p>
         </div>
-        <img src="./images/Donate/donate_food_banner.jpg" alt="" width="100%" />
+        <div class="c_donate_money_sop col-2">
+          <div class="c_donate_money_step2  c_mainyellow">
+            <p>2</p>
+          </div>
+          <p>資料確認</p>
+        </div>
+        <div class="c_donate_money_sop col-2 ">
+          <div class="c_donate_money_step3 c_maingray c_textcolor_fff">
+            <p>3</p>
+          </div>
+          <p>完成</p>
+        </div>
       </div>
-
-      <!-- ///////////////////////////////////// -->
-
-      <table class="tab table table-borderless c_donate_foodBOX">
-        <thead class="c_donate_foodBOX_title">
-          <th>項目</th>
-          <th>價格</th>
+      <!-- //////////// -->
+      <table class="tab table table-borderless c_cart_item">
+        <thead class="c_cart_item_title">
+          <th>商品 (<span>5</span>件)</th>
+          <th>商品資訊</th>
+          <th>單價</th>
           <th>數量</th>
           <th>小計</th>
-          <!-- <th>操作</th> -->
+          <th>刪除</th>
         </thead>
         <tbody>
           <tr>
             <td>
               <img
-                class="c_donate_foodBOX_pic"
+                class="c_cart_item_pic"
                 src="./images/Donate/donate_food_item01.jpg"
                 alt=""
                 width="100%"
               />
-              <span class="c_donate_foodBOX_name">
+            </td>
+            <td>
+              <span class="c_cart_item_name">
                 [愛心直送徐園長護生園] <br />Classic Pets 加好寶乾狗糧 –
                 雞肉口味 15KG x 10包</span
               >
             </td>
-            <td class="price c_donate_foodBOX_price">4999</td>
+            <td class="price c_cart_item_price">4999</td>
             <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
+              <div class="c_cart_item_amount">
+                <button type="button" class="min" disabled>-</button>
                 <input
                   type="text"
                   name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
+                  value="1"
+                  class="num c_cart_itemAmount"
                 />
                 <button type="button" class="add">+</button>
               </div>
             </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
+            <td class="small_total c_cart_item_subtotal">0</td>
+            <td class="delete">刪除</td>
           </tr>
+      
           <tr>
             <td>
               <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item02.jpg"
-                alt=""
-                width="100%"
-              />
-              <span class="c_donate_foodBOX_name">
-                [愛心直送董旺旺流浪狗園] <br />
-                IQ Dog 聰明狗乾糧 - 雞肉口味 15kg x10包</span
-              >
-            </td>
-            <td class="price c_donate_foodBOX_price">4089</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item03.jpg"
-                alt=""
-                width="100%"
-              />
-              <span class="c_donate_foodBOX_name">
-                [愛心直送台中大甲陳媽貓狗園]<br />
-                Mon Petit 貓倍麗 貓罐頭三種口味 80公克 X 24入</span
-              >
-            </td>
-            <td class="price c_donate_foodBOX_price">639</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item04.jpg"
-                alt=""
-                width="100%"
-              />
-              <span class="c_donate_foodBOX_name">
-                [愛心直送南投埔里埔愛貓屋]<br />
-                Mon 皇冠海味貓罐頭 7種口味 每罐170g 每箱48罐</span
-              >
-            </td>
-            <td class="price c_donate_foodBOX_price">599</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-        </tbody>
-      </table>
-      <!-- //////////////////////愛心捐項目-----手機板 -->
-      <table class="tab table table-borderless c_donate_mobile_foodBOX">
-        <tbody>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
+                class="c_cart_item_pic"
                 src="./images/Donate/donate_food_item01.jpg"
                 alt=""
                 width="100%"
               />
             </td>
-            <td colspan="2">
-              <div class="c_donate_foodBOX_name">
+            <td>
+              <span class="c_cart_item_name">
                 [愛心直送徐園長護生園] <br />Classic Pets 加好寶乾狗糧 –
-                雞肉口味 15KG x 10包
-              </div>
+                雞肉口味 15KG x 10包</span
+              >
             </td>
-          </tr>
-          <tr class="c_tr_bottom">
-            <td class="price c_donate_foodBOX_price">4999</td>
+            <td class="price c_cart_item_price">4999</td>
             <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
+              <div class="c_cart_item_amount">
+                <button type="button" class="min" disabled>-</button>
                 <input
                   type="text"
                   name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
+                  value="1"
+                  class="num c_cart_itemAmount"
                 />
                 <button type="button" class="add">+</button>
               </div>
             </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item02.jpg"
-                alt=""
-                width="100%"
-              />
-            </td>
-            <td colspan="2">
-              <div class="c_donate_foodBOX_name">
-                [愛心直送董旺旺流浪狗園] <br />
-                IQ Dog 聰明狗乾糧 - 雞肉口味 15kg x10包
-              </div>
-            </td>
-          </tr>
-          <tr class="c_tr_bottom">
-            <td class="price c_donate_foodBOX_price">4089</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item03.jpg"
-                alt=""
-                width="100%"
-              />
-            </td>
-            <td colspan="2">
-              <div class="c_donate_foodBOX_name">
-                [愛心直送台中大甲陳媽貓狗園]<br />
-                Mon Petit 貓倍麗 貓罐頭三種口味 80公克 X 24入
-              </div>
-            </td>
-          </tr>
-          <tr class="c_tr_bottom">
-            <td class="price c_donate_foodBOX_price">639</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="c_donate_foodBOX_pic"
-                src="./images/Donate/donate_food_item04.jpg"
-                alt=""
-                width="100%"
-              />
-            </td>
-            <td colspan="2">
-              <div class="c_donate_foodBOX_name">
-                [愛心直送南投埔里埔愛貓屋]<br />
-                Mon 皇冠海味貓罐頭 7種口味 每罐170g 每箱48罐
-              </div>
-            </td>
-          </tr>
-          <tr class="c_tr_bottom">
-            <td class="price c_donate_foodBOX_price">599</td>
-            <td>
-              <div class="c_donate_foodBOX_amount">
-                <button type="button" class="min">-</button>
-                <input
-                  type="text"
-                  name=""
-                  value="0"
-                  class="num c_donate_foodAmount"
-                />
-                <button type="button" class="add">+</button>
-              </div>
-            </td>
-            <td class="small_total c_donate_foodBOX_subtotal">0</td>
-            <!-- <td class="delete">刪除</td> -->
+            <td class="small_total c_cart_item_subtotal">0</td>
+            <td class="delete">刪除</td>
           </tr>
         </tbody>
       </table>
+      <!-- //////////////////////項目-----手機板 -->
+      <table class="tab table table-borderless c_cart_Mobile_item">
+        <tbody>
+         
+          <tr>
+            <th>
+              <img
+                class="c_cart_item_pic"
+                src="./images/Donate/donate_food_item01.jpg"
+                alt=""
+                width="100%"
+              />
+            </th>
+            <th colspan="2">
+              <div class="c_cart_item_name">
+                [愛心直送徐園長護生園] <br />Classic Pets 加好寶乾狗糧 –
+                雞肉口味 15KG x 10包
+              </div>
+            </th>
+          </tr>
+      
+          <tr class="c_tr_bottom">
+            <td class="price c_cart_item_price">4999</td>
+            <td>
+              <div class="c_cart_item_amount">
+                <button type="button" class="min">-</button>
+                <input
+                  type="text"
+                  name=""
+                  value="0"
+                  class="num c_cart_itemAmount"
+                />
+                <button type="button" class="add">+</button>
+              </div>
+            </td>
+            <td class="small_total c_cart_item_subtotal">0</td>
+           
+          </tr>
+         
+       <td class="delete">刪除</td>
+       
+        </tbody>
+      </table>
 
-      <div class="row c_donate_foodBOX_total">
+      <div class="row c_cart_item_total">
         <!-- <span>已選<span style="color: red;" class="num_sum">1</span>件商品</span> -->
         <span>總計</span>
-        <span class="sum c_donate_foodBOX_alltotal">0</span>
+        <span class="sum c_cart_item_alltotal">0</span>
         <!-- <div><span style="color: red;" class="delSome">刪除選中商品</span>
       <span style="color: red;" class="delAll">清空購物車</span>
   </div> -->
       </div>
-
-      <!-- ///////////////////////////////////// -->
-      <form class="c_donate_money_form">
-        <div class="c_donate_form_item">
-          <div class="form-check c_donate_checkBox">
-            <input class="form-check-input" type="checkbox" value="" />
-            <label class="form-check-label" for="defaultCheck1">
-              不公開查詢
-            </label>
-          </div>
-          <p>捐贈資料</p>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">
-            捐贈姓名/公司行號
-          </label>
-
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control c_fast_donationNAME"
-              placeholder="王X明"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">
-            身分證字號/統一編號
-          </label>
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control c_fast_IDnumber"
-              placeholder="身分證字號/統一編號"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label
-            for="exampleFormControlInput1"
-            class="col-sm-4 col-form-label c_form_name"
-          >
-            Email
-          </label>
-          <div class="col-sm-8">
-            <input
-              type="email"
-              class="form-control c_fast_email"
-              placeholder="name@example.com"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name"> 手機號碼 </label>
-          <div class="col-sm-8">
-            <input
-              type="text"
-              class="form-control c_fast_cellphone"
-              placeholder="09XX-XXX-XXX"
-            />
-          </div>
-        </div>
-
-        <div class="c_donate_form_item">
-          <div class="form-check c_donate_checkBox">
-            <input class="form-check-input c_receiptCheck" type="checkbox" />
-            <label class="form-check-label" for="defaultCheck1">
-              不需寄送收據
-            </label>
-          </div>
-          <p>收據資料</p>
-        </div>
-
-        <div class="form-group row">
-          <div class="col-sm-4 col-form-label">
-            <label class="c_form_name">收據抬頭</label>
-          </div>
-
-          <div class="col-sm-8">
-            <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input
-                class="form-check-input c_receipt_dis c_sameName01"
-                type="checkbox"
-                value=""
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                同捐助姓名
-              </label>
-            </div>
-            <input
-              type="text"
-              class="form-control c_receipt_dis c_fast_receiptNAME"
-              placeholder="王X明"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-4 col-form-label">
-            <label class="c_form_name">收件人</label>
-          </div>
-
-          <div class="col-sm-8">
-            <div class="form-check c_donate_checkBox c_donate_check_margin">
-              <input
-                class="form-check-input c_receipt_dis c_sameName02"
-                type="checkbox"
-                value=""
-              />
-              <label class="form-check-label" for="defaultCheck1">
-                同捐助姓名
-              </label>
-            </div>
-            <input
-              type="text"
-              class="form-control c_receipt_dis c_fast_addressNAME"
-              placeholder="王X明"
-            />
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label c_form_name">
-            收據寄送地址
-          </label>
-          <div class="col-sm-8">
-            <div
-              id="dis"
-              class="row c_donate_address c_receipt_dis city-selector"
-              role="tw-city-selector"
-              data-bootstrap-style
-              data-has-zipcode
-            ></div>
-
-            <input
-              type="text"
-              class="form-control c_receipt_dis c_fast_address"
-              placeholder="復興南路一段390號"
-            />
-          </div>
-        </div>
-
-        <div class="c_donate_form_item">
-          <p>付款方式</p>
-        </div>
-        <ul class="row c_donate_PayBox">
-          <li class="col-4 c_btn_credit">信用卡</li>
-          <li class="col-4 c_btn_linePay">Line Pay</li>
-          <li class="col-4 c_btn_atm">ATM</li>
-        </ul>
-
-        <!-- box信用交易 -->
-        <div class="c_donate_pay_credit_box">
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              信用卡卡號
-            </label>
-            <div class="row col-sm-8">
-              <input
-              type="text"
-                class="form-control col-3 c_cardNumber c_fast_card_number01"
-                placeholder="****"
-                maxlength="4"
-              />
-              <input
-              type="text"
-                class="form-control col-3 c_cardNumber c_fast_card_number02"
-                placeholder="****"
-                maxlength="4"
-              />
-              <input
-              type="text"
-                class="form-control col-3 c_cardNumber c_fast_card_number03"
-                placeholder="****"
-                maxlength="4"
-              />
-              <input
-              type="text"
-                class="form-control col-3 c_cardNumber c_fast_card_number04"
-                placeholder="****"
-                maxlength="4"
-              />
-            </div>
-          </div>
-          <div class="c_creditCandSvg_box">
-            <svg class="c_creditCand_Svg">
-              <use
-                xlink:href="./images/Index/icomoon/symbol-defs.svg#visa-logo"
-              ></use>
-            </svg>
-            <svg class="c_creditCand_Svg">
-              <use
-                xlink:href="./images/Index/icomoon/symbol-defs.svg#mastercard-logo"
-              ></use>
-            </svg>
-            <svg class="c_creditCand_Svg">
-              <use
-                xlink:href="./images/Index/icomoon/symbol-defs.svg#JCB-logo"
-              ></use>
-            </svg>
-          </div>
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              卡片有效期限
-            </label>
-            <div class="row col-sm-8">
-              <input
-                type="text"
-                class="form-control col-8 col-sm-2 c_cardNumber c_fast_period01"
-                placeholder="YY"
-                maxlength="2"
-              />
-              <input
-                type="text"
-                class="form-control col-8 col-sm-2 c_cardNumber c_fast_period02"
-                placeholder="MM"
-                maxlength="2"
-              />
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              信用卡安全碼(三碼)
-            </label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control col-2 c_fast_security"
-                placeholder="***"
-                maxlength="3"
-              />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              持卡人姓名
-            </label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control c_fast_cardName"
-                placeholder="王X明"
-              />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label
-              for="exampleFormControlInput1"
-              class="col-sm-4 col-form-label c_form_name"
-            >
-              Email
-            </label>
-            <div class="col-sm-8">
-              <input
-                type="email"
-                class="form-control c_fast_email"
-                placeholder="name@example.com"
-              />
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="col-sm-4 col-form-label c_form_name">
-              手機號碼
-            </label>
-            <div class="col-sm-8">
-              <input
-                type="text"
-                class="form-control c_fast_cellphone"
-                placeholder="09XX-XXX-XXX"
-              />
-            </div>
-          </div>
-          <br /><br />
-          <p class="c_donate_note">
-            為維護交易安全本公司已配合國際組織全面採用信用卡3DS
-            2.0交易授權機制，如遇交易失敗請洽詢發卡銀行或更換銀行卡片後重新交易。<br />
-            To protect transaction security, ECPay has complied with
-            international organizations to fully adopt the credit card 3DS 2.0
-            transaction authorization. If transaction fails, please contact the
-            issuer or change another card to complete the transaction.<br />
-            本次交易採用綠綠科技金流機制進行付款，故信用卡交易帳單將顯示為綠界科技股份有限公司
-            <br />The transaction applies ECPay cashflow mechanism for payment.
-            Green World Fintech Service Company will be shown on credit card
-            bill as seller of the transaction.<br />
-            非經持卡人同意，如有冒用他人卡片盜刷之行為，刑法最高判五年有期徒刑<br />
-            Using other person's credit card without consent of the cardholder
-            will be subject to maximum 5 years prison sentence per the Criminal
-            Code.<br />
-            本頁面已使用256bitSSL安全加密機制 This page has applied 256-bit SSL
-            security encryption mechanism.<br />
-            為確保網路交易安全，您同意本公司得就此筆交易向發卡銀行、收單銀行及持卡人核對是否屬實<br />
-            In order to protect internet transaction security, you agree that
-            the company may confirm the existence of this transaction with card
-            issuing bank, acquiring bank, and cardholder.<br />
-            信用卡成功交易後否認，如經判定為本人或授權刷卡的行為，相關損失及費用須自行負擔
-            <br />If a successful credit card transaction is denied but later
-            confirmed to be executed by cardholder or authorized person, the
-            cardholder shall bear related loss and expenses.
-          </p>
-
-          <div class="row c_donate_btn_box">
-            <a href="Donate.html" class="col-6 c_donate_btn_forward">回上層</a>
-            <a href="Donate_complete.html" class="col-6 c_donate_btn_next"
-              >下一步</a
-            >
-          </div>
-        </div>
-
-        <!-- Line 交易box -->
-        <div class="c_donate_pay_Line_box">
-          <img src="./images/Donate/donate_linePay_logo.png" alt="" />
-          <p>
-            請使用LINE帳號或掃描行動條碼登入。<br />若您已經是LINE
-            Pay會員，您可以在應用程式中直接進行付款。
-          </p>
-
-          <div class="row">
-            <div class="col-sm-6 c_donate_line_log_in">
-              <p>LINE Log in</p>
-              <input
-                type="email"
-                class="form-control"
-                placeholder="電子郵件帳號"
-              />
-              <input type="password" class="form-control" placeholder="密碼" />
-              <div class="c_donate_line_login_btn">
-                <p>登入</p>
-              </div>
-              <small
-                >您可在LINE應用程式中的「設定」>「我的帳號」確認您的帳號資訊。</small
-              >
-            </div>
-            <div class="col-sm-6 c_donate_line_QRcode_box">
-              <p>行動條碼掃描</p>
-
-              <div class="c_donate_line_QR">
-                <img src="./images/Donate/donate_linePay_QRcode.png" alt="" />
-              </div>
-              <small>在付款認證完成之前請勿關閉此頁。</small>
-            </div>
-          </div>
-          <div class="row c_donate_btn_box">
-            <a href="Donate.html" class="col-6 c_donate_btn_forward">回上層</a>
-          </div>
-        </div>
-
-        <!-- ATM 交易 -->
-        <div class="c_donate_atm_box">
-          <div class="row c_donate_btn_box">
-            <a href="Donate.html" class="col-6 c_donate_btn_forward">回上層</a>
-            <a href="Donate_atm.html" class="col-6 c_donate_btn_next">下一步</a>
-          </div>
-        </div>
-      </form>
     </div>
-
+  <!-- //////////////////////////////////////////////// -->
     <a href="#" id="gotop" style="text-decoration: none"> TOP </a>
 
     <a href="#" id="gotop2" style="text-decoration: none"> TOP </a>
@@ -1440,16 +944,16 @@
     />
       <img
         class="c_footDog01"
-        src="./images/Donate/donate__footer_dog(1).png"
+        src="./images/Cart/donate__footer_dog(1).png"
         alt=""
       />
       <img
         class="c_footDog02"
-        src="./images/Donate/donate__footer_dog(2).png"
+        src="./images/Cart/cat_2.png"
         alt=""
       />
     </div>
-
+  <!-- //////////////////////////////////////////////// -->
     <div class="footer">
       <svg class="logo logofooter">
         <use xlink:href="./images/index/icomoon/symbol-defs.svg#logo"></use>
@@ -1581,9 +1085,11 @@
     <script src="./js/0_main/navbar/web/custom.js"></script>
 
     <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+
     <!-- 地址 JS    star-->
     <script src="./js/Donate/tw-city-selector.js"></script>
 
     <script src="js/Donate/donate.js"></script>
+    <script src="js/Cart/cart.js"></script>
   </body>
 </html>

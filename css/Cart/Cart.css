@@ -7,6 +7,7 @@
 .c_textcolor_fff{
   color: #fff;
 }
+/* 上面長條黃黃 */
 .c_yellow_check {
   max-width: 1028px;
   background-color: var(--mainyellow);
@@ -24,7 +25,7 @@
   margin: 0 1%;
 }
 
-/*捐錢進度*/
+/*----------進度-------------*/
 
 .c_sopbox {
   position: relative;
@@ -64,20 +65,123 @@
   text-align: center;
   line-height: 1.8;
 }
-
-
-
 .c_donate_money_sop p {
   margin: 10% auto;
 }
+/* -------------------------購物車項目------------------------------------------------------- */
+
+.c_cart_item{
+  max-width: 1028px;
+  margin: 5% auto 2% auto;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+ 
+}
+
+.c_cart_item_title{
+ 
+  margin: 0 auto;
+
+  background-color: var(--mainyellow);
+}
+.c_cart_item_pic {
+  max-width: 130px;
+  
+  vertical-align: middle;
+}
+
+.c_cart_item_name{
+  vertical-align: middle;
+  display:inline-block;
+  max-width:250px; 
+  text-align: left; 
+  font-size: 14px;
+  margin-left: 5%;
+}
+.c_cart_item_amount{
+  margin: 0 auto;
+  max-width: 150px;
+  background-color: #F7F4EE;
+  border-radius: 50px;
+  font-size: 18px;
+  justify-content: center;
+  margin-bottom: 0;
+
+}
+.c_cart_itemAmount{
+  /* margin: 0 15%; */
+  /* line-height: 2.2; */
+  max-width: 60px;
+  border: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+.c_cart_item_amount input:focus{
+outline:none;
+  /* border:none; */
+}
+.min,.add{
+  font-weight: 800;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.c_cart_item_subtotal{
+  width: 150px;
+}
+.c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_alltotal::before{
+  content: "NT$  ";
+  font-size: 13px;
+}
+.c_cart_item td, .c_cart_item th {
+  vertical-align: middle;
+  /* 使Table欄位垂直置中 */
+  border-top: 0px ;
+  padding: 0.8rem;
+}
+.c_cart_item tr{
+  border-bottom: 5px solid #F7F4EE;
+}
+
+.c_cart_item_total{
+  max-width: 850px;
+  margin: 0 auto;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right:8%;
+
+}
+.c_cart_item_total span{
+margin-left: 8%;
+ 
+
+
+}
+.c_cart_Mobile_item{
+  display: none;
+      }
+
+
+
+
+
+
+
+
 
 @media (max-width: 414px) {
+  /* 上面長條黃黃 */
   .c_yellow_check {
     padding: 5%;
 
     margin-bottom: 8%;
   }
-  /*捐錢進度*/
+  /*進度----------*/
   .c_sopbox {
     font-size: 11px;
     margin: 4% auto;
@@ -98,4 +202,90 @@
     font-size: 24px;
     line-height: 2.2;
   }
+
+  /* -------------------------購物車項目------------------------------------------------------- */
+  .c_cart_Mobile_item{
+    display: block;
+        }
+        .c_cart_item thead{
+            display: none;
+        }
+        .c_cart_item {
+            display: none;
+        }
+       
+    .c_cart_item_total{
+        font-size: 14px;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .c_cart_Mobile_item{
+    
+        max-width: 350px;
+        margin: 5% auto 2% auto;
+        font-size: 14px;
+        text-align: center;
+        background-color: #fff;
+    
+    }
+    
+    .c_cart_Mobile_item td, .c_cart_Mobile_item th {
+        vertical-align: middle;
+        /* 使Table欄位垂直置中 */
+        border-top: 0px ;
+        padding: 0.6rem;
+    }
+    
+    
+    .c_cart_item_pic{
+        width: 90px;
+        display:inline-block;
+        vertical-align: middle;
+        margin-left: 5%;
+    }
+    
+    .c_cart_item_name{
+        vertical-align: middle;
+        display:inline-block;
+       max-width:230px; 
+        text-align: left; 
+        font-size: 13px;
+        margin-left: 1%;
+    }
+    .c_cart_item_subtotal {
+        max-width:100px; 
+    
+    }
+    .c_cart_item_amount{
+     
+        max-width: 90px;
+    
+        font-size: 14px;
+    
+    
+    }
+    .c_cart_itemAmount{
+    
+        max-width: 40px;
+    
+    
+    }
+    
+    .c_cart_item_subtotal{
+        width: 100px;
+    }
+    .c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_alltotal::before{
+        content: "NT$  ";
+        font-size: 11px;
+    }
+    
+    .c_tr_bottom{
+        border-bottom: 10px solid #F7F4EE;
+      
+    }
+    
+    .c_cart_item_price{
+        opacity: .6;
+    }
+    
 }
