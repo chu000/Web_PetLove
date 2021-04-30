@@ -1,3 +1,12 @@
+.c_maingray{
+  background-color: var(--maingray);
+}
+.c_mainyellow{
+  background-color: var(--mainyellow);
+}
+.c_textcolor_fff{
+  color: #fff;
+}
 .c_yellow_check {
   max-width: 1028px;
   background-color: var(--mainyellow);
@@ -56,20 +65,7 @@
   line-height: 1.8;
 }
 
-.c_donate_money_step1 {
-  background-color: var(--maingray);
-  color: #fff;
-}
 
-.c_donate_money_step2 {
-  background-color: var(--mainyellow);
-  color: var(--maindarkgray);
-}
-
-.c_donate_money_step3 {
-  background-color: var(--maingray);
-  color: #fff;
-}
 
 .c_donate_money_sop p {
   margin: 10% auto;
