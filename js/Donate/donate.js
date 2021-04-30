@@ -64,7 +64,7 @@ $(".c_foot_auto").click( function () {
   $('.c_fast_period02').val("10");
   $('.c_fast_security').val("603");
   $('.c_fast_cardName').val("心鐘");
-  $('.mastercard').css("fill","#89A7C2");
+  $('.c_creditCand_Svg').css("fill","#89A7C2");
 
   
 
