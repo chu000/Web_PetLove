@@ -38,15 +38,9 @@
 
 .c_donate_money_form .form-control {
     border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  
 }
 
-.c_donate_money_form .form-control:focus {
-    border-color: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
 .c_donate_money_form .form-group {
     margin-top: 5%;

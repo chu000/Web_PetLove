@@ -93,13 +93,13 @@
 .c_searchBOX .form-control {
   border-radius: 50px;
   border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  /* -webkit-box-shadow: none; */
+  /* box-shadow: none; */
 }
-.c_searchBOX .form-control:focus {
+ .form-control:focus {
   border-color: #fff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: 0px 0px 0px 3px  var(--mainyellow);
+  box-shadow: 0px 0px 0px 3px  var(--mainyellow);
 }
 
 .table td,
