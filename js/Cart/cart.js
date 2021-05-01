@@ -47,7 +47,7 @@
                 return false;
             }
               n++;
-              $(".min").attr("disabled", false);
+            //   $(this).siblings(".min").attr("disabled", false);
               $(this).siblings(".num").val(n);
               let price = $(this).parent().parent().siblings(".price").html();
               // price = price.substr(1);
@@ -61,7 +61,7 @@
                   //console.log(n);
                   
                   if (n === 1) {
-                    $(".min").attr("disabled", true);
+                    // $(this).attr("disabled", true);
                       return false;
                   }
                   n--;
