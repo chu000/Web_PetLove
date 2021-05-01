@@ -72,7 +72,7 @@
 
 .c_cart_item{
   max-width: 1028px;
-  margin: 5% auto 2% auto;
+  margin: 5% auto 0 auto;
   font-size: 16px;
   text-align: center;
   background-color: #fff;
@@ -214,8 +214,25 @@ cursor: pointer;
 
 
 
+.c_yellow_deleteAll {
+  max-width: 1028px;
+  background-color: var(--mainyellow);
+  padding: 1%;
+  margin: 0 auto;
+  color: var(--maindarkgray);
+ font-size: 13px;
+  text-align: right;
+  cursor: pointer;
+}
 
+.c_yellow_deleteAll svg{
+  width: 13px;
+  height: 13px;
+  fill:var(--maindarkgray);
+  margin-right: 5px;
+  margin-bottom: 1px;
 
+}
 @media (max-width: 414px) {
   /* 上面長條黃黃 */
   .c_yellow_check {

@@ -41,12 +41,14 @@
 
 
         //   監聽有幾個商品帶入標題
+        
+       
         $(document).ready(function() {
             // alert($(".c_itemBody tr").length);
             let r = $(".c_itemBody tr").length;
             $(".c_title_itemAmount").text(r);
         });
-
+     
           $(".add").click(function() {
               let n = parseInt($(this).siblings(".num").val());
               //console.log(n);
@@ -113,7 +115,7 @@
           $(".c_title_itemAmount").text(r);
 
                   // $(".ed").change();
-                  // getSum();
+                  getSum();
                   // clearCheckAll();
                   
               })
@@ -126,14 +128,13 @@
           //     })
               //清空購物車
           $(".delAll").click(function() {
+            $(".c_title_itemAmount").text(0);//   監聽執行後有商品帶入0
+
+
               $(".tab tbody").empty();
               getSum();
               clearCheckAll();
 
-              
-        //   監聽執行後有幾個商品帶入標題
-          let r = $(".c_itemBody tr").length;
-          $(".c_title_itemAmount").text(r);
   
           })
 
