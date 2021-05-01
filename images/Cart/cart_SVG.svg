@@ -1,0 +1,28 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+
+
+<symbol id="c_arrow-down" viewBox="0 0 16.46 16.46">
+
+
+<path id="Icon_ionic-md-arrow-dropup-circle" data-name="Icon ionic-md-arrow-dropup-circle" d="M19.835,11.6a8.23,8.23,0,1,0-8.23,8.23A8.23,8.23,0,0,0,19.835,11.6ZM15.4,12.871h-7.6l3.8-3.8Z" transform="translate(19.835 19.835) rotate(180)" />
+
+
+
+
+</symbol>
+<symbol id="c_trash" viewBox="0 0 19.602 22.402">
+
+
+<path id="Icon_awesome-trash-alt" data-name="Icon awesome-trash-alt" d="M1.4,20.3a2.1,2.1,0,0,0,2.1,2.1H16.1a2.1,2.1,0,0,0,2.1-2.1V5.6H1.4ZM13.3,9.1a.7.7,0,0,1,1.4,0v9.8a.7.7,0,0,1-1.4,0Zm-4.2,0a.7.7,0,1,1,1.4,0v9.8a.7.7,0,0,1-1.4,0Zm-4.2,0a.7.7,0,0,1,1.4,0v9.8a.7.7,0,0,1-1.4,0Zm14-7.7h-5.25L13.24.582A1.05,1.05,0,0,0,12.3,0h-5a1.038,1.038,0,0,0-.936.582L5.951,1.4H.7a.7.7,0,0,0-.7.7V3.5a.7.7,0,0,0,.7.7H18.9a.7.7,0,0,0,.7-.7V2.1A.7.7,0,0,0,18.9,1.4Z" />
+
+
+
+
+
+</symbol>
+
+
+
+</defs>
+</svg>

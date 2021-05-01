@@ -85,19 +85,56 @@
 
   background-color: var(--mainyellow);
 }
+
 .c_cart_item_pic {
   max-width: 130px;
-  
+  max-height: 130px;
   vertical-align: middle;
+
 }
 
+.c_cart_td02{
+  max-width:300px; 
+}
 .c_cart_item_name{
-  vertical-align: middle;
-  display:inline-block;
-  max-width:250px; 
+  /* vertical-align: middle; */
+
+ 
   text-align: left; 
   font-size: 14px;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  margin-bottom: 5%;
+}
+.c_cart_item_content{
+
+  max-width:250px; 
+ 
+   text-align: left; 
+   font-size: 13px;
+   margin-left: 1%;
+   margin-bottom: 3%;
+}
+.c_cart_item_blueBTN_size,.c_cart_item_blueBTN_time{
+ position: relative;
+width: 150px;
+  margin: 0 auto;
+ background-color: var(--mainblue);
+ color: #fff;
+ 
+ border-radius: 50px;
+ text-align: center;
+ cursor: pointer;
+}
+.c_cart_item_blueBTN_size svg,.c_cart_item_blueBTN_time svg{
+  position: absolute;
+
+  width: 14px;
+  height: 20px;
+  fill:#fff;
+right:5px;
+
+
+ 
 }
 .c_cart_item_amount{
   margin: 0 auto;
@@ -163,12 +200,17 @@ margin-left: 8%;
 
 }
 .c_cart_Mobile_item{
-  display: none;
+  /* display: none; */
+  max-width: 375px;
       }
 
 
 
-
+.delete svg{
+  width: 17px;
+  fill:var(--maingray);
+cursor: pointer;
+}
 
 
 
@@ -252,6 +294,7 @@ margin-left: 8%;
         font-size: 13px;
         margin-left: 1%;
     }
+
     .c_cart_item_subtotal {
         max-width:100px; 
     

@@ -38,7 +38,14 @@
           //         $(this).parents("tr").removeClass("current");
           //     }
           // })
-    
+
+
+        //   監聽有幾個商品帶入標題
+        $(document).ready(function() {
+            // alert($(".c_itemBody tr").length);
+            let r = $(".c_itemBody tr").length;
+            $(".c_title_itemAmount").text(r);
+        });
 
           $(".add").click(function() {
               let n = parseInt($(this).siblings(".num").val());
@@ -99,10 +106,16 @@
           $(".delete").click(function() {
                   //刪除的是當前的商品
                   $(this).parent().remove();
-                 
+
+
+           //   監聽執行後有幾個商品帶入標題
+          let r = $(".c_itemBody tr").length;
+          $(".c_title_itemAmount").text(r);
+
                   // $(".ed").change();
                   // getSum();
                   // clearCheckAll();
+                  
               })
               //刪除選定的商品:小的複選框如果選中就刪除對應的商品
           // $(".delSome").click(function() {
@@ -116,6 +129,12 @@
               $(".tab tbody").empty();
               getSum();
               clearCheckAll();
+
+              
+        //   監聽執行後有幾個商品帶入標題
+          let r = $(".c_itemBody tr").length;
+          $(".c_title_itemAmount").text(r);
+  
           })
 
           // function clearCheckAll() {
