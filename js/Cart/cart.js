@@ -125,7 +125,10 @@
           let rm = $(".c_cart_Mobile_box li").length;
           $(".c_title_mobile_itemAmount").text(rm);
      
-
+if(r===0 | rm===0){
+  $(".c_cart_BIGbox").empty();
+  $(".c_NOitem").show();
+}
                   // $(".ed").change();
                   getSum();
                   // clearCheckAll();
@@ -144,7 +147,8 @@
 
 
               $(".tab tbody").empty();
-              $(".c_cart_Mobile_box").empty();
+              $(".c_cart_BIGbox").empty();
+              $(".c_NOitem").show();
               getSum();
               // clearCheckAll();
 
