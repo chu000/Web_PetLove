@@ -41,13 +41,21 @@
 
 
         //   監聽有幾個商品帶入標題
-        
-       
+// 桌機
         $(document).ready(function() {
             // alert($(".c_itemBody tr").length);
             let r = $(".c_itemBody tr").length;
             $(".c_title_itemAmount").text(r);
         });
+        // 手機
+        $(document).ready(function() {
+            // alert($(".c_itemBody tr").length);
+            let rm = $(".c_cart_Mobile_box li").length;
+            $(".c_title_mobile_itemAmount").text(rm);
+        });
+
+
+
      
           $(".add").click(function() {
               let n = parseInt($(this).siblings(".num").val());
@@ -113,6 +121,10 @@
            //   監聽執行後有幾個商品帶入標題
           let r = $(".c_itemBody tr").length;
           $(".c_title_itemAmount").text(r);
+                  // 手機
+          let rm = $(".c_cart_Mobile_box li").length;
+          $(".c_title_mobile_itemAmount").text(rm);
+     
 
                   // $(".ed").change();
                   getSum();
@@ -132,8 +144,9 @@
 
 
               $(".tab tbody").empty();
+              $(".c_cart_Mobile_box").empty();
               getSum();
-              clearCheckAll();
+              // clearCheckAll();
 
   
           })

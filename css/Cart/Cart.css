@@ -133,8 +133,6 @@ width: 150px;
   fill:#fff;
 right:5px;
 
-
- 
 }
 .c_cart_item_amount{
   margin: 0 auto;
@@ -272,7 +270,11 @@ cursor: pointer;
         .c_cart_item {
             display: none;
         }
-       
+        .c_cart_item_title{
+          padding: 2%;
+          font-size: 12px;
+        }
+ 
     .c_cart_item_total{
         font-size: 14px;
         margin-right: 5%;
@@ -281,7 +283,8 @@ cursor: pointer;
     .c_cart_Mobile_item{
     
         max-width: 350px;
-        margin: 5% auto 2% auto;
+        margin: 2% auto 2% auto;
+        padding: 5%;
         font-size: 14px;
         text-align: center;
         background-color: #fff;
@@ -297,21 +300,57 @@ cursor: pointer;
     
     
     .c_cart_item_pic{
-        width: 90px;
-        display:inline-block;
+       max-width: 80px;
+       max-height: 80px;
+   
         vertical-align: middle;
-        margin-left: 5%;
+ 
     }
     
     .c_cart_item_name{
         vertical-align: middle;
-        display:inline-block;
-       max-width:230px; 
+     
+       max-width:250px; 
         text-align: left; 
-        font-size: 13px;
-        margin-left: 1%;
+        font-size: 12px;
+        margin-bottom: 5%;
     }
+    .c_cart_item_content{
 
+      max-width:250px; 
+     
+       text-align: left; 
+       font-size: 11px;
+       margin-left: 0;
+       margin-bottom: 3%;
+    }
+    .c_cart_item_blueBTN_size,.c_cart_item_blueBTN_time{
+     position: relative;
+    width: 100px;
+      margin: 0 auto;
+     background-color: var(--mainblue);
+     color: #fff;
+     
+     border-radius: 50px;
+     text-align: center;
+     cursor: pointer;
+    }
+    .c_cart_item_blueBTN_size svg,.c_cart_item_blueBTN_time svg{
+      position: absolute;
+    
+      width: 10px;
+      height: 10px;
+      fill:#fff;
+    right:5px;
+    top:3px;
+    
+    }
+    .c_Mobile_item_down{
+max-width: 360px;
+margin: 0 auto;
+margin-top: 5%;
+justify-content: space-between;
+    }
     .c_cart_item_subtotal {
         max-width:100px; 
     
@@ -320,7 +359,7 @@ cursor: pointer;
      
         max-width: 90px;
     
-        font-size: 14px;
+        font-size: 13px;
     
     
     }
