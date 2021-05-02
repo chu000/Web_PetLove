@@ -184,13 +184,35 @@ $(".c_btn_atm").click(function () {
           function getSum() {
               let count = 0; //計算總件數
               let money = 0; //計算總價錢
-              $(".num").each(function(index) {
-                // if ($(".ed").eq(index).prop("checked") == true) {
-                      count += parseInt($(".num").eq(index).val());
-                      money += parseInt($(".small_total").eq(index).text());
-                // }
-              })
-              $(".num_sum").html(count);
+    //$(".num").each(function(index) {
+    // if ($(".ed").eq(index).prop("checked") == true) {
+    // count += parseInt($(".num").eq(index).val());
+    //       money += parseInt($(".small_total").eq(index).text());
+    // }
+
+    // -----以下這裡是我亂試
+    var isMobileDisplay = $(".c_donate_mobile_foodBOX").css("display");
+    if (isMobileDisplay == "none") {
+      // console.log("yaya");
+      $(".c_donate_foodBOX")
+        .find(".num")
+        .each(function (index) {
+          money += parseInt($(".c_donate_foodBOX")
+          .find(".small_total").eq(index).text());
+        });
+    } else {
+      // console.log("55");
+      $(".c_donate_mobile_foodBOX")
+        .find(".num")
+        .each(function (index) {
+          money += parseInt($(".c_donate_mobile_foodBOX")
+          .find(".small_total").eq(index).text());
+          // console.log(money);
+        });
+    }
+
+    // })
+              // $(".num_sum").html(count);
               $(".sum").html(money);
           }
 

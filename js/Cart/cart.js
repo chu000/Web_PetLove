@@ -120,14 +120,16 @@ $(function () {
       $(".c_cart_item")
         .find(".num")
         .each(function (index) {
-          money += parseInt($(".small_total").eq(index).text());
+          money += parseInt($(".c_cart_item")
+          .find(".small_total").eq(index).text());
         });
     } else {
       // console.log("55");
       $(".c_cart_Mobile_box")
         .find(".num")
         .each(function (index) {
-          money += parseInt($(".Mobile_small_total").eq(index).text());
+          money += parseInt($(".c_cart_Mobile_box")
+          .find(".small_total").eq(index).text());
           // console.log(money);
         });
     }
