@@ -244,14 +244,18 @@
 .c_dogFeed02 {
   position: absolute;
   max-width: 70px;
+  
+  opacity: 1;
 }
 .c_dogFeed01 {
   bottom: 50px;
   left: 165px;
+  transition: 1.5s;
 }
 .c_dogFeed02 {
   bottom: 50px;
   right: 45px;
+  transition: 1s;
 }
 
 /* 大總結金額 */
@@ -345,6 +349,8 @@
   .c_cart_Mobile_box {
     display: block;
     margin-bottom: 0;
+    max-width: 350px;
+    margin: 0 auto;
   }
   .c_cart_item thead {
     display: none;
@@ -353,6 +359,7 @@
     display: none;
   }
   .c_cart_item_title {
+    max-width: 350px;
     padding: 2%;
     font-size: 12px;
   }
@@ -366,7 +373,7 @@
   }
   .c_cart_Mobile_item {
     position: relative;
-    max-width: 350px;
+    /* max-width: 350px; */
     margin: 2% auto 2% auto;
     /* padding: 5%; */
     font-size: 14px;
@@ -468,7 +475,26 @@
   .c_cart_item_price {
     opacity: 0.6;
   }
+
+  .c_blue_sale_box{
+    max-width: 350px;
+  }
+  .c_cart_many_dog{
+display: none;
+  }
+  .c_big_total_box{
+    padding: 6% 3%;
+    margin: 0;
+  }
   /* 手機板 刪除 */
+  .c_yellow_deleteAll{
+    max-width: 350px;
+    
+  }
+  .c_yellow_deleteAll span{
+    font-size: 12px;
+    margin-right: 5%;
+  }
   .c_cart_Mobile_delete {
     position: absolute;
     width: 20%;

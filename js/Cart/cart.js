@@ -68,7 +68,7 @@
               $(this).siblings(".num").val(n);
               let price = $(this).parent().parent().siblings(".price").html();
               // price = price.substr(1);
-              console.log(price);
+              // console.log(price);
               $(this).parent().parent().siblings(".small_total").text(n * price);
    
               getSum();
@@ -213,3 +213,32 @@ if(r===0 | rm===0){
  
 
 
+// ---------------------------狗狗食物動畫
+
+
+$(window).scroll(function () {
+        
+
+  console.log('scollTop', $(this).scrollTop());
+
+  let windowScrollTop = $(this).scrollTop();
+
+ 
+
+
+  if (windowScrollTop > 650) {
+      $('.c_dogFeed01').css('opacity', '1').css('transform', 'translateY(0px)');
+  }
+  else {
+      $('.c_dogFeed01').css('opacity', '0').css('transform', 'translateY(-120px)');
+  }
+
+  if (windowScrollTop > 700) {
+    $('.c_dogFeed02').css('opacity', '1').css('transform', 'translateY(0px)');
+}
+else {
+    $('.c_dogFeed02').css('opacity', '0').css('transform', 'translateY(-150px)');
+}
+
+
+})
