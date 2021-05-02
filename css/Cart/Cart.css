@@ -314,7 +314,10 @@ cursor: pointer;
 
   /* -------------------------購物車項目------------------------------------------------------- */
   .c_cart_Mobile_box{
+    position: relative;
+    z-index: 5;
     display: block;
+    margin-bottom: 0;
   
         }
         .c_cart_item thead{
@@ -334,14 +337,16 @@ cursor: pointer;
         margin-top: 5%;
     }
     .c_cart_Mobile_item{
-    
+      position: relative;
         max-width: 350px;
         margin: 2% auto 2% auto;
-        padding: 5%;
+        /* padding: 5%; */
         font-size: 14px;
         text-align: center;
         background-color: #fff;
-    
+        z-index: 10;
+        overflow: hidden;
+      
     }
     
     .c_cart_Mobile_item td, .c_cart_Mobile_item th {
@@ -398,10 +403,14 @@ cursor: pointer;
     top:3px;
     
     }
+.c_Mobile_item_up{
+  margin:5% 1% 0 1%;
+}
+
     .c_Mobile_item_down{
 max-width: 360px;
-margin: 0 auto;
-margin-top: 5%;
+margin: 4% 0 5% 0;
+/* margin-top: 5%; */
 justify-content: space-between;
     }
     .c_cart_item_subtotal {
@@ -439,7 +448,23 @@ justify-content: space-between;
     .c_cart_item_price{
         opacity: .6;
     }
-
+/* 手機板 刪除 */
+.c_cart_Mobile_delete{
+  position:absolute;
+ width:100%;
+ height: 100%;
+  
+  background-color: var(--maindarkgray);
+  text-align: right;
+  
+  top:0;
+  right: 0;
+  z-index: 0;
+}
+.c_cart_Mobile_delete svg{
+ margin-right: 20px;
+ 
+}
     /* 甚麼都沒有 */
     .c_NOitem{
 
