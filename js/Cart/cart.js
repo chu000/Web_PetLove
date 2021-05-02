@@ -9,6 +9,7 @@
         //因為checked是複選框的固有屬性，此時利用prop（）獲取和設定該屬性
         $(function() {
           getSum();
+        
           // $(".checkAll").change(function() {
           //         // console.log($(this).prop("checked"));//全選按鈕的狀態
           //         $(".ed,.checkAll").prop("checked", $(this).prop("checked"));
@@ -90,6 +91,7 @@
                   getSum();
               })
               //使用者也可以直接修改表單num裡面的值（小bug），同樣計算小計
+              
           $(".num").change(function() {
               let n = $(this).val();
               let price = $(this).parent().siblings(".price").html();
@@ -106,6 +108,20 @@
                       // count += parseInt($(".num").eq(index).val());
                       money += parseInt($(".small_total").eq(index).text());
                 // }
+
+
+                // -----以下這裡是我亂試
+// if ($(".c_cart_Mobile_box").css('display','none') ){
+//   $(".num").each(function(index) {
+//           money += parseInt($(".small_total").eq(index).text());
+//   })
+// }else{
+//   $(".num").each(function(index) {
+//     money += parseInt($(".Mobile_small_total").eq(index).text());
+
+// })
+// }
+
               })
               // $(".num_sum").html(count);
               $(".sum").html(money);
@@ -186,11 +202,20 @@ if(r===0 | rm===0){
             let c_MOcoin = $('.c_MOcoin').text();
             if ($('.c_MOcoin_btn').is(":checked") == false) {
               c_MOcoin =0
-              console.log(c_MOcoin)
+              // console.log(c_MOcoin)
                 } 
-            
+                if (sum > 999) {
+                  $('.c_cut_fare').text(60)
+                  money = parseInt(sum-c_MOcoin);
+                    }
+                     else if (0 < sum < 999){
+                       $('.c_cut_fare').text(0)
+                      money = parseInt(sum + 60 - c_MOcoin);
+                    } else if(sum = 0){
+                      money = 0
+                    }
 
-            money = parseInt(sum-c_MOcoin);
+           
            
           
             $(".c_big_total").html(money);
@@ -219,7 +244,7 @@ if(r===0 | rm===0){
 $(window).scroll(function () {
         
 
-  console.log('scollTop', $(this).scrollTop());
+  // console.log('scollTop', $(this).scrollTop());
 
   let windowScrollTop = $(this).scrollTop();
 

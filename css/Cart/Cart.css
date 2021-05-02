@@ -352,9 +352,7 @@
     max-width: 350px;
     margin: 0 auto;
   }
-  .c_cart_item thead {
-    display: none;
-  }
+
   .c_cart_item {
     display: none;
   }
