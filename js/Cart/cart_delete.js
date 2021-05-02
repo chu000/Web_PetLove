@@ -62,7 +62,7 @@
       }
   });
 
-  $(document).on('touch', '.c_cart_Mobile_delete',function(e){  // 點選刪除，刪除父元素節點
-      $(this).parent().remove();
-  });
+//   $(document).on('touch', '.c_cart_Mobile_delete',function(e){  // 點選刪除，刪除父元素節點
+    //   $(this).parent().remove();
+//   });
 })();
