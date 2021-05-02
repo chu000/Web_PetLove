@@ -103,12 +103,14 @@
               let money = 0; //計算總價錢
               $(".num").each(function(index) {
                 // if ($(".ed").eq(index).prop("checked") == true) {
-                      count += parseInt($(".num").eq(index).val());
+                      // count += parseInt($(".num").eq(index).val());
                       money += parseInt($(".small_total").eq(index).text());
                 // }
               })
-              $(".num_sum").html(count);
+              // $(".num_sum").html(count);
               $(".sum").html(money);
+
+              getBigTotal();
           }
 
           // 刪除商品模組
@@ -160,4 +162,54 @@ if(r===0 | rm===0){
           //         $(".checkAll").prop("checked", false);
           //     }
           // }
+
+
+     //----------------------------毛金幣是否啟用-------------------------------- 
+          $(".c_MOcoin_btn").on("change", function (event) {
+
+            if ($(this).is(":checked") == true) {
+          $('.c_MOcoin').css('color','var(--maindarkgray)')
+            } else {
+              $('.c_MOcoin').css('color','var(--maingray)')
+             
+              
+            }
+            getBigTotal();
+          });
+
+            //----------------------------大結算--------------------------------  
+          function getBigTotal() {
+
+     
+            let money = 0; //計算總價錢
+            let sum =$('.sum').text();
+            let c_MOcoin = $('.c_MOcoin').text();
+            if ($('.c_MOcoin_btn').is(":checked") == false) {
+              c_MOcoin =0
+              console.log(c_MOcoin)
+                } 
+            
+
+            money = parseInt(sum-c_MOcoin);
+           
+          
+            $(".c_big_total").html(money);
+        }
+
+
+
+
+
+
+
+
+
+
+
       })
+
+
+
+ 
+
+

@@ -168,8 +168,12 @@ outline:none;
 .c_cart_item_subtotal{
   width: 150px;
 }
-.c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_alltotal::before{
+.c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_NT::before{
   content: "NT$  ";
+  font-size: 13px;
+}
+.c_cart_item_cut_NT::before{
+  content: "-NT$  ";
   font-size: 13px;
 }
 .c_cart_item td, .c_cart_item th {
@@ -181,23 +185,25 @@ outline:none;
 .c_cart_item tr{
   border-bottom: 5px solid #F7F4EE;
 }
-
-.c_cart_item_total{
-  max-width: 850px;
+.c_big_total_box{
+padding:  5% 9%;
+line-height: 2;
+}
+.c_cart_total_list{
+display: flex;
+max-width: 300px;
   margin: 0 auto;
-  justify-content: flex-end;
+justify-content: space-between;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin-right:8%;
 
 }
-.c_cart_item_total span{
-margin-left: 8%;
- 
 
-
+.c_blue_line{
+  border-bottom: 1px solid var(--mainblue);
+  margin: 2%;
 }
-
 
 
 
@@ -228,8 +234,28 @@ cursor: pointer;
   margin-bottom: 1px;
 
 }
+/* 藍色區塊 */
+.c_blue_sale_box{
+  max-width: 1028px;
+  margin: 0 auto;
+  height: 300px;
+  background-color: var(--mainblue);
+}
 
 
+/* 大總結金額 */
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 25px;
+  vertical-align: middle;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: var(--mainblue);
+  background-color:var(--mainblue);
+}
 .c_NOitem{
   display: none;
   position: relative;
@@ -330,10 +356,9 @@ cursor: pointer;
           font-size: 12px;
         }
  
-    .c_cart_item_total{
+    .c_cart_total_list{
         font-size: 14px;
-        margin-right: 5%;
-        margin-top: 5%;
+ 
     }
     .c_cart_Mobile_li{
       position: relative;
@@ -438,11 +463,11 @@ justify-content: space-between;
     .c_cart_item_subtotal{
         width: 100px;
     }
-    .c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_alltotal::before{
-        content: "NT$  ";
+    .c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_NT::before,  .c_cart_item_cut_NT::before{
+    
         font-size: 11px;
     }
-    
+  
     .c_tr_bottom{
         border-bottom: 10px solid #F7F4EE;
       
