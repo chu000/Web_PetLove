@@ -344,7 +344,7 @@ cursor: pointer;
         font-size: 14px;
         text-align: center;
         background-color: #fff;
-        z-index: 10;
+     
         overflow: hidden;
       
     }
@@ -459,7 +459,7 @@ justify-content: space-between;
   
   top:0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
 }
 .c_cart_Mobile_delete svg{
  margin-right: 20px;
