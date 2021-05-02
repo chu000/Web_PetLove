@@ -1,10 +1,10 @@
-.c_maingray{
+.c_maingray {
   background-color: var(--maingray);
 }
-.c_mainyellow{
+.c_mainyellow {
   background-color: var(--mainyellow);
 }
-.c_textcolor_fff{
+.c_textcolor_fff {
   color: #fff;
 }
 /* 上面長條黃黃 */
@@ -70,17 +70,15 @@
 }
 /* -------------------------購物車項目------------------------------------------------------- */
 
-.c_cart_item{
+.c_cart_item {
   max-width: 1028px;
   margin: 5% auto 0 auto;
   font-size: 16px;
   text-align: center;
   background-color: #fff;
- 
 }
 
-.c_cart_item_title{
- 
+.c_cart_item_title {
   margin: 0 auto;
 
   background-color: var(--mainyellow);
@@ -90,130 +88,124 @@
   max-width: 130px;
   max-height: 130px;
   vertical-align: middle;
-
 }
 
-.c_cart_td02{
-  max-width:300px; 
+.c_cart_td02 {
+  max-width: 300px;
 }
-.c_cart_item_name{
+.c_cart_item_name {
   /* vertical-align: middle; */
 
- 
-  text-align: left; 
+  text-align: left;
   font-size: 14px;
   /* margin-left: 5%; */
   margin-bottom: 5%;
 }
-.c_cart_item_content{
+.c_cart_item_content {
+  max-width: 250px;
 
-  max-width:250px; 
- 
-   text-align: left; 
-   font-size: 13px;
-   margin-left: 1%;
-   margin-bottom: 3%;
+  text-align: left;
+  font-size: 13px;
+  margin-left: 1%;
+  margin-bottom: 3%;
 }
-.c_cart_item_blueBTN_size,.c_cart_item_blueBTN_time{
- position: relative;
-width: 150px;
+.c_cart_item_blueBTN_size,
+.c_cart_item_blueBTN_time {
+  position: relative;
+  width: 150px;
   margin: 0 auto;
- background-color: var(--mainblue);
- color: #fff;
- 
- border-radius: 50px;
- text-align: center;
- cursor: pointer;
+  background-color: var(--mainblue);
+  color: #fff;
+
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
 }
-.c_cart_item_blueBTN_size svg,.c_cart_item_blueBTN_time svg{
+.c_cart_item_blueBTN_size svg,
+.c_cart_item_blueBTN_time svg {
   position: absolute;
 
   width: 14px;
   height: 20px;
-  fill:#fff;
-right:5px;
-
+  fill: #fff;
+  right: 5px;
 }
-.c_cart_item_amount{
+.c_cart_item_amount {
   margin: 0 auto;
   max-width: 150px;
-  background-color: #F7F4EE;
+  background-color: #f7f4ee;
   border-radius: 50px;
   font-size: 18px;
   justify-content: center;
   margin-bottom: 0;
-
 }
-.c_cart_itemAmount{
+.c_cart_itemAmount {
   /* margin: 0 15%; */
   /* line-height: 2.2; */
   max-width: 60px;
   border: none;
   text-align: center;
   background-color: rgba(255, 255, 255, 0);
-
-
 }
 
-.c_cart_item_amount input:focus{
-outline:none;
+.c_cart_item_amount input:focus {
+  outline: none;
   /* border:none; */
 }
-.min,.add{
+.min,
+.add {
   font-weight: 800;
   border: none;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.c_cart_item_subtotal{
+.c_cart_item_subtotal {
   width: 150px;
 }
-.c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_NT::before{
+.c_cart_item_price::before,
+.c_cart_item_subtotal::before,
+.c_cart_item_NT::before {
   content: "NT$  ";
   font-size: 13px;
 }
-.c_cart_item_cut_NT::before{
+.c_cart_item_cut_NT::before {
   content: "-NT$  ";
   font-size: 13px;
 }
-.c_cart_item td, .c_cart_item th {
+.c_cart_item td,
+.c_cart_item th {
   vertical-align: middle;
   /* 使Table欄位垂直置中 */
-  border-top: 0px ;
+  border-top: 0px;
   padding: 0.8rem;
 }
-.c_cart_item tr{
-  border-bottom: 5px solid #F7F4EE;
+.c_cart_item tr {
+  border-bottom: 5px solid #f7f4ee;
 }
-.c_big_total_box{
-padding:  5% 9%;
-line-height: 2;
+.c_big_total_box {
+  padding: 5% 9%;
+  line-height: 2;
 }
-.c_cart_total_list{
-display: flex;
-max-width: 300px;
+.c_cart_total_list {
+  display: flex;
+  max-width: 300px;
   margin: 0 auto;
-justify-content: space-between;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 500;
-  margin-right:8%;
-
+  margin-right: 8%;
 }
 
-.c_blue_line{
+.c_blue_line {
   border-bottom: 1px solid var(--mainblue);
   margin: 2%;
 }
 
-
-
-.delete svg{
+.delete svg {
   width: 17px;
-  fill:var(--maingray);
-cursor: pointer;
+  fill: var(--maingray);
+  cursor: pointer;
 }
-
-
 
 .c_yellow_deleteAll {
   max-width: 1028px;
@@ -221,27 +213,46 @@ cursor: pointer;
   padding: 1%;
   margin: 0 auto;
   color: var(--maindarkgray);
- font-size: 13px;
+  font-size: 13px;
   text-align: right;
   cursor: pointer;
 }
 
-.c_yellow_deleteAll svg{
+.c_yellow_deleteAll svg {
   width: 13px;
   height: 13px;
-  fill:var(--maindarkgray);
+  fill: var(--maindarkgray);
   margin-right: 5px;
   margin-bottom: 1px;
-
 }
 /* 藍色區塊 */
-.c_blue_sale_box{
+.c_blue_sale_box {
   max-width: 1028px;
   margin: 0 auto;
   height: 300px;
   background-color: var(--mainblue);
 }
 
+.c_cart_many_dog {
+  position: relative;
+}
+.c_cart_many_dog .c_dogs {
+  max-width: 500px;
+  margin: 10% 0% 2% 15%;
+}
+.c_dogFeed01,
+.c_dogFeed02 {
+  position: absolute;
+  max-width: 70px;
+}
+.c_dogFeed01 {
+  bottom: 50px;
+  left: 165px;
+}
+.c_dogFeed02 {
+  bottom: 50px;
+  right: 45px;
+}
 
 /* 大總結金額 */
 
@@ -251,51 +262,44 @@ cursor: pointer;
   vertical-align: middle;
 }
 
-.custom-control-input:checked~.custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
   border-color: var(--mainblue);
-  background-color:var(--mainblue);
+  background-color: var(--mainblue);
 }
-.c_NOitem{
+.c_NOitem {
   display: none;
   position: relative;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
   margin-top: 10%;
-
 }
-.c_NOitem p{
+.c_NOitem p {
   max-width: 280px;
   margin: 5% auto;
- font-size: 22px;
+  font-size: 22px;
   color: var(--maindarkgray);
-
-
-  
 }
-.c_NOitem img{
+.c_NOitem img {
   /* position: absolute; */
   max-width: 155px;
-
-  
 }
- /*下一步*/
+/*下一步*/
 .c_btn_box {
   max-width: 600px;
   margin: 10% auto;
   justify-content: center;
-
-
 }
 
 .c_btn_box a {
   color: var(--maindarkgray);
   text-decoration: none;
-
 }
 
-.c_btn_forward, .c_btn_next, .c_btn_home {
+.c_btn_forward,
+.c_btn_next,
+.c_btn_home {
   max-width: 200px;
   background-color: var(--mainyellow);
   border-radius: 50px;
@@ -305,10 +309,9 @@ cursor: pointer;
 }
 
 /* 手機版關掉 */
-.c_cart_Mobile_box{
+.c_cart_Mobile_box {
   display: none;
-
-      }
+}
 @media (max-width: 414px) {
   /* 上面長條黃黃 */
   .c_yellow_check {
@@ -339,186 +342,166 @@ cursor: pointer;
   }
 
   /* -------------------------購物車項目------------------------------------------------------- */
-  .c_cart_Mobile_box{
-
+  .c_cart_Mobile_box {
     display: block;
     margin-bottom: 0;
-  
-        }
-        .c_cart_item thead{
-            display: none;
-        }
-        .c_cart_item {
-            display: none;
-        }
-        .c_cart_item_title{
-          padding: 2%;
-          font-size: 12px;
-        }
- 
-    .c_cart_total_list{
-        font-size: 14px;
- 
-    }
-    .c_cart_Mobile_li{
-      position: relative;
-      max-width: 350px;
-    }
-    .c_cart_Mobile_item{
-      position: relative;
-        max-width: 350px;
-        margin: 2% auto 2% auto;
-        /* padding: 5%; */
-        font-size: 14px;
-        text-align: center;
-        background-color: #fff;
-     z-index: 5;
-        overflow: hidden;
-      
-    }
-    
-    .c_cart_Mobile_item td, .c_cart_Mobile_item th {
-        vertical-align: middle;
-        /* 使Table欄位垂直置中 */
-        border-top: 0px ;
-        padding: 0.6rem;
-    }
-    
-    
-    .c_cart_item_pic{
-       max-width: 80px;
-       max-height: 80px;
-   
-        vertical-align: middle;
- 
-    }
-    
-    .c_cart_item_name{
-        vertical-align: middle;
-     
-       max-width:250px; 
-        text-align: left; 
-        font-size: 12px;
-        margin-bottom: 5%;
-    }
-    .c_cart_item_content{
+  }
+  .c_cart_item thead {
+    display: none;
+  }
+  .c_cart_item {
+    display: none;
+  }
+  .c_cart_item_title {
+    padding: 2%;
+    font-size: 12px;
+  }
 
-      max-width:250px; 
-     
-       text-align: left; 
-       font-size: 11px;
-       margin-left: 0;
-       margin-bottom: 3%;
-    }
-    .c_cart_item_blueBTN_size,.c_cart_item_blueBTN_time{
-     position: relative;
+  .c_cart_total_list {
+    font-size: 14px;
+  }
+  .c_cart_Mobile_li {
+    position: relative;
+    max-width: 350px;
+  }
+  .c_cart_Mobile_item {
+    position: relative;
+    max-width: 350px;
+    margin: 2% auto 2% auto;
+    /* padding: 5%; */
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  .c_cart_Mobile_item td,
+  .c_cart_Mobile_item th {
+    vertical-align: middle;
+    /* 使Table欄位垂直置中 */
+    border-top: 0px;
+    padding: 0.6rem;
+  }
+
+  .c_cart_item_pic {
+    max-width: 80px;
+    max-height: 80px;
+
+    vertical-align: middle;
+  }
+
+  .c_cart_item_name {
+    vertical-align: middle;
+
+    max-width: 250px;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5%;
+  }
+  .c_cart_item_content {
+    max-width: 250px;
+
+    text-align: left;
+    font-size: 11px;
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
+  .c_cart_item_blueBTN_size,
+  .c_cart_item_blueBTN_time {
+    position: relative;
     width: 100px;
-      margin: 0 auto;
-     background-color: var(--mainblue);
-     color: #fff;
-     
-     border-radius: 50px;
-     text-align: center;
-     cursor: pointer;
-    }
-    .c_cart_item_blueBTN_size svg,.c_cart_item_blueBTN_time svg{
-      position: absolute;
-    
-      width: 10px;
-      height: 10px;
-      fill:#fff;
-    right:5px;
-    top:3px;
-    
-    }
-.c_Mobile_item_up{
-  margin:5% 1% 0 1%;
-}
+    margin: 0 auto;
+    background-color: var(--mainblue);
+    color: #fff;
 
-    .c_Mobile_item_down{
-max-width: 360px;
-margin: 4% 0 5% 0;
-/* margin-top: 5%; */
-justify-content: space-between;
-    }
-    .c_cart_item_subtotal {
-        max-width:100px; 
-    
-    }
-    .c_cart_item_amount{
-     
-        max-width: 90px;
-    
-        font-size: 13px;
-    
-    
-    }
-    .c_cart_itemAmount{
-    
-        max-width: 40px;
-    
-    
-    }
-    
-    .c_cart_item_subtotal{
-        width: 100px;
-    }
-    .c_cart_item_price::before,.c_cart_item_subtotal::before,.c_cart_item_NT::before,  .c_cart_item_cut_NT::before{
-    
-        font-size: 11px;
-    }
-  
-    .c_tr_bottom{
-        border-bottom: 10px solid #F7F4EE;
-      
-    }
-    
-    .c_cart_item_price{
-        opacity: .6;
-    }
-/* 手機板 刪除 */
-.c_cart_Mobile_delete{
-  position:absolute;
- width:20%;
- height: 99%;
-  
-  background-color: var(--maindarkgray);
-  text-align: right;
-  
-  top:1px;
-  right: 0;
-  z-index:0;
-}
-.c_cart_Mobile_delete svg{
- margin-right: 25px;
-margin-top: 10px;
- 
-}
-    /* 甚麼都沒有 */
-    .c_NOitem{
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .c_cart_item_blueBTN_size svg,
+  .c_cart_item_blueBTN_time svg {
+    position: absolute;
 
-      margin-top: 50%;
-    
-    }
-    .c_NOitem p{
-      max-width: 280px;
-      margin: 5% auto;
-     font-size: 18px;
- 
-    
-    
-      
-    }
-    .c_NOitem img{
-   
-      max-width: 130px;
-  
-      
-    }
-        /*下一步*/
-        .c_btn_forward, .c_btn_next {
-          max-width: 150px;
-          padding: 1% 5%;
-          margin: 20% 3%;
-      }
+    width: 10px;
+    height: 10px;
+    fill: #fff;
+    right: 5px;
+    top: 3px;
+  }
+  .c_Mobile_item_up {
+    margin: 5% 1% 0 1%;
+  }
+
+  .c_Mobile_item_down {
+    max-width: 360px;
+    margin: 4% 0 5% 0;
+    /* margin-top: 5%; */
+    justify-content: space-between;
+  }
+  .c_cart_item_subtotal {
+    max-width: 100px;
+  }
+  .c_cart_item_amount {
+    max-width: 90px;
+
+    font-size: 13px;
+  }
+  .c_cart_itemAmount {
+    max-width: 40px;
+  }
+
+  .c_cart_item_subtotal {
+    width: 100px;
+  }
+  .c_cart_item_price::before,
+  .c_cart_item_subtotal::before,
+  .c_cart_item_NT::before,
+  .c_cart_item_cut_NT::before {
+    font-size: 11px;
+  }
+
+  .c_tr_bottom {
+    border-bottom: 10px solid #f7f4ee;
+  }
+
+  .c_cart_item_price {
+    opacity: 0.6;
+  }
+  /* 手機板 刪除 */
+  .c_cart_Mobile_delete {
+    position: absolute;
+    width: 20%;
+    height: 99%;
+
+    background-color: var(--maindarkgray);
+    text-align: right;
+
+    top: 1px;
+    right: 0;
+    z-index: 0;
+  }
+  .c_cart_Mobile_delete svg {
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+  /* 甚麼都沒有 */
+  .c_NOitem {
+    margin-top: 50%;
+  }
+  .c_NOitem p {
+    max-width: 280px;
+    margin: 5% auto;
+    font-size: 18px;
+  }
+  .c_NOitem img {
+    max-width: 130px;
+  }
+  /*下一步*/
+  .c_btn_forward,
+  .c_btn_next {
+    max-width: 150px;
+    padding: 1% 5%;
+    margin: 20% 3%;
+  }
 }
