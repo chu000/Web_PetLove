@@ -228,7 +228,7 @@ $(window).scroll(function () {
 
   let windowScrollTop = $(this).scrollTop();
 
-  if (windowScrollTop > 650) {
+  if (windowScrollTop > 730) {
     $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
   } else {
     $(".c_dogFeed01")
