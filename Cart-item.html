@@ -1464,15 +1464,26 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-        $('.c_Favorite_box_pic svg').on('click',function () {
-  //        let heartcss = $(".c_Favorite_box_pic svg").css("fill");
-  //  if(heartcss  == "var(--maindarkgray)") {
-    $(this).css('fill', '#FF9A9A');
-  //  }
          
+        $('.c_Favorite_box_pic svg').on('click',function () {
+          var heartcss = $(".c_Favorite_box_pic  svg").css("fill");
+          console.log('0',heartcss)
+   if(heartcss  = "#707070") {
+     console.log('1',heartcss)
+    $(this).css('fill', '#FF9A9A');
+   }
+ else if(heartcss  = '#FF9A9A'){
+    console.log('2',heartcss)
+    $(this).css('fill', '#707070');
+   }
 
-     
         })
+
+
+
+
+
+
 
         $(document).ready(function () {
         $(".c_gallery_slick").slick({
