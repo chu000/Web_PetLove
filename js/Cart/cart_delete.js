@@ -58,7 +58,7 @@
       var width = $('.c_cart_Mobile_delete:first').width();   
       var left = $(this).css('left');
       if(parseInt(left)<0){
-          $(this).animate({left:0},500);  // 恢復原狀
+          $(this).animate({left:0},200);  // 恢復原狀
       }
   });
 
