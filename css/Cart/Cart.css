@@ -225,14 +225,34 @@
   margin-right: 5px;
   margin-bottom: 1px;
 }
-/* 藍色區塊 */
+/* 藍色區塊 促銷活動 */
 .c_blue_sale_box {
   max-width: 1028px;
   margin: 0 auto;
   height: 300px;
   background-color: var(--mainblue);
+  font-size: 16px;
+  padding: 3%;
 }
 
+.c_SalesBox{
+  color: #F7F4EE;
+}
+.c_SalesBox_title{
+  text-align: center;
+  font-size: 22px;
+  border-bottom: 1px solid #F7F4EE;
+  padding: 1%;
+}
+.c_SalesBox_kind{
+  color: var(--maindarkgray);
+border-radius: 50px;
+background-color: #F7F4EE;
+font-size: 14px;
+padding: 0 10px;
+margin-right: 1%;
+}
+/* 狗狗插圖 */
 .c_cart_many_dog {
   position: relative;
 }
@@ -271,6 +291,8 @@
   border-color: var(--mainblue);
   background-color: var(--mainblue);
 }
+
+/* ---購物車沒有商品時 */
 .c_NOitem {
   display: none;
   position: relative;
@@ -316,6 +338,226 @@
 .c_cart_Mobile_box {
   display: none;
 }
+
+/* -----------外掛slick  ---------輪播圖片-----調整 */
+
+
+.c_gallery_slick {
+  position: relative;
+  margin: 0 auto;
+  max-width: 450px;
+
+}
+
+.c_Favorite_box{
+  max-width: 180px;
+  /* margin: 0 10px; */
+  text-align: center;
+
+}
+.c_Favorite_box_pic{
+  position: relative;
+
+
+  /* min-width: 100px; */
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+
+}
+.c_Favorite_box_pic img{
+ width: 100%;
+  /* max-height: 100%; */
+  max-width: 50px;
+  height: 150px;
+}
+
+/* .c_gallery_slick img{
+  max-width: 120px;
+  min-width: 100px;
+  border-radius: 10px;
+  margin: 0 10px;
+} */
+
+/* 我的最愛 心惇商品切換 */
+.l_recommend {
+  width: 500px;
+
+
+}
+
+.carousel-cell {
+  width: 200px;
+  height: 400px;
+  margin-right: 1px;
+  /* background: #8C8; */
+  text-align: center;
+  counter-increment: carousel-cell;
+
+
+}
+
+
+
+.l_img {
+  position: relative;
+  border-radius: 30px;
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10% 3%;
+
+
+}
+.l_img img {
+  width: 100%;
+height: 100%;
+  /* max-height: 130px; */
+ vertical-align: middle;
+
+}
+.l_img img {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+h4 {
+  font-size: 14px;
+  color: #707070;
+  /* letter-spacing: 1px; */
+
+
+
+}
+
+h5 {
+  font-size: 16px;
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #707070;
+  letter-spacing: 1px;
+
+}
+
+
+
+.flickity-button-icon {
+  fill: #ccc;
+
+}
+
+.flickity-prev-next-button {
+  width: 15px;
+  height: 15px;
+  background: none;
+  border: 3px solid #ccc;
+
+}
+
+
+.flickity-prev-next-button.next {
+  right: -80px;
+  z-index: 99;
+  display: block;
+
+}
+
+.flickity-prev-next-button.previous {
+  left: -80px;
+  z-index: 99;
+  display: block;
+
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.l_button_box {
+  background-color: #C3C3C3;
+  opacity: 0.4;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 30px;
+  display: none;
+}
+
+.l_img:hover .l_button_box {
+  top: 0;
+  display: block;
+}
+
+.l_img:hover button {
+
+  transform: translateX(25px) translateY(-50px);
+  transition: .5s;
+  display: block;
+}
+
+.l_img button {
+  display: none;
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  /* transform: translatey(150px); */
+  position: absolute;
+  transform: translateX(-170px) translateY(200px);
+
+  z-index: 3;
+
+}
+
+.l_img button:hover {
+  background-color: #F9DD83;
+}
+
+.l_img:hover .l_icon_heart {
+  display: block;
+}
+
+.l_icon_heart {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  left: 147px;
+  top: 15px;
+  /* display: none; */
+
+
+}
+
+.l_icon_heart:hover .icon_heart {
+  fill: #FF9A9A;
+  stroke: #89A7C2;
+}
+
+.l_icon_heart svg {
+  width: 80%;
+  height: 70%;
+  fill: none;
+  stroke: #89A7C2;
+  stroke-width: 2.5px;
+  /* border: 1px solid red; */
+
+  z-index: 4;
+
+
+}
+
+
+
+
+
+
 @media (max-width: 414px) {
   /* 上面長條黃黃 */
   .c_yellow_check {
@@ -473,13 +715,16 @@
   .c_cart_item_price {
     opacity: 0.6;
   }
-
+/* 促銷活動 */
   .c_blue_sale_box{
     max-width: 350px;
   }
+
+  /* 狗狗插圖 */
   .c_cart_many_dog{
 display: none;
   }
+  /* 大結算 */
   .c_big_total_box{
     padding: 6% 3%;
     margin: 0;
@@ -509,7 +754,8 @@ display: none;
     margin-right: 25px;
     margin-top: 10px;
   }
-  /* 甚麼都沒有 */
+
+/* ---購物車沒有商品時 */
   .c_NOitem {
     margin-top: 50%;
   }
