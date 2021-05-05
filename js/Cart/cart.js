@@ -228,7 +228,7 @@ $(window).scroll(function () {
 
   let windowScrollTop = $(this).scrollTop();
 
-  if (windowScrollTop > 730) {
+  if (windowScrollTop > 560) {
     $(".c_dogFeed01").css("opacity", "1").css("transform", "translateY(0px)");
   } else {
     $(".c_dogFeed01")
@@ -236,7 +236,7 @@ $(window).scroll(function () {
       .css("transform", "translateY(-120px)");
   }
 
-  if (windowScrollTop > 700) {
+  if (windowScrollTop > 750) {
     $(".c_dogFeed02").css("opacity", "1").css("transform", "translateY(0px)");
   } else {
     $(".c_dogFeed02")
