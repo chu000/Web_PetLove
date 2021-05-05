@@ -55,7 +55,7 @@ $(".c_foot_auto").click( function () {
   $('.c_fast_email').val("happymama@gmail.com");
   $('.c_fast_receiptNAME').val("阮心鐘曼");
   $('.c_fast_addressNAME').val("阮心鐘曼");
-  $('.c_fast_address').val("松勇路69巷2號");
+  $('.c_fast_address').val("復興南路一段390號");
   $('.c_fast_card_number01').val("5412");
   $('.c_fast_card_number02').val("3456");
   $('.c_fast_card_number03').val("7890");

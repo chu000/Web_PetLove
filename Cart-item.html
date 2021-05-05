@@ -1145,7 +1145,7 @@
                 <img src="./images/Cart/ex_sale/cat_snacks_43.jpg" alt="" />
                 <div class="c_grakBG"></div></a>
                 <button class="c_Favorite_btn"> 加入購物車</button>
-                <svg>
+                <svg class="heart-button">
                   <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
                 </svg>
               </div>
@@ -1162,7 +1162,7 @@
               <img src="./images/Cart/ex_sale/cat_snacks_20.jpg" alt="" />
               <div class="c_grakBG"></div></a>
               <button class="c_Favorite_btn"> 加入購物車</button>
-              <svg>
+              <svg class="heart-button">
                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
               </svg>
             </div>
@@ -1179,7 +1179,7 @@
               <img src="./images/Cart/ex_sale/dog_snacks_10.jpg" alt="" />
               <div class="c_grakBG"></div></a>
               <button class="c_Favorite_btn"> 加入購物車</button>
-              <svg>
+              <svg class="heart-button">
                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
               </svg>
             </div>
@@ -1196,7 +1196,7 @@
               <img src="./images/Cart/ex_sale/dog_snacks_18.jpg" alt="" />
               <div class="c_grakBG"></div></a>
               <button class="c_Favorite_btn"> 加入購物車</button>
-              <svg>
+              <svg class="heart-button">
                 <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
               </svg>
             </div>
@@ -1212,7 +1212,7 @@
             <img src="./images/Cart/ex_sale/cat_snacks_26.jpg" alt="" />
             <div class="c_grakBG"></div></a>
             <button class="c_Favorite_btn"> 加入購物車</button>
-            <svg>
+            <svg class="heart-button">
               <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-heart"></use>
             </svg>
           </div>
@@ -1465,21 +1465,32 @@
     ></script>
     <script>
          
-        $('.c_Favorite_box_pic svg').on('click',function () {
-          var heartcss = $(".c_Favorite_box_pic  svg").css("fill");
-          console.log('0',heartcss)
-   if(heartcss  = "#707070") {
-     console.log('1',heartcss)
-    $(this).css('fill', '#FF9A9A');
-   }
- else if(heartcss  = '#FF9A9A'){
-    console.log('2',heartcss)
-    $(this).css('fill', '#707070');
-   }
+//         $('.c_Favorite_box_pic svg').on('click',function () {
+//           var heartcss = $(".c_Favorite_box_pic  svg").css("fill");
+//           console.log('0',heartcss)
+//    if(heartcss  = "#707070") {
+//      console.log('1',heartcss)
+//     $(this).css('fill', '#FF9A9A');
+//    }
+//  else if(heartcss  = '#FF9A9A'){
+//     console.log('2',heartcss)
+//     $(this).css('fill', '#707070');
+//    }
 
-        })
+//         })
+
+        let heart = document.getElementsByClassName('heart-button')
+for (let h of heart) {
 
 
+    h.addEventListener("click", function (e) {
+        // h.style.transform = "scale(1.2)";
+        h.classList.toggle('c_heart_color')
+        // h.classList.toggle("#span_big");
+
+        console.log(h)
+    });
+}
 
 
 

@@ -154,7 +154,7 @@ $(function () {
     // 手機
     let rm = $(".c_cart_Mobile_box li").length;
     $(".c_title_mobile_itemAmount").text(rm);
-
+//當商品項目都為0時 把購物車list都清空
     if ((r === 0) | (rm === 0)) {
       $(".c_cart_BIGbox").empty();
       $(".c_NOitem").show();

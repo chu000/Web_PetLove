@@ -7,23 +7,6 @@
 .c_textcolor_fff {
   color: #fff;
 }
-/* 上面長條黃黃 */
-.c_yellow_check {
-  max-width: 1028px;
-  background-color: var(--mainyellow);
-  padding: 2%;
-  margin: 0 auto;
-  color: var(--maindarkgray);
-  margin-bottom: 8%;
-  text-align: center;
-}
-
-.c_yellow_check svg {
-  width: 25px;
-  height: 25px;
-  fill: #fff;
-  margin: 0 1%;
-}
 
 /*----------進度-------------*/
 
@@ -285,28 +268,7 @@
   /* position: absolute; */
   max-width: 155px;
 }
-/*下一步*/
-.c_btn_box {
-  max-width: 600px;
-  margin: 10% auto;
-  justify-content: center;
-}
 
-.c_btn_box a {
-  color: var(--maindarkgray);
-  text-decoration: none;
-}
-
-.c_btn_forward,
-.c_btn_next,
-.c_btn_home {
-  max-width: 200px;
-  background-color: var(--mainyellow);
-  border-radius: 50px;
-  padding: 1% 5%;
-  text-align: center;
-  margin: 5%;
-}
 
 
 /* 藍色區塊 促銷活動 */
@@ -444,6 +406,138 @@ display: block;
   fill: #FF9A9A;
 
 }
+.c_heart_color{
+  fill: #FF9A9A;
+}
+/*下一步*/
+.c_btn_box {
+  max-width: 600px;
+  margin: 10% auto;
+  justify-content: center;
+}
+
+.c_btn_box a {
+  color: var(--maindarkgray);
+  text-decoration: none;
+}
+
+.c_btn_forward,
+.c_btn_next,
+.c_btn_home {
+  max-width: 200px;
+  background-color: var(--mainyellow);
+  border-radius: 50px;
+  padding: 1% 5%;
+  text-align: center;
+  margin: 5%;
+}
+
+/* 上面長條黃黃 */
+.c_yellow_check {
+  max-width: 1028px;
+  background-color: var(--mainyellow);
+  padding: 2%;
+  margin: 0 auto;
+  color: var(--maindarkgray);
+  margin-bottom: 8%;
+  text-align: center;
+  justify-content: center;
+}
+
+.c_little_check svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  margin: 0 1%;
+}
+
+/* -----------------------完成頁資料表-------------------------- */
+.c_cart_OrdererName{
+  max-width: 380px;
+  margin: 0 auto;
+  font-size: 14px;
+  border: 0;
+  color: var(--maindarkgray);
+}
+.c_cart_OrdererName td ,.c_cart_OrdererName th{
+padding: 2%;
+  border: 0;
+}
+.c_cart_OrdererName td{
+  padding-left: 8%;
+}
+.c_cart_OrdererName th{
+  text-align: right;
+  width: 100px;
+
+}
+
+/* 完成頁 訂購品項 */
+.c_cart_Orderlist{
+
+  font-size: 14px;
+  vertical-align: middle;
+  justify-content: center;
+  margin-bottom: 3%;
+  /* padding-bottom: 5%;
+  border-bottom: 1px solid var(--maindarkgray); */
+}
+.c_cart_Orderlist::after{
+
+  content: "";
+  margin: 0 auto;
+  width: 600px;
+  height: 1px;
+  margin-top: 5%;
+  background-color: #80808034;
+}
+
+.c_cart_Orderlist_pic{
+
+width: 120px;
+height: 120px;
+background-color: #fff;
+overflow: hidden;
+padding: 1%;
+margin-right: 5%;
+
+}
+.c_cart_Orderlist_pic img{
+width: 100%;
+height: 100%;
+  object-fit: contain;
+  /* object-position: center center; */
+ 
+  }
+
+.c_cart_Orderlist_name{
+  max-width:400px;
+ margin: 2% 0;
+ min-height: 45px;
+}
+.c_cart_Orderlist_content{
+margin-left: 1%;
+  margin-top: 2%;
+}
+.c_cart_Orderlist_content th,.c_cart_Orderlist_content td{
+  width:80px;
+  padding: 1%;
+  }
+
+.c_yellow_radius{
+  
+  border-radius: 50px;
+  background-color: var(--mainyellow);
+  padding: 1% 10%;
+  margin-right: 5%;
+  font-size: 13px;
+  
+}
+/* .c_cart_Orderlist_content_item{
+ 
+} */
+
+
 
 
 /* 手機版關掉 */
@@ -496,12 +590,8 @@ font-size: 10px;
   margin-bottom: 5%;
 }
 
-  /* 上面長條黃黃 */
-  .c_yellow_check {
-    padding: 5%;
 
-    margin-bottom: 8%;
-  }
+
   /*進度----------*/
   .c_sopbox {
     font-size: 11px;
@@ -710,5 +800,64 @@ display: none;
     max-width: 150px;
     padding: 1% 5%;
     margin: 20% 3%;
+  }
+
+
+
+  
+  /* 上面長條黃黃 */
+  .c_yellow_check {
+    padding: 5%;
+
+    margin-bottom: 8%;
+  }
+/* -----------------------完成頁資料表-------------------------- */
+.c_cart_Orderlist{
+
+  margin-bottom: 8%;
+
+}
+.c_cart_Orderlist::after{
+
+  content: "";
+ 
+  width: 300px;
+  height: 1px;
+  margin-top: 8%;
+
+}
+.c_cart_Orderlist_pic{
+
+  min-width: 120px;
+  min-height: 120px;
+  margin-right: 0;
+  margin-bottom: 8%;
+  
+  }
+ 
+  .c_cart_Orderlist{
+
+    font-size: 12px;
+
+  }
+  .c_cart_Orderlist_name{
+    max-width:400px;
+   margin: 2% 0;
+   min-height: 45px;
+  }
+  .c_cart_Orderlist_content{
+  margin-left: 0;
+    margin-top: 2%;
+   
+  }
+ 
+  
+  .c_yellow_radius{
+  
+   
+    padding: 1% 15%;
+    margin-right: 2%;
+    font-size: 10px;
+    
   }
 }
