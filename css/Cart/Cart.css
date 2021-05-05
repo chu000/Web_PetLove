@@ -392,7 +392,12 @@ transform: translateX(0px) translateY(50px);
 display: block;
 
 }
-.c_Favorite_box_pic svg{
+
+.heart-button:hover {
+  fill: #FF9A9A;
+
+}
+.heart-button{
   position: absolute;
   z-index: 20;
   top: 5px;
@@ -402,10 +407,7 @@ display: block;
   height:20px;
   cursor: pointer;
 }
-.c_Favorite_box_pic svg:hover {
-  fill: #FF9A9A;
 
-}
 .c_heart_color{
   fill: #FF9A9A;
 }
