@@ -343,4 +343,18 @@
         padding: 1% 5%;
         margin: 20% 3%;
     }
+
+
+    .c_donate_complete_box p {
+    
+           font-size: 14px;
+       }
+       
+       .c_donate_atm_list {
+           max-width: 250px;
+           font-size: 14px;
+  
+           border: 0px solid var(--mainblue);
+        
+       }
 }
