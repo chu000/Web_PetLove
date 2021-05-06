@@ -65,7 +65,7 @@ $(".c_foot_auto").click( function () {
   $('.c_fast_security').val("603");
   $('.c_fast_cardName').val("心鐘");
   $('.c_fast_account_password').val("petword0527");
-  $('.c_fast_verification"').val("0527");
+  $('.c_fast_verification').val("0527");
   $('.c_creditCand_Svg').eq(1).css("fill","#89A7C2");
   
 

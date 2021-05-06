@@ -41,12 +41,13 @@ padding-top: 1%;
 }
 .c_account_eye{
     position: absolute;
-    fill:var(--mainblue);
+    fill:var(--maindarkgray);
     width: 25px;
     height: 25px;
     top:6px;
     right:15px;
     cursor: pointer;
+    opacity:.3;
 }
 
 
