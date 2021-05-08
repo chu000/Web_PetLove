@@ -1,7 +1,11 @@
+.c_account_big_box{
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
 .c_Account_title{
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-bottom: 5%;
     text-align: center;
 }
