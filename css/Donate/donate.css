@@ -281,11 +281,13 @@ width: 100%;
     /* padding: 1%; */
     padding-left: 10%;
   }
-  .c_foot_dog {
+  .c_footDog02,.c_footDog01 {
     display: none;
   }
 
-
+.c_foot_auto{
+  right: 2%;
+}
 
 
 

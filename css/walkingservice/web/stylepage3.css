@@ -1,0 +1,162 @@
+:root {
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+
+}
+
+@media only screen and (min-width: 1128px) {
+
+    /* map */
+    #app {
+        margin-top: -1300px;
+        height: 2400px;
+    }
+
+    .map {
+        transform: scale(0.27);
+    }
+
+
+
+    path {
+        stroke: #fff;
+        fill: var(--mainyellow);
+        transition: 0.5s;
+    }
+
+
+
+    .title_area {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+        font-size: 30px;
+    }
+
+    h1 span {
+        color: #B99362;
+        padding-left: 10px;
+    }
+
+    hr {
+        width: 100px;
+        margin-left: 0;
+        border: none;
+        border-bottom: solid 2px white;
+    }
+
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+    }
+
+    .forcast h2 {
+        margin-top: 20px;
+    }
+
+    .n_list {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 70px;
+
+    }
+
+    #Path_12659 {
+        stroke: #CCCCCC;
+    }
+
+    #Ellipse_59 {
+        fill: var(--maingray);
+
+    }
+
+    #Ellipse_60 {
+        fill: var(--mainyellow);
+    }
+
+    #_2 {
+        font-weight: 400;
+        fill: var(--maindarkgray);
+    }
+
+    .n_select {
+        color: var(--mainblue);
+        font-size: 22px;
+        letter-spacing: 6px;
+        margin-left: 400px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
+    .n_list1 {
+        display: none;
+    }
+
+    .n_walking_site_wrap {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .n_walking_site {
+        line-height: 38px;
+        margin-right: 10px;
+    }
+
+    .form-control {
+        border-radius: 10px !important;
+        width: 210px !important;
+        color: var(--maindarkgray);
+        border: 1px solid var(--maingray);
+        border:none;
+        height: 38px;
+    }
+    .form-control:focus {
+        box-shadow: none;
+        border:none;
+     }
+
+    .n_walking_site_wrapAll {
+        display: flex;
+        justify-content: center;
+    }
+
+    .n_map_taipei {
+        transform: scale(0.35);
+        margin-top: -450px;
+        margin-bottom: -500px;
+    }
+
+    .n_booking_buttonWrap2 {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .n_booking_button2 {
+        border: 0;
+        height: 35px;
+        width: 150px;
+        background: var(--mainblue);
+        border-radius: 18px;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 35px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+
+    input {
+        font-style: normal;
+        font-size: 16px;
+    }
+
+}

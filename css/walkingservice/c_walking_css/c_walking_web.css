@@ -1,0 +1,34 @@
+:root {
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+
+}
+
+@media only screen and (min-width: 1128px) {
+
+
+
+   
+
+
+
+
+    .n_list {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 70px;
+margin-bottom:2%;
+    }
+
+
+    .n_list1 {
+        display: none;
+    }
+
+
+
+
+}

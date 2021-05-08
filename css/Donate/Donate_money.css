@@ -216,7 +216,7 @@
 
 .c_donate_btn_box {
     max-width: 600px;
-    margin: 10% auto;
+    margin:5% auto;
     justify-content: center;
 
 
@@ -341,7 +341,7 @@
     .c_donate_btn_forward, .c_donate_btn_next {
         max-width: 150px;
         padding: 1% 5%;
-        margin: 20% 3%;
+        margin: 13% 3%;
     }
 
 
