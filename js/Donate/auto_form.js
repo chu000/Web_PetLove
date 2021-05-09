@@ -23,6 +23,9 @@ $(".c_foot_auto").click( function () {
   $('.c_fast_account_password').val("petword0527");
   $('.c_fast_verification').val("0527");
   $('.c_creditCand_Svg').eq(1).css("fill","#89A7C2");
+  $('.c_fast_walk_address').val("台北市大安區復興南路一段390號");
+  $('.c_pet_name').val("Luku");
+  $('.c_pet_age').val("7歲");
   
   
 

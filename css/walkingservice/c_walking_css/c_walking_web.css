@@ -14,27 +14,17 @@
   color: var(--mainblue);
 }
 
-/* .c_walking_form_selectcheck input{
-    appearance: none;  
-
-    -webkit-appearance: none; 
- border: 2px solid var(--mainblue) ;
-border-radius: 50%;
-margin-top: 1%  ;
-
-opacity: 1;
- outline: none; 
-width: 15px;
-height: 15px;
-background-color: #fff;
-} */
 .c_donate_money_form .c_walking_form-group {
   margin-top: 4%;
   margin-right: 0;
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
+.c_walk_first_row {
+
+  margin-left: 2%;
+}
+.c_walk_first_row .c_receipt_dis{
+
+color: rgb(158, 158, 158);
 }
 
 .c_dogsize_each {
@@ -52,6 +42,7 @@ background-color: #fff;
   height: 40px;
   stroke: var(--maindarkgray);
 }
+/* 合計 */
 .c_walk_sum{
     display: flex;
     justify-content: space-between;
@@ -61,6 +52,32 @@ background-color: #fff;
 }
 .c_walk_sum p{
     margin: 1% 5%;
+}
+/* 完成頁 */
+.c_yellow_check svg{
+  width: 25px;
+  height: 25px;
+  margin-right: 1%;
+}
+.c_walk_complete_list{
+  margin: 0 auto;
+  max-width: 600px;
+
+
+}
+.c_walk_complete_list tr{
+  border-bottom: 1px solid rgba(158, 158, 158, 0.589);
+}
+.c_walk_complete_list tr:last-child{
+  border-bottom: 0px ;
+}
+.c_walk_complete_list th{
+  width: 200px;
+  padding: 4%;
+}
+.c_walk_complete_list td{
+  width: 300px;
+  padding: 4%;
 }
 
 @media (max-width: 414px) {
@@ -93,4 +110,25 @@ background-color: #fff;
     width: 30px;
     height: 30px;
   }
+
+  /* 完成頁 */
+.c_yellow_check svg{
+  width: 20px;
+  height: 20px;
+  margin-right: 2%;
+}
+.c_walk_complete_list{
+ font-size: 14px;
+
+
+}
+
+.c_walk_complete_list th{
+  max-width: 150px;
+
+}
+.c_walk_complete_list td{
+  max-width: 200px;
+
+}
 }

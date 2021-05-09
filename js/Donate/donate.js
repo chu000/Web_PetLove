@@ -14,12 +14,14 @@ $(".c_receiptCheck").on("change", function (event) {
   //     alert("checked");}
   if ($(this).is(":checked") == true) {
     $(".c_receipt_dis").attr("disabled", true);
+    $(".c_receipt_dis").css("color", "rgb(158, 158, 158)");
     $(".city-selector ")
       .children(".form-group")
       .children(".form-control")
       .attr("disabled", true);
   } else {
     $(".c_receipt_dis").attr("disabled", false);
+    $(".c_receipt_dis").css("color", "var(--maindarkgray)");
     $(".form-control").attr("disabled", false);
   }
 });
