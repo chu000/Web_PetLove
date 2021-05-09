@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
     <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
-    <link rel="stylesheet" href="./css/walkingservice/c_walking_css/c_walking_mobile.css">
+ 
     <link rel="stylesheet" href="./css/walkingservice/c_walking_css/c_walking_web.css">
     <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
     <link rel="stylesheet" href="./css/Cart/Cart.css" type="text/css" />
@@ -928,231 +928,205 @@
  
 
   
-        <div class="c_yellow_check">
-          <!-- <svg >
-            <use xlink:href="./images/Donate/donate.svg#c_check"></use>
-          </svg> -->
-          總金額:NT$24,700</div>
+    
   
   
         <form class="c_donate_money_form">
-  
+            <div class="c_donate_form_item">
+                <div class="form-check c_donate_checkBox">
+                  <input
+                    class="form-check-input c_receiptCheck"
+                    
+                    type="checkbox" checked
+                  />
+                  <label class="form-check-label" for="defaultCheck1">
+                   修改
+                  </label>
+                </div>
+                <p>代遛服務資訊</p>
+              </div>
+            <div class="row ">
+              <div class="col-sm-6  c_walking_form-group row">
+                <label class="col-sm-4 col-form-label c_form_name ">
+                    地區
+                </label>
+      
+                <div class="col-sm-8">
+                  <input type="text" class="form-control  c_fast_donationNAME c_receipt_dis"  value="台北" disabled />
+                </div>
+              </div>
+              <div class="col-sm-6 c_walking_form-group row">
+                <label class="col-sm-4 col-form-label c_form_name ">
+                    地點
+                </label>
+      
+                <div class="col-sm-8">
+                  <input type="text" class="form-control c_fast_donationNAME c_receipt_dis"  value="大安區" disabled/>
+                </div>
+              </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-sm-6  c_walking_form-group row">
+                  <label class="col-sm-4 col-form-label c_form_name ">
+                    日期
+                  </label>
+        
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control c_fast_donationNAME c_receipt_dis"  value="2021/05/08" disabled/>
+                  </div>
+                </div>
+                <div class="col-sm-6 c_walking_form-group row">
+                  <label class="col-sm-4 col-form-label c_form_name ">
+                    時間
+                  </label>
+        
+                  <div class="col-12  col-sm-8">
+                    <input type="text" class="form-control c_fast_donationNAME c_receipt_dis"  value="18:30" disabled/>
+                  </div>
+                </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-6  c_walking_form-group row">
+                      <label class="col-sm-4 col-form-label c_form_name ">
+                        日期
+                      </label>
+            
+                      <div class="col-12 col-sm-8">
+                        <input type="text" class="form-control c_fast_donationNAME c_receipt_dis"  value="2021/05/08" disabled/>
+                      </div>
+                    </div>
+                    <div class="col-12  col-sm-6 form-group ">
+
+                    </div>
+                    </div>
+
  
+            <div class="c_donate_form_item">
   
+                <p>基本資料</p>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name ">
+                    主人姓名
+                </label>
+      
+                <div class="col-sm-8">
+                  <input type="text" class="form-control c_fast_donationNAME " placeholder="王X明" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name"> 手機號碼 </label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control c_fast_cellphone"
+                    placeholder="09XX-XXX-XXX"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label
+                  for="exampleFormControlInput1"
+                  class="col-sm-4 col-form-label "
+                >
+                其他通訊方式
+                </label>
+                <div class="col-sm-8">
+                  <input
+                    type="email"
+                    class="form-control c_fast_email"
+                    placeholder="Email or Line ID"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name"> 約定地址 </label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="台北市大安區復興南路一段390號"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name">毛孩姓名</label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="來福"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name">寵物尺寸</label>
+                <div class="col-sm-8">
+        
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label c_form_name">毛孩年紀</label>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="6歲"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label ">注意事項</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+
+
+              <div class="form-group row">
+                <label class="col-sm-4 col-form-label ">加價服務</label>
+                <div class="col-sm-8">
+                    <div class="form-check " style="margin-top: 2%;">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label c_walking_form_select_text" for="exampleRadios1">
+                        路程費(以Google地圖計算，三公里內免加錢，超過每三公里+200元)
+                    </label>
+                  </div>
+              <div class="form-check " style="margin-top: 2%;">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label c_walking_form_select_text" for="exampleRadios1">
+                    兩隻狗以上，每隻+100元(最多不可超過3隻)
+                </label>
+              </div>
+       
+      
+              <div class="form-check" style="margin-top: 2%;">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label c_walking_form_select_text" for="exampleRadios2">
+                    載送服務(一趟300元)
+                </label>
+               
+                 
+                  
+                  
+             
+              </div>
+              <div class="form-check " style="margin-top: 2%;">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label c_walking_form_select_text" for="exampleRadios1">
+                    清潔服務(清潔腳底30元)
+                </label>
+              </div>
+
+
+            </div>
+          </div>
     
   
    
   
         
-  
-          <div class="c_donate_form_item">
-            <p>請選擇付款方式</p>
-          </div>
-          <ul class="row c_donate_PayBox">
-            <li class="col-4 c_btn_credit">信用卡</li>
-            <li class="col-4 c_btn_linePay">Line Pay</li>
-            <li class="col-4 c_btn_atm">ATM</li>
-          </ul>
-  
-          <!-- box信用交易 -->
-          <div class="c_donate_pay_credit_box">
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label c_form_name">
-                信用卡卡號
-              </label>
-              <div class="row col-sm-8">
-                <input
-                type="text"
-                  class="form-control col-3 c_cardNumber c_fast_card_number01"
-                  placeholder="****"
-                  maxlength="4"
-                />
-                <input
-                type="text"
-                  class="form-control col-3 c_cardNumber c_fast_card_number02"
-                  placeholder="****"
-                  maxlength="4"
-                />
-                <input
-                type="text"
-                  class="form-control col-3 c_cardNumber c_fast_card_number03"
-                  placeholder="****"
-                  maxlength="4"
-                />
-                <input
-                type="text"
-                  class="form-control col-3 c_cardNumber c_fast_card_number04"
-                  placeholder="****"
-                  maxlength="4"
-                />
-              </div>
-            </div>
-            <div class="c_creditCandSvg_box">
-              <svg class="c_creditCand_Svg">
-                <use
-                  xlink:href="./images/Index/icomoon/symbol-defs.svg#visa-logo"
-                ></use>
-              </svg>
-              <svg class="c_creditCand_Svg">
-                <use
-                  xlink:href="./images/Index/icomoon/symbol-defs.svg#mastercard-logo"
-                ></use>
-              </svg>
-              <svg class="c_creditCand_Svg">
-                <use
-                  xlink:href="./images/Index/icomoon/symbol-defs.svg#JCB-logo"
-                ></use>
-              </svg>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label c_form_name">
-                卡片有效期限
-              </label>
-              <div class="row col-sm-8">
-                <input
-                  type="text"
-                  class="form-control col-8 col-sm-2 c_cardNumber c_fast_period01"
-                  placeholder="YY"
-                  maxlength="2"
-                />
-                <input
-                  type="text"
-                  class="form-control col-8 col-sm-2 c_cardNumber c_fast_period02"
-                  placeholder="MM"
-                  maxlength="2"
-                />
-              </div>
-            </div>
-  
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label c_form_name ">
-                信用卡安全碼(三碼)
-              </label>
-              <div class="col-sm-8">
-                <input
-                  type="text"
-                  class="form-control col-2 c_fast_security"
-                  placeholder="***"
-                  maxlength="3"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label c_form_name">
-                持卡人姓名
-              </label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control c_fast_cardName" placeholder="王X明" />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label
-                for="exampleFormControlInput1"
-                class="col-sm-4 col-form-label c_form_name"
-              >
-                Email
-              </label>
-              <div class="col-sm-8">
-                <input
-                  type="email"
-                  class="form-control c_fast_email"
-                  placeholder="name@example.com"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label c_form_name">
-                手機號碼
-              </label>
-              <div class="col-sm-8">
-                <input
-                  type="text"
-                  class="form-control c_fast_cellphone"
-                  placeholder="09XX-XXX-XXX"
-                />
-              </div>
-            </div>
-            <br /><br />
-            <p class="c_donate_note">
-              為維護交易安全本公司已配合國際組織全面採用信用卡3DS
-              2.0交易授權機制，如遇交易失敗請洽詢發卡銀行或更換銀行卡片後重新交易。<br />
-              To protect transaction security, ECPay has complied with
-              international organizations to fully adopt the credit card 3DS 2.0
-              transaction authorization. If transaction fails, please contact the
-              issuer or change another card to complete the transaction.<br />
-              本次交易採用綠綠科技金流機制進行付款，故信用卡交易帳單將顯示為綠界科技股份有限公司
-              <br />The transaction applies ECPay cashflow mechanism for payment.
-              Green World Fintech Service Company will be shown on credit card
-              bill as seller of the transaction.<br />
-              非經持卡人同意，如有冒用他人卡片盜刷之行為，刑法最高判五年有期徒刑<br />
-              Using other person's credit card without consent of the cardholder
-              will be subject to maximum 5 years prison sentence per the Criminal
-              Code.<br />
-              本頁面已使用256bitSSL安全加密機制 This page has applied 256-bit SSL
-              security encryption mechanism.<br />
-              為確保網路交易安全，您同意本公司得就此筆交易向發卡銀行、收單銀行及持卡人核對是否屬實<br />
-              In order to protect internet transaction security, you agree that
-              the company may confirm the existence of this transaction with card
-              issuing bank, acquiring bank, and cardholder.<br />
-              信用卡成功交易後否認，如經判定為本人或授權刷卡的行為，相關損失及費用須自行負擔
-              <br />If a successful credit card transaction is denied but later
-              confirmed to be executed by cardholder or authorized person, the
-              cardholder shall bear related loss and expenses.
-            </p>
-  
-            <div class="row c_donate_btn_box">
-              <a href="walking_form.html" class="col-6 c_donate_btn_forward">回上層</a>
-              <a href="#l" class="col-6 c_donate_btn_next"
-                >下一步</a
-              >
-            </div>
-          </div>
-  
-          <!-- Line 交易box -->
-          <div class="c_donate_pay_Line_box">
-            <img src="./images/Donate/donate_linePay_logo.png" alt="" />
-            <p>
-              請使用LINE帳號或掃描行動條碼登入。<br />若您已經是LINE
-              Pay會員，您可以在應用程式中直接進行付款。
-            </p>
-  
-            <div class="row">
-              <div class="col-sm-6 c_donate_line_log_in">
-                <p>LINE Log in</p>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="電子郵件帳號"
-                />
-                <input type="password" class="form-control" placeholder="密碼" />
-                <div class="c_donate_line_login_btn">
-                  <p>登入</p>
-                </div>
-                <small
-                  >您可在LINE應用程式中的「設定」>「我的帳號」確認您的帳號資訊。</small
-                >
-              </div>
-              <div class="col-sm-6 c_donate_line_QRcode_box">
-                <p>行動條碼掃描</p>
-  
-                <div class="c_donate_line_QR">
-                  <img src="./images/Donate/donate_linePay_QRcode.png" alt="" />
-                </div>
-                <small>在付款認證完成之前請勿關閉此頁。</small>
-              </div>
-            </div>
-            <div class="row c_donate_btn_box">
-              <a href="walking_form.html" class="col-6 c_donate_btn_forward">回上層</a>
-            </div>
-          </div>
-  
-          <!-- ATM 交易 -->
-          <div class="c_donate_atm_box">
-            <div class="row c_donate_btn_box">
-              <a href="walking_form.html" class="col-6 c_donate_btn_forward">回上層</a>
-              <a href="#" class="col-6 c_donate_btn_next">下一步</a>
-            </div>
-          </div>
         </form>
       </div>
 

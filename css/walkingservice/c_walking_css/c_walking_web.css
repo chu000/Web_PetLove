@@ -1,34 +1,77 @@
-:root {
-    --mainblue: #89A7C2;
-    --mainpink: #FF9A9A;
-    --mainyellow: #F9DD83;
-    --maingray: #CCCCCC;
-    --maindarkgray: #707070;
 
+
+
+  .n_list {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 2%;
+  }
+
+  .n_list1 {
+    display: none;
+  }
+
+
+.c_walking_form_select_text{
+    font-size: 16px;
+    color:var(--mainblue);
+    
 }
 
-@media only screen and (min-width: 1128px) {
+/* .c_walking_form_selectcheck input{
+    appearance: none;  
 
+    -webkit-appearance: none; 
+ border: 2px solid var(--mainblue) ;
+border-radius: 50%;
+margin-top: 1%  ;
 
+opacity: 1;
+ outline: none; 
+width: 15px;
+height: 15px;
+background-color: #fff;
+} */
+.c_donate_money_form .c_walking_form-group {
+    margin-top:4%;
+    margin-right: 0;
+}
+.row{
+    margin-right: 0;   
+    margin-left: 0;   
+}
 
-   
-
-
-
-
-    .n_list {
-        width: 800px;
-        margin: 0 auto;
-        margin-top: 70px;
-margin-bottom:2%;
-    }
+@media  (max-width: 414px) {
 
 
     .n_list1 {
+        display: block;
+        margin-top: 35%;
+        margin-left: 7px;
+margin-bottom: 10%;
+    }
+
+
+    .n_list {
         display: none;
+      
+
+    }
+
+ 
+
+    #n_selectTime,#n_selectpeople,  #n_selectSite{
+
+        fill: none;
     }
 
 
 
 
+    .c_walking_form_select_text{
+        font-size: 14px;
+     
+        
+    }
 }
