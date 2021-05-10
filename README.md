@@ -9,3 +9,6 @@
 [會員3](https://chu000.github.io/Web_PetLove/Account_forgot.html) 
 [會員4](https://chu000.github.io/Web_PetLove/Account_verification.html) 
 [會員4](https://chu000.github.io/Web_PetLove/Account_resetPassword.html) 
+
+[代遛](https://chu000.github.io/Web_PetLove/walking_form.html) 
+[旅館](https://chu000.github.io/Web_PetLove/booking_form.html) 
