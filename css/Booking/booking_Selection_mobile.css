@@ -1,0 +1,333 @@
+:root{
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+    --mainlightyellow:#F7F4EE;
+    --uborder:1px solid red;
+    --mainfont:Poppins;
+    --alightyellow:#FBF9F6;
+}
+@media (min-width:100px) and (max-width: 1127px){
+    
+
+
+.l_reservation_title,
+.l_hotel_title{
+  display: none;
+   
+}
+.l_reservation_title_mobile,
+.l_hotel_title_mobile{
+margin: 150px 0 55px;
+text-align: center;
+   
+}
+
+.l_hotel_title_mobile{
+    margin-bottom: 60px;
+  
+}
+.l_title_tc,.l_title_en
+{
+    color:var(--mainblue);
+    font-size:24px ;
+    font-family: Poppins;
+    
+}
+.l_title_en{
+    font-size:12px ;
+    font-weight: 100;
+   text-align: right;
+}
+.l_step,.l_notice_title{
+    color: var(--mainblue);
+    font-size: 16px;
+   text-align: center;
+   margin: 0 0 50px 0;
+    /* border: var(--uborder); */
+}
+.l_step_number{
+    /* border: var(--uborder); */
+    /* margin-bottom: 250px; */
+    height: 400px;
+}
+.l_step_number{
+   margin-bottom: 200px;
+}
+.l_line{
+    width: 1px;
+    height: 400px;
+    background-color: var(--mainblue);
+    position: absolute;
+    top: 350px;
+    left:85px ;
+  
+}
+
+.l_number{
+    width: 85%;
+    /* border: var(--uborder); */
+    margin: 0 auto ;
+    display: flex;
+    height: 100px;
+
+}
+.l_box{
+    width: 70%;
+    /* border: var(--uborder); */
+}
+
+
+
+.l_circle{
+    width: 25px;
+    height: 25px;
+    background-color: var(--mainyellow);
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    font-family:var(--mfont);
+     color: var(--maindarkgray);
+    z-index: 3;
+    position: relative;
+   
+}
+h5{
+    width: 100%;
+    /* border: var(--uborder); */
+    color: var(--mainblue);
+    font-family: var(--mfont);
+    font-weight: 700;
+    font-size: 14px;
+   letter-spacing: 2px;
+}
+h6{
+    width: 100%;
+    /* border: var(--uborder); */
+     color: var(--maindarkgray);
+    font-family: var(--mfont);
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.l_hotelselection{
+ display: none;
+}
+
+
+
+.dropdown{
+    /* border: var(--uborder); */
+   margin: 0 auto;
+   width: 70%;
+}
+.l_hotel_name{
+   
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-family: var(--mainfont);
+    background-color:var(--alightyellow);
+    color: var(--mainblue);
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 35px;
+    
+
+}
+
+.l_hotel_name svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+#l_selecthotel svg{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+.l_hostel-1-logo,
+.l_hostel-2-logo,
+.l_hostel-3-logo{
+    fill: var(--mainblue);
+    stroke: var(--mainblue);
+}
+.dropdown-item{
+    font-family: var(--mainfont);
+    color: var(--mainblue);
+    letter-spacing: 1px;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle,
+.btn-secondary:focus{
+    border: none;
+    font-size: 14px;
+    font-family: var(--mainfont);
+    background-color: #ffff;
+    color: var(--mainblue);
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 35px;
+
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus{
+    box-shadow:none;
+}
+.btn-secondary.focus, .btn-secondary:focus{
+    box-shadow:none;
+}
+.dropdown-menu.show{
+    border: none;
+    top: -2px !important;
+    left: 15px !important;
+   height: 160px;
+  
+}
+.dropdown-menu a{
+    margin-top: 10px;
+}
+
+.l_woof_detail,
+.l_mumao_detail,
+.l_sonemore_detail{
+    width: 85%;
+    background-color:var(--alightyellow);
+    margin: 50px auto 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.l_woof_big,
+.l_mumao_big,
+.l_sonemore_big{
+    /* border: var(--uborder); */
+    width: 100%;
+    height: 250px;
+    margin: 50px auto;
+}
+.l_woof_big img,
+.l_mumao_big img,
+.l_sonemore_big img{
+    width: 100%;
+    height: 100%;
+}
+.l_woof_img,
+.l_mumao_img,
+.l_sonemore_img{
+    display: flex;
+    justify-content: space-between;
+}
+.l_woof_img1,.l_woof_img2,
+.l_mumao_img1,.l_mumao_img2,
+.l_sonemore_img1,.l_sonemore_img2{
+    width: 145px;
+    height: 120px;
+   
+    
+}
+.l_woof_img1 img,.l_woof_img2 img,
+.l_mumao_img1 img,.l_mumao_img2 img,
+.l_sonemore_img1 img,.l_sonemore_img2 img{
+    width: 100%;
+    height: 100%;
+}
+.l_woof_Text,
+.l_mumao_Text,
+.l_sonemore_Text{
+    margin: 50px auto;
+    width: 80%;
+
+}
+.l_woof_name,
+.l_mumao_name,
+.l_sonemore_name{
+color: var(--mainblue);
+font-family: var(--mainfont);
+font-weight: 600;
+margin-bottom: 20px;
+font-size: 16px;
+letter-spacing: 2px;
+}
+.l_woof_introduction,
+.l_mumao_introduction,
+.l_sonemore_introduction{
+color: var(--mainblue);
+font-family: var(--mainfont);
+margin-top: 50px;
+font-size: 12px;
+letter-spacing: 1.5px;
+list-style: 20px;
+line-height: 20px;
+
+}
+
+.button{
+    background-color: var(--mainyellow);
+    border-radius: 50px;
+    width: 50%;
+    height: 37px;
+    margin: 80px auto ;
+    text-align: center;
+    line-height: 40px;
+    
+    
+
+}
+.button a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: var(--maindarkgray);
+    font-family: var(--mainfont);
+ 
+}
+.button img{
+    width: 30px;
+    height:30px;
+    position: relative;
+    top: -2px;
+    
+    
+}
+
+.l_notice{
+    height: 2000px;
+    width: 85%;
+    margin: 50px auto;
+}
+
+.l_notice_securitytitle,.l_notice_ruletitle{
+    font-size: 14px;
+    color: var(--mainblue);
+    font-family: var(--mfont);
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+}
+.l_notice_securitytext,
+.l_notice_ruletext{
+    font-size: 14px;
+     color: var(--maindarkgray);
+    font-family: var(--mfont);
+    line-height: 25px;
+    letter-spacing: 1px;
+   
+}
+.l_notice_securitytext span{
+     color: var(--mainpink);
+   
+}
+.l_notice_ruletitle{
+    margin-top: 70px;
+    
+}
+.l_footer_img{
+    display: none;
+}
+}
+
+

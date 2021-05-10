@@ -80,6 +80,25 @@ color: rgb(158, 158, 158);
   padding: 4%;
 }
 
+/* 可刪 */
+/* .c_walk_reset_btn{
+  display: block;
+  float: right;
+  border: 0;
+  background-color:rgba(255, 255, 255, 0);
+  color: var(--mainblue);
+  font-size: 14px;
+} */
+.c_formother_input{
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid var(--maindarkgray)!important;
+}
+.c_formother_input:focus{
+  background-color: rgba(255, 255, 255, 0);
+  /* border-bottom: 1px solid var(--maindarkgray)  !important; */
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0) !important;
+  box-shadow: 0px 0px 0px 0px  rgba(255, 255, 255, 0) !important;
+}
 @media (max-width: 414px) {
   .n_list1 {
     display: block;

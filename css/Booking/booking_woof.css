@@ -1,0 +1,556 @@
+:root {
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+    --mlightyellow: #F7F4EE;
+    --uborder: 1px solid red;
+    --mainfont: Poppins;
+    --alightyellow: #FBF9F6;
+
+}
+@media only screen and (min-width: 1128px){
+  
+    .l_woof{
+        width: 1200px;
+        height: 120px;
+        margin: 150px auto 80px;
+        background-color:var(--alightyellow);
+        border-radius: 20px;
+        font-family: var(--mfont);
+        color: var(--mainblue);
+        font-size: 30px;
+        text-align: center;
+        line-height: 120px;
+    }
+
+.l_hostel-1-logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+}
+.l_bigpic{
+    width: 1200px;
+    height: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    
+}
+.l_bigpic img{
+    width: 110%;
+    height: 110%;
+    animation-name: img-animation;
+     animation-duration: 3s;
+   
+}
+@keyframes img-animation{
+    0% {
+        transform: scale(1,1);
+
+
+    }
+
+    100% {
+        transform: scale(1.1,1.1);;
+
+    }
+}
+.l_about_title{
+   
+    text-align: center;
+   
+   
+}
+.l_about_text{
+    
+    width: 950px;
+    color: var(--mainblue);
+    font-size: 18px;
+    font-family: var(--mfont);
+    margin: 100px auto 0;
+    text-align: center;
+    letter-spacing: 2px;
+    
+
+}
+.l_about_text span{ 
+    font-size: 30px;
+    font-weight: 400;
+ 
+
+}
+.l_inf{
+    width: 950px;
+    
+    border-radius: 20px;
+    background-color: var(--alightyellow);
+    margin: 80px auto;
+    color: var(--maindarkgray);
+    font-family: var(--mfont);
+    font-size: 18px;
+    padding: 20px;
+}
+.l_inftitle{
+    font-size: 22px;
+  text-align: center;
+   /* border: var(--uborder); */
+   
+   
+}
+.l_infgrid{
+    font-size: 18px;
+     /* border: var(--uborder); */
+    width: 400px;
+    height: 200px;
+    display:grid;
+grid-template-columns: 100px auto;
+Grid-template-rows:1fr 1fr 1fr 1fr;
+margin: 50px 300px 30px ;
+}
+.l_phototour_title{
+    text-align: center;
+    margin-top: 200px;
+}
+.bx-wrapper {
+    width: 1200px;
+    height: 500px;
+    margin: 100px auto;
+    border-radius: 20px;
+    
+}
+.bx-wrapper{
+    border: none;
+    box-shadow:none;
+    background-color:var(--alightyellow);
+}
+.l_slider{
+    
+   border-radius: 20px;
+    
+    margin: 10px auto;
+}
+.l_phototour{
+    display: flex;
+   
+}
+.bx-viewport{
+    height: 600px !important;
+  
+}
+.l_phototour_card_1,
+.l_phototour_card{
+    width: 600px;
+    height: 500px;
+    padding: 40px 100px ;
+  /* margin-right: 20px;
+     */
+    
+}
+.l_phototour_subtitle{
+    width: 65%;
+   margin-bottom: 30px;
+    color: var(--mainblue);
+    font-size: 30px;
+    font-family: var(--mainfont);
+   
+}
+.l_phototour_subtitle span{
+    font-size: 16px;
+    
+}
+.l_pool_img,
+.l_food_img,
+.l_disinfect_img,
+.l_Twenty-fourcare_img{
+    width: 80px;
+    height: 80px;
+    
+}
+.l_pool_img img,
+.l_food_img img,
+.l_disinfect_img img,
+.l_Twenty-fourcare_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.l_phototour_detail{
+ 
+    display: flex;
+}
+.l_pool_text{
+    color: var(--maindarkgray);
+    font-size: 18px;
+    font-family: var(--mainfont);
+    letter-spacing: 1.5px;
+    line-height: 25px;
+   
+}
+.l_phototour_photo1{
+    position: relative;
+    left: 600px;
+    top: -500px;
+}
+
+.l_phototour_photo4{
+    position: relative;
+    left: 500px;
+    top: -330px;
+}
+.l_phototour_photo1,
+.l_phototour_photo2,
+.l_phototour_photo3,
+.l_phototour_photo4{
+    width: 500px;
+    height: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+
+}
+.l_phototour_photo1 img,
+.l_phototour_photo2 img,
+.l_phototour_photo3 img,
+.l_phototour_photo4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.bx-wrapper .bx-controls-direction a{
+    z-index: 2 !important;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+
+
+.bx-wrapper .bx-prev {
+   
+    left: 450px;
+    top: 90% !important;
+   
+    
+}
+
+.bx-wrapper .bx-next{
+    
+    top: 90% !important;
+    left: 530px;
+    
+    
+} 
+ 
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    left: -450px;
+    bottom: 40px;
+    
+
+
+}
+    
+.l_roomtypes_title{
+    
+    text-align: center;
+    margin-top: 180px;
+   
+   }
+.l_button{
+    width: 370px;
+       margin: 50px auto;
+       display: flex;
+       justify-content: space-between;
+   }
+.l_btn_dog,
+.l_btn_cat{
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    background-color:white;
+    font-size: 22px;
+    line-height: 40px;
+    color: var(--mainblue);
+    border: none;
+    fill: var(--mainblue);
+   
+  
+}
+
+
+.l_btn_dog:hover,
+.l_btn_cat:hover{
+    background-color:var(--mainyellow);
+    color: white;
+   
+  
+}
+
+.l_btn_dog:hover svg,
+.l_btn_cat:hover svg{
+  
+    fill: white;
+  
+  
+}
+
+.button_color{
+    background-color:var(--mainyellow);
+    color: var(--mainblue);
+    fill:var(--mainblue);
+
+}
+
+.hotel_btn_dog,
+.hotel_btn_cat{
+    width: 25px;
+    height: 25px;
+    margin: -5px 15px 0 0px ;
+}
+.l_dog_room,
+.l_cat_room{
+    display: flex;
+    width: 1200px;
+  justify-content: space-between;
+ 
+  margin: 50px auto;
+
+}
+.l_dog_room_1,
+.l_dog_room_2,
+.l_dog_room_3,
+.l_cat_room_1,
+.l_cat_room_2,
+.l_cat_room_3{
+    list-style: none;
+  width: 200px;
+  margin: 0;
+  
+ 
+  
+}
+.l_dogroom_1 a,
+.l_dogroom_2 a,
+.l_dogroom_3 a,
+.l_catroom_1 a,
+.l_catroom_2 a,
+.l_catroom_3 a{
+    text-decoration: none;
+    
+
+}
+
+.l_dogroom_img,
+.l_catroom_img{
+border-radius: 10px;
+width: 350px;
+ height: 500px;
+ overflow: hidden;
+ /* border: var(--uborder); */
+ 
+}
+.l_dogroom_img img,
+.l_catroom_img img{
+   height: 100%;
+   width: 100%;
+
+    
+  
+}
+.l_room_card{
+    width: 350px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--maindarkgray);
+    border: 1px solid #CCCCCC;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+   
+
+}
+h1{
+    font-size: 22px;
+    color: var(--mainblue);
+    
+
+}
+h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    
+
+}
+h3{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+}
+h4{
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+
+}
+
+.l_medical_title{
+    text-align: center;
+    margin-top: 200px;
+}
+.l_medical_img{
+    text-align: center;
+  
+    margin-bottom: 15px;
+}
+.l_medical_1:hover .l_medical_img svg {
+    transform: translatey(-20px);
+    transition: .5s;
+    fill: var(--mainyellow);
+}
+.l_medical_1:hover h5{
+    transform: translatey(-20px);
+    transition: .4s;
+}
+.l_medical_1:hover h6{
+    opacity: 1;
+    transition: .8s;
+}
+
+.l_medical_img svg{
+    fill:var(--mainblue);
+    width: 100px;
+    height: 80px;
+   
+  
+}
+.l_medical_detail{
+    margin: 100px auto 30px;
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+.l_box{
+    
+    width: 200px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+h5{
+  font-size: 18px;
+  text-align: center;
+  
+}
+h6{
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.l_line{
+    border-top:1px solid var(--mainyellow) ;
+    width: 1200px;
+    height: 10px;
+    margin: 0px auto 100px;
+}
+
+.l_services{
+    width: 900px;
+    margin: 0 auto 100px;
+}
+.l_services_title{
+    font-size: 18px;
+    color: var(--mainblue);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+
+}
+.l_services_text{
+    font-size: 16px;
+    color: var(--maindarkgray);
+    font-weight: 300;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+    line-height: 30px;
+
+}
+.l_footer_img{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+.l_footer_dog{
+    width: 190px;
+  
+
+    
+}
+.l_footer_dog img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 10px;
+   
+
+}
+.l_footer_cat{
+   
+    width: 230px;
+}
+.l_footer_cat img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+     object-position: 0 40px;
+}
+
+.l_about_title_mobile,
+.l_phototour_title_mobile,
+.l_roomtypes_title_mobile,
+.l_medical_title_mobile,
+.l_dog_room_mobile,
+.l_cat_room_mobile,
+.l_button_mobile{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

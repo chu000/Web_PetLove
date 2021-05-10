@@ -1,0 +1,610 @@
+:root {
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+    --mlightyellow: #F7F4EE;
+    --uborder: 1px solid red;
+    --mainfont: Poppins;
+    --alightyellow: #FBF9F6;
+
+}
+@media (min-width:100px) and (max-width: 1127px){
+  .container-fluid{
+      padding: 0 0;
+  }
+    .l_woof{
+        width: 250px;
+        height: 40px;
+        margin: 120px auto 50px;
+        background-color:var(--alightyellow);
+        border-radius: 20px;
+        font-family: var(--mfont);
+        color: var(--mainblue);
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+.l_hostel-1-logo{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    stroke: var(--mainblue);
+}
+.l_bigpic{
+    width:100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    
+}
+.l_bigpic img{
+    width: 110%;
+    height: 110%;
+    animation-name: img-animation;
+     animation-duration: 3s;
+     object-fit: cover;
+   
+}
+@keyframes img-animation{
+    0% {
+        transform: scale(1,1);
+
+
+    }
+
+    100% {
+        transform: scale(1.1,1.1);;
+
+    }
+}
+.l_about_title_mobile,
+.l_phototour_title_mobile,
+.l_roomtypes_title_mobile,
+.l_medical_title_mobile{
+    text-align: center;
+}
+
+
+.l_about_text{
+    
+    width:85%;
+    color: var(--mainblue);
+    font-size: 14px;
+    font-family: var(--mfont);
+    margin: 50px auto 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    
+
+}
+.l_about_text span{
+   
+    font-size: 16px;
+    font-weight: 400;
+ 
+
+}
+.l_inf{
+    width: 90%; 
+    border-radius: 10px;
+    background-color: var(--alightyellow);
+    margin: 80px auto;
+    color: var(--maindarkgray);
+    font-family: var(--mfont);
+    font-size: 14px;
+    padding: 20px;
+}
+.l_inftitle{
+    font-size: 16px;
+  text-align: center;
+  
+   
+   
+}
+.l_infgrid{
+    font-size: 14px;
+     /* border: var(--uborder); */
+    width: 260px;
+    height: 160px;
+    display:grid;
+grid-template-columns: 70px auto;
+Grid-template-rows:1fr 1fr 1fr 1fr;
+margin-top: 50px;
+}
+.l_phototour_title_mobile{
+   
+    margin: 130px auto -50px;
+}
+.bx-wrapper {
+ width: 90%;
+    height: 650px;
+    margin: 100px auto;
+    border-radius: 20px;
+    
+}
+.bx-wrapper{
+    border: none;
+    box-shadow:none;
+    background-color:var(--alightyellow);
+}
+.l_slider{
+    
+   border-radius: 20px;
+    
+    margin: 10px auto;
+}
+.l_phototour{
+    display: flex;
+    height: 650px;
+}
+.bx-viewport{
+    height: 650px !important;
+   
+  
+}
+.l_phototour_card_1{
+    width: 300px;
+
+    position: relative;
+    left: 25px;
+    top: 320px;
+ 
+  font-family: var(--mainfont);
+}
+.l_phototour_card{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 25px;
+    top: 320px;
+ 
+  font-family: var(--mainfont);
+
+}
+.l_phototour_subtitle{
+    width: 65%;
+   margin-bottom: 30px;
+    color: var(--mainblue);
+    font-size: 16px;
+    font-family: var(--mainfont);
+   
+}
+.l_phototour_subtitle span{
+    font-size: 12px;
+    
+}
+.l_pool_img,
+.l_food_img,
+.l_disinfect_img,
+.l_Twenty-fourcare_img{
+    width: 50px;
+    height: 50px;
+   
+}
+.l_pool_img img,
+.l_food_img img,
+.l_disinfect_img img,
+.l_Twenty-fourcare_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.l_phototour_detail{
+ 
+    display: flex;
+}
+.l_pool_text{
+    color: var(--maindarkgray);
+    font-size: 14px;
+    font-family: var(--mainfont);
+    letter-spacing: 1px;
+    line-height: 20px;
+    
+   
+}
+
+.l_phototour_photo1{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    position: relative;
+    left: 30px;
+    top: -200px;
+}
+.l_phototour_photo4{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+ position: absolute;
+    left: 10px;
+    top: -300px;
+}
+.l_phototour_photo2,
+.l_phototour_photo3{
+    width: 280px ;
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 30px;
+    top: 20px;
+
+ 
+
+}
+.l_phototour_photo1 img,
+.l_phototour_photo2 img,
+.l_phototour_photo3 img,
+.l_phototour_photo4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.bx-wrapper .bx-controls-direction a{
+    z-index: 2 !important;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+
+
+.bx-wrapper .bx-prev {
+   
+    left: 130px;
+    top: 95% !important;
+   
+    
+}
+
+.bx-wrapper .bx-next{
+    
+    top: 95% !important;
+    left: 190px;
+    
+    
+} 
+ 
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+    left: -450px;
+    bottom: 40px;
+    
+
+
+}
+    
+.l_roomtypes_title{
+    
+    text-align: center;
+    margin-top: 180px;
+   
+   }
+.l_button_mobile{
+    width: 88%;
+       margin: 35px auto;
+       display: flex;
+       justify-content: space-between;
+   }
+.l_btn_dog_mobile,
+.l_btn_cat_mobile{
+    width: 140px;
+    height: 35px;
+    border-radius: 50px;
+    background-color:white;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--mainblue);
+    border: none;
+    fill: var(--mainblue);
+   
+  
+}
+.l_btn_cat_mobile{
+    background-color:#F9DD83;
+}
+
+
+
+
+.hotel_btn_dog,
+.hotel_btn_cat{
+    width: 25px;
+    height: 25px;
+    margin: -5px 15px 0 0px ;
+}
+
+.l_cat_room_mobile{
+    position: relative;
+    top: -700px;
+    /* border: 1px red solid; */
+   
+   
+    
+    
+}
+
+.l_dog_room_mobile{
+   
+    opacity: 0;
+    
+}
+
+.carousel {
+    width: 100%;
+    /* border: 4px red solid; */
+    height: 700px;
+
+}
+
+.carousel-cell {
+    width: 250px;
+    height: 650px;
+    margin-right: 10px;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+
+
+
+.flickity-prev-next-button {
+    display: none;
+}
+
+.l_dog_room_1,
+.l_dog_room_2,
+.l_dog_room_3,
+.l_cat_room_1,
+.l_cat_room_2,
+.l_cat_room_3 {
+    list-style: none;
+    width: 200px;
+    margin: 0;
+    border: var(--uborder);
+
+
+
+}
+
+.l_dogroom_1 a,
+.l_dogroom_2 a,
+.l_dogroom_3 a,
+.l_catroom_1 a,
+.l_catroom_2 a,
+.l_catroom_3 a {
+    text-decoration: none;
+
+
+}
+
+.l_dogroom_img,
+.l_catroom_img {
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    /* border: var(--uborder); */
+
+}
+
+.l_dogroom_img img,
+.l_catroom_img img {
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.l_room_card {
+    width: 250px;
+    height: 230px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--maindarkgray);
+    border: 1px solid #CCCCCC;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    font-size: 16px;
+    color: var(--mainblue);
+
+
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+
+
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+}
+
+h4 {
+
+    font-size: 14px;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+
+}
+
+.l_medical_title_mobile{
+    text-align: center;
+    margin-top: -600px;
+    
+    
+}
+.l_medical_img{
+    text-align: center;
+  
+    margin-bottom: 15px;
+}
+
+
+
+
+.l_medical_img svg{
+    fill:var(--mainyellow);
+    width: 80px;
+    height: 50px;
+   
+  
+}
+.l_medical_detail{
+    margin: 100px auto 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+Grid-template-rows: 200px 150px ;
+}
+.l_box{
+   
+    width: 120px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin: 10px auto;
+
+}
+h5{
+  font-size: 14px;
+  text-align: center;
+  
+}
+h6{
+
+ 
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.l_line{
+    border-top:1px solid var(--mainyellow) ;
+    width: 80%;
+    height: 10px;
+    margin: 0px auto 100px;
+}
+
+.l_services{
+    width: 90%;
+    margin: 0 auto 100px;
+}
+.l_services_title{
+    width: 90%;
+    font-size: 16px;
+    color: var(--mainblue);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 20px auto 10px ;
+
+}
+.l_services_text{
+    font-size: 14px;
+    color: var(--maindarkgray);
+ 
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 90%;
+    margin: 0 auto 50px;
+}
+.l_footer_img{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+}
+.l_footer_dog{
+    width: 190px;
+  
+
+    
+}
+.l_footer_dog img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 0 10px;
+   
+
+}
+.l_footer_cat{
+   
+    width: 230px;
+}
+.l_footer_cat img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+     object-position: 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.l_about_title,
+.l_phototour_title,
+.l_roomtypes_title,
+.l_medical_title,
+.l_dog_room,
+.l_cat_room,
+.l_button,
+.l_btn_dog,
+.l_btn_cat,
+.l_footer_img{
+    display: none;
+}
+
+
+}
+
+
+
+
+
+
