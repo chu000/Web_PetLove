@@ -58,6 +58,7 @@ color: rgb(158, 158, 158);
   width: 25px;
   height: 25px;
   margin-right: 1%;
+  fill: #fff;
 }
 .c_walk_complete_list{
   margin: 0 auto;
