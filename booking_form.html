@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="./css/walkingservice/c_walking_css/c_walking_web.css"
     />
+    <link
+      rel="stylesheet"
+      href="./css/Booking/c_bookong_css/c_booking_web.css"
+    />
     <link rel="stylesheet" href="./css/Donate/donate.css" type="text/css" />
     <link rel="stylesheet" href="./css/Cart/Cart.css" type="text/css" />
     <link
@@ -47,7 +51,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
     />
-
+    <!-- bootstrap日曆 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css"> -->
     <title>PetLove 派樂星球</title>
     <style></style>
   </head>
@@ -805,6 +811,51 @@
 
       <form class="c_donate_money_form">
         <div class="form-group row">
+          <div class="col-sm-4">
+          <label class=" col-form-label c_form_name"> 預計入住時段</label><p class="c_booking_note_p">接受入住時段：15:30-20:30<br>
+            (提前入住將收取超時費用) </p> </div>
+
+          <div class="col-sm-8 row c_booking_time">
+            <!-- type="date" 會有年月日  type="text"關掉value可以顯示 placeholder-->
+            <div class="col-12 col-sm-6">
+            <input type="date" class="form-control" placeholder="请输入"
+	name="date" id="birthday" value="2021-06-27" max="2021-06-30" min="" disabled>
+
+        </div>
+            <div class="col-12 col-sm-6">
+            <select class="form-control "  disabled>
+              <!-- <option>請選擇時間</option> -->
+              <option>15:30</option>
+              <option>16:30</option>
+              <option>17:30</option>
+              <option>18:30</option>
+              <option>19:30</option>
+              <option>20:30</option>
+            </select></div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">
+          <label class=" col-form-label c_form_name">預計退房時段</label><p class="c_booking_note_p">接受退房時段：12:00-14:00<br>
+            (延後退房將收取超時費用)  </p> </div>
+
+          <div class="col-sm-8 row c_booking_time">
+            <!-- type="date" 會有年月日  type="text"關掉value可以顯示 placeholder-->
+            <div class="col-12 col-sm-6">
+            <input type="date" class="form-control" placeholder="请输入"
+	name="date" id="birthday" value="2021-06-30" max="2021-07-10" min="" disabled>
+
+        </div>
+            <div class="col-12 col-sm-6">
+            <select class="form-control "  disabled>
+              <!-- <option>請選擇時間</option> -->
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+            </select></div>
+          </div>
+        </div>
+        <div class="form-group row">
           <label for="exampleFormControlInput1" class="col-sm-4 col-form-label">
             E-mail
           </label>
@@ -1243,5 +1294,32 @@
     <script src="js/Donate/donate.js"></script>
     <script src="js/Donate/auto_form.js"></script>
     <script src="js/walkingservice/c_walk_js/c_walk.js"></script>
+    <!-- bootstrap日曆 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> -->
+    <!--日曆 設定當天前的日子不能選 -->
+    <script>
+      $(function(){
+          //得到当前时间
+        var date_now = new Date();
+        //得到当前年份
+        var year = date_now.getFullYear();
+        //得到当前月份
+        //注：
+        //  1：js中获取Date中的month时，会比当前月份少一个月，所以这里需要先加一
+        //  2: 判断当前月份是否小于10，如果小于，那么就在月份的前面加一个 '0' ， 如果大于，就显示当前月份
+        var month = date_now.getMonth()+1 < 10 ? "0"+(date_now.getMonth()+1) : (date_now.getMonth()+1);
+        //得到当前日子（多少号）
+        var date = date_now.getDate() < 10 ? "0"+date_now.getDate() : date_now.getDate();
+        //设置input标签的max属性
+        var month1 = date_now.getMonth()+2 < 10 ? "0"+(date_now.getMonth()+1) : (date_now.getMonth()+1);
+        //设置input标签的max属性
+        $("#birthday").attr("min",year+"-"+month+"-"+date);
+        
+        
+        
+      })
+      
+      </script>
+
   </body>
 </html>

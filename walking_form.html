@@ -974,7 +974,8 @@
                   </label>
         
                   <div class="col-sm-8">
-                    <input type="text" class="form-control c_receipt_dis"  value="2021/05/08" disabled/>
+                    <input type="date" class="form-control c_receipt_dis" placeholder="请输入"
+                    name="date" id="birthday" value="2021-06-27" max="2021-06-30" min="" disabled/>
                   </div>
                 </div>
                 <div class="col-sm-6 c_walking_form-group row">
@@ -994,7 +995,12 @@
                       </label>
             
                       <div class="col-12 col-sm-8">
-                        <input type="text" class="form-control  c_receipt_dis"  value="方案二(一小時)" disabled/>
+                        <select class="form-control c_receipt_dis"  disabled>
+                            <!-- <option>請選擇時間</option> -->
+                            <option>方案一(30分鐘)</option>
+                            <option>方案二(1小時)</option>
+              
+                          </select>
                       </div>
                     </div>
                     <div class="col-12  col-sm-6 form-group ">
