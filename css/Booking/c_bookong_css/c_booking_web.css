@@ -37,35 +37,32 @@
 .c_booking_time {
   padding-top: 3%;
 }
-.c_booking_complete_box{
+.c_booking_complete_box {
   max-width: 900px;
-  margin:10% auto;
-
+  margin: 10% auto;
 }
-.c_booking_cheak{
+.c_booking_cheak {
   max-width: 500px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
   padding: 10%;
-  /* line-height: 3; */
-
 }
-.c_booking_cheak p{
-margin-top: 10%;
+.c_booking_cheak p {
+  margin-top: 10%;
 }
-.c_booking_cheak span{
-margin-left: 5%;
+.c_booking_cheak span {
+  margin-left: 5%;
   font-size: 30px;
 }
 
-.c_booking_cheak svg{
-margin-bottom: 3%;
+.c_booking_cheak svg {
+  margin-bottom: 3%;
 
-width: 30px;
-height: 30px;
-fill: var(--mainyellow);
+  width: 30px;
+  height: 30px;
+  fill: var(--mainyellow);
 }
 @media (max-width: 414px) {
   .c_booking_title {
