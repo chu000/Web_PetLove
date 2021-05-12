@@ -37,7 +37,9 @@ $(function () {
   //     }
   // })
 
-  //   監聽有幾個商品帶入標題
+
+
+  //   監聽購物車 有幾個商品帶入標題------------------------
   // 桌機
   $(document).ready(function () {
     // alert($(".c_itemBody tr").length);
@@ -50,7 +52,7 @@ $(function () {
     let rm = $(".c_cart_Mobile_box li").length;
     $(".c_title_mobile_itemAmount").text(rm);
   });
-
+// 使用+按鈕時------------------------------
   $(".add").click(function () {
     let n = parseInt($(this).siblings(".num").val());
     //console.log(n);
@@ -71,6 +73,7 @@ $(function () {
 
     getSum();
   });
+  // 使用-按鈕時------------------------------
   $(".min").click(function () {
     let n = parseInt($(this).siblings(".num").val());
     //console.log(n);
@@ -92,18 +95,35 @@ $(function () {
     getSum();
   });
   //使用者也可以直接修改表單num裡面的值（小bug），同樣計算小計
+// 一開始算small_total小記的值------------------
+  // $(".num").change(function () {
+  //   let n = $(this).val();
+  //   let price = $(this).parent().siblings(".price").html();
+  //   // price = price.substr(1);
+  //   $(this)
+  //     .parent()
+  //     .siblings(".small_total")
+  //     .text(n * price);
+  //   getSum();
+  // });
+    //   (更新)全部監聽有買多少項，每條 small_total 為多少-------------------------------
+  
+    $(".num")
+      .each(function (index) {
+        let n = parseInt($(this).val());
+        console.log(n);
+        let price = $(this).parent().parent().siblings(".price").html();
+        console.log(price);
+        $(this)
+          .parent()
+          .parent()
+          .siblings(".small_total")
+          .text(n * price);
 
-  $(".num").change(function () {
-    let n = $(this).val();
-    let price = $(this).parent().siblings(".price").html();
-    // price = price.substr(1);
-    $(this)
-      .parent()
-      .siblings(".small_total")
-      .text(n * price);
-    getSum();
-  });
+        getSum();
+      });
 
+// 第一次總共小計的結算-------------------------------------------
   function getSum() {
     let count = 0; //計算總件數
     let money = 0; //計算總價錢
@@ -113,23 +133,25 @@ $(function () {
     //       money += parseInt($(".small_total").eq(index).text());
     // }
 
-    // -----以下這裡是我亂試
+    // -----以下這裡是我亂試(為了分開桌機手機板  上面為原始)
     var isMobileDisplay = $(".c_cart_Mobile_box").css("display");
     if (isMobileDisplay == "none") {
       // console.log("yaya");
       $(".c_cart_item")
         .find(".num")
         .each(function (index) {
-          money += parseInt($(".c_cart_item")
-          .find(".small_total").eq(index).text());
+          money += parseInt(
+            $(".c_cart_item").find(".small_total").eq(index).text()
+          );
         });
     } else {
       // console.log("55");
       $(".c_cart_Mobile_box")
         .find(".num")
         .each(function (index) {
-          money += parseInt($(".c_cart_Mobile_box")
-          .find(".small_total").eq(index).text());
+          money += parseInt(
+            $(".c_cart_Mobile_box").find(".small_total").eq(index).text()
+          );
           // console.log(money);
         });
     }
@@ -142,7 +164,7 @@ $(function () {
     getBigTotal();
   }
 
-  // 刪除商品模組
+  // 刪除商品模組------------------------------------------
   // 點選刪除之後一定是刪除當前的商品，所以從$(this)出發
   $(".delete").click(function () {
     //刪除的是當前的商品
@@ -154,7 +176,7 @@ $(function () {
     // 手機
     let rm = $(".c_cart_Mobile_box li").length;
     $(".c_title_mobile_itemAmount").text(rm);
-//當商品項目都為0時 把購物車list都清空
+    //當商品項目都為0時 把購物車list都清空
     if ((r === 0) | (rm === 0)) {
       $(".c_cart_BIGbox").empty();
       $(".c_NOitem").show();
@@ -211,8 +233,7 @@ $(function () {
       money = parseInt(sum - c_MOcoin);
     } else if (0 < sum < 999) {
       $(".c_cut_fare").text(0);
-      money = parseInt(sum - c_MOcoin)+ 60 ;
-    
+      money = parseInt(sum - c_MOcoin) + 60;
     } else if ((sum = 0)) {
       money = 0;
     }
